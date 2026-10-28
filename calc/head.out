@@ -1,0 +1,7 @@
+the dip a patch over the cable sees (its 29 mm averaged), the cable against the same groove empty;
+and the head's own pattern across it, peak to peak (fixed to the head, calibrated out)
+  no head, 2 mm in front of the wall     | cable under the centre: -2.6 dB
+  head, air 5 mm                         | cable under the centre: -1.1 dB (pattern 1.5 dB) | cable under a ring patch: -1.3 dB
+  head, rubber 5 mm                      | cable under the centre: -0.9 dB (pattern 1.6 dB) | cable under a ring patch: -1.1 dB
+  head, rubber 10 mm                     | cable under the centre: -0.8 dB (pattern 2.0 dB) | cable under a ring patch: -0.7 dB
+  head, rubber 20 mm                     | cable under the centre: -4.0 dB (pattern 4.9 dB) | cable under a ring patch: -3.3 dB

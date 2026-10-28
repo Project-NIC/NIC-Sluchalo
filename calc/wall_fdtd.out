@@ -1,0 +1,53 @@
+# python3 wall_fdtd.py <mm> <mortar> <brick>  and  python3 wall_fdtd.py avg 140 mortar_hi <TM|TE> 55; run 26 Oct 2026
+# validate: 2.44 GHz TM FDTD -3.0 dB, series -2.9 dB; TE -0.1 / -0.1 dB
+== brick 140 mm, 15 mm plaster each side, mortar_lo
+  2.44 GHz along : joints  0.4 dB p-p | the groove, empty:  -2.1 /  +0.8 dB | the groove with a cable:  -5.3 /  +0.1 dB | the groove with a 25 mm conduit and a cable:  -7.7 /  -0.3 dB
+  2.44 GHz across: joints  0.4 dB p-p | the groove, empty:  -0.5 /  +0.1 dB | the groove with a cable:  -0.3 /  +0.1 dB | the groove with a 25 mm conduit and a cable:  -2.3 /  -0.1 dB
+  5.50 GHz along : joints 14.6 dB p-p | the groove, empty:  -3.0 /  +7.6 dB | the groove with a cable:  -9.3 /  +8.7 dB | the groove with a 25 mm conduit and a cable: -15.4 /  +8.4 dB
+  5.50 GHz across: joints 10.8 dB p-p | the groove, empty:  -1.6 /  +2.6 dB | the groove with a cable:  -2.0 /  +2.3 dB | the groove with a 25 mm conduit and a cable:  -5.2 /  +4.2 dB
+== brick 140 mm, 15 mm plaster each side, mortar_hi
+  2.44 GHz along : joints  0.7 dB p-p | the groove, empty:  -3.1 /  +1.2 dB | the groove with a cable:  -5.5 /  -0.0 dB | the groove with a 25 mm conduit and a cable:  -7.0 /  -1.0 dB
+  2.44 GHz across: joints  0.2 dB p-p | the groove, empty:  -0.7 /  +0.4 dB | the groove with a cable:  -0.5 /  +0.4 dB | the groove with a 25 mm conduit and a cable:  -2.4 /  +0.5 dB
+  5.50 GHz along : joints 22.7 dB p-p | the groove, empty: -14.4 / +13.2 dB | the groove with a cable:  -5.4 / +12.2 dB | the groove with a 25 mm conduit and a cable:  -3.2 / +11.5 dB
+  5.50 GHz across: joints 15.3 dB p-p | the groove, empty: -26.1 /  +2.9 dB | the groove with a cable: -22.4 /  +2.9 dB | the groove with a 25 mm conduit and a cable:  -7.3 /  +2.5 dB
+== brick_damp 140 mm, 15 mm plaster each side, mortar_hi
+  2.44 GHz along : joints  0.9 dB p-p | the groove, empty:  -1.8 /  +1.3 dB | the groove with a cable:  -5.2 /  +0.1 dB | the groove with a 25 mm conduit and a cable:  -7.6 /  -0.2 dB
+  2.44 GHz across: joints  0.5 dB p-p | the groove, empty:  +0.3 /  +0.5 dB | the groove with a cable:  +0.4 /  +0.6 dB | the groove with a 25 mm conduit and a cable:  -0.8 /  +0.7 dB
+  5.50 GHz along : joints 29.1 dB p-p | the groove, empty:  -2.1 / +14.4 dB | the groove with a cable:  -2.4 / +15.5 dB | the groove with a 25 mm conduit and a cable:  -2.3 / +17.0 dB
+  5.50 GHz across: joints 44.2 dB p-p | the groove, empty: -13.3 / +27.5 dB | the groove with a cable: -14.6 / +26.5 dB | the groove with a 25 mm conduit and a cable:  -5.1 / +31.7 dB
+== brick 290 mm, 15 mm plaster each side, mortar_lo
+  2.44 GHz along : joints  2.5 dB p-p | the groove, empty:  -3.0 /  +1.0 dB | the groove with a cable:  -8.1 /  +0.2 dB | the groove with a 25 mm conduit and a cable: -11.0 /  +0.1 dB
+  2.44 GHz across: joints  1.5 dB p-p | the groove, empty:  -1.0 /  +0.3 dB | the groove with a cable:  -0.8 /  +0.3 dB | the groove with a 25 mm conduit and a cable:  -2.8 /  +0.4 dB
+  5.50 GHz along : joints  5.8 dB p-p | the groove, empty:  -3.4 /  +3.4 dB | the groove with a cable:  -9.8 /  +4.7 dB | the groove with a 25 mm conduit and a cable: -48.6 /  +3.2 dB
+  5.50 GHz across: joints  5.7 dB p-p | the groove, empty:  -2.8 /  +1.8 dB | the groove with a cable:  -2.2 /  +1.7 dB | the groove with a 25 mm conduit and a cable: -13.2 /  +2.6 dB
+== brick 290 mm, 15 mm plaster each side, mortar_hi
+  2.44 GHz along : joints  2.1 dB p-p | the groove, empty:  -2.9 /  +1.1 dB | the groove with a cable:  -5.4 /  +0.2 dB | the groove with a 25 mm conduit and a cable:  -6.8 /  -0.5 dB
+  2.44 GHz across: joints  1.1 dB p-p | the groove, empty:  -0.6 /  +0.4 dB | the groove with a cable:  -0.4 /  +0.4 dB | the groove with a 25 mm conduit and a cable:  -2.1 /  +0.5 dB
+  5.50 GHz along : joints  3.7 dB p-p | the groove, empty: -11.5 /  +3.4 dB | the groove with a cable: -28.7 /  +3.4 dB | the groove with a 25 mm conduit and a cable: -17.5 /  +3.0 dB
+  5.50 GHz across: joints  3.9 dB p-p | the groove, empty:  -3.5 /  +1.7 dB | the groove with a cable:  -3.0 /  +1.5 dB | the groove with a 25 mm conduit and a cable: -16.0 /  +2.2 dB
+== brick 140 mm, mortar_hi, averaged over channels
+  5 channels 5.18-5.82 GHz, along : joints 21.1 dB p-p | the empty groove -11.2 dB | the cable in it  -4.9 dB, against the empty groove  -1.7 dB
+== brick 140 mm, mortar_hi, averaged over channels
+  5 channels 5.18-5.82 GHz, across: joints 14.6 dB p-p | the empty groove -11.6 dB | the cable in it -10.3 dB, against the empty groove  -0.3 dB
+# python3 wall_fdtd.py avg <mm> <mortar> TM 24 <plaster>, run 26 Oct 2026: 3 channels at 2.4 GHz, field along the cable
+== brick 140 mm, mortar_hi, plaster, averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  0.7 dB p-p | the empty groove  -3.1 dB | the cable in it  -5.6 dB, against the empty groove  -3.3 dB
+== brick 140 mm, mortar_hi, plaster_lc, averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  0.4 dB p-p | the empty groove  -2.1 dB | the cable in it  -2.0 dB, against the empty groove  -2.7 dB
+== brick 140 mm, mortar_wet, plaster, averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  5.9 dB p-p | the empty groove  -1.0 dB | the cable in it  -1.6 dB, against the empty groove  -0.9 dB
+== brick 290 mm, mortar_hi, plaster, averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  2.1 dB p-p | the empty groove  -2.9 dB | the cable in it  -5.3 dB, against the empty groove  -3.0 dB
+== brick 290 mm, mortar_hi, plaster_lc, averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  1.8 dB p-p | the empty groove  -2.1 dB | the cable in it  -1.9 dB, against the empty groove  -2.4 dB
+== brick 290 mm, mortar_wet, plaster, averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  8.4 dB p-p | the empty groove  -1.2 dB | the cable in it  -2.0 dB, against the empty groove  -2.0 dB
+# python3 wall_fdtd.py avg <mm> mortar_hi TM 24 plaster_lc <groove mm>, run 27 Oct 2026: the typical wall here
+== brick 140 mm, mortar_hi, plaster_lc, groove 10 mm deep (the cable 20 mm from the face), averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  0.4 dB p-p | the empty groove  -0.7 dB | the cable in it  -2.8 dB, against the empty groove  -3.3 dB
+== brick 140 mm, mortar_hi, plaster_lc, groove 20 mm deep (the cable 25 mm from the face), averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  0.4 dB p-p | the empty groove  -1.5 dB | the cable in it  -2.7 dB, against the empty groove  -3.3 dB
+== brick 290 mm, mortar_hi, plaster_lc, groove 10 mm deep (the cable 20 mm from the face), averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  1.8 dB p-p | the empty groove  -0.7 dB | the cable in it  -2.4 dB, against the empty groove  -2.9 dB
+== brick 290 mm, mortar_hi, plaster_lc, groove 20 mm deep (the cable 25 mm from the face), averaged over channels
+  3 channels 2.41-2.47 GHz, along : joints  1.8 dB p-p | the empty groove  -1.6 dB | the cable in it  -2.4 dB, against the empty groove  -2.9 dB

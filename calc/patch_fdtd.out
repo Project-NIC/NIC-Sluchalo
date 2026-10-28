@@ -1,0 +1,40 @@
+# python3 patch_fdtd.py <gap mm|none> <er> <sigma>, run 26 Oct 2026
+no wall: resonance 2.475 GHz
+wall er 3.9, sigma 0.027 S/m, gap 0 mm: resonance 2.190 GHz
+wall er 3.9, sigma 0.027 S/m, gap 2 mm: resonance 2.462 GHz
+wall er 3.9, sigma 0.027 S/m, gap 5 mm: resonance 2.488 GHz
+wall er 3.9, sigma 0.027 S/m, gap 10 mm: resonance 2.495 GHz
+wall er 3.0, sigma 0.014 S/m, gap 0 mm: resonance 2.263 GHz
+wall er 6.1, sigma 0.166 S/m, gap 0 mm: resonance 2.027 GHz
+wall er 6.1, sigma 0.166 S/m, gap 5 mm: resonance 2.472 GHz
+# the ring's patch, narrowed to 29 x 29 mm (fourth argument 29), run 26 Oct 2026
+patch 29 x 29 mm, no wall: resonance 2.488 GHz
+patch 29 x 29 mm, wall er 3.9, sigma 0.027 S/m, gap 0 mm: resonance 2.187 GHz
+patch 29 x 29 mm, wall er 3.9, sigma 0.027 S/m, gap 2 mm: resonance 2.469 GHz
+patch 29 x 29 mm, wall er 3.9, sigma 0.027 S/m, gap 5 mm: resonance 2.498 GHz
+# python3 patch_fdtd.py s11 ..., run 26-27 Oct 2026 (30 ns)
+patch 29 x 29 mm, feed 8 mm in, no wall: best match 2.508 GHz, S11 -20.6 dB, Z 57-7j ohm, -10 dB band 60 MHz; at 2412/2442/2472 MHz -2.9 / -4.8 / -8.8 dB
+patch 29 x 29 mm, feed 10 mm in, no wall: best match 2.498 GHz, S11 -12.7 dB, Z 34+11j ohm, -10 dB band 30 MHz; at 2412/2442/2472 MHz -1.9 / -3.5 / -7.4 dB
+patch 29 x 29 mm, feed 12 mm in, no wall: best match 2.492 GHz, S11 -3.6 dB, Z 11+17j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -0.7 / -1.4 / -2.8 dB
+patch 29 x 29 mm, feed 10 mm in, wall er 3.9, sigma 0.027, gap 5 mm: best match 2.508 GHz, S11 -9.5 dB, Z 27+12j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -1.9 / -3.2 / -5.8 dB
+patch 29 x 29 mm, feed 10 mm in, wall er 3.9, sigma 0.027, gap 10 mm filled with er 3.0: best match 2.260 GHz, S11 -8.7 dB, Z 25+11j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -0.8 / -0.6 / -0.5 dB
+patch 29 x 29 mm, feed 10 mm in, wall er 3.9, sigma 0.027, gap 20 mm filled with er 3.0: best match 2.250 GHz, S11 -8.0 dB, Z 23+12j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -0.8 / -0.6 / -0.5 dB
+patch 29 x 29 mm, feed 10 mm in, wall er 6.1, sigma 0.166, gap 10 mm filled with er 3.0: best match 2.256 GHz, S11 -6.3 dB, Z 19+14j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -1.1 / -0.8 / -0.7 dB
+patch 29 x 29 mm, feed 10 mm in, no wall, gap 10 mm filled with er 3.0: best match 2.253 GHz, S11 -8.9 dB, Z 25+11j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -0.6 / -0.5 / -0.4 dB
+patch 27 x 29 mm, feed 7 mm in, wall er 3.9, sigma 0.027, gap 20 mm filled with er 3.0: best match 2.402 GHz, S11 -17.8 dB, Z 40+6j ohm, -10 dB band 63 MHz; at 2412/2442/2472 MHz -15.7 / -8.8 / -5.5 dB
+patch 27 x 29 mm, feed 8 mm in, wall er 3.9, sigma 0.027, gap 20 mm filled with er 3.0: best match 2.396 GHz, S11 -11.5 dB, Z 32+12j ohm, -10 dB band 30 MHz; at 2412/2442/2472 MHz -10.3 / -6.4 / -4.1 dB
+patch 27 x 29 mm, feed 8 mm in, wall er 6.1, sigma 0.166, gap 20 mm filled with er 3.0: best match 2.419 GHz, S11 -11.7 dB, Z 31+10j ohm, -10 dB band 36 MHz; at 2412/2442/2472 MHz -11.6 / -9.2 / -5.6 dB
+patch 27 x 29 mm, feed 8 mm in, no wall, gap 20 mm filled with er 3.0: best match 2.399 GHz, S11 -9.6 dB, Z 27+13j ohm, -10 dB band 0 MHz; at 2412/2442/2472 MHz -9.2 / -6.5 / -4.3 dB
+patch 30 x 29 mm, feed 8 mm in, no wall: best match 2.432 GHz, S11 -18.0 dB, Z 60-10j ohm, -10 dB band 60 MHz; at 2412/2442/2472 MHz -12.8 / -15.7 / -8.2 dB
+patch 30 x 29 mm, feed 8 mm in, wall er 3.9, sigma 0.027, gap 5 mm: best match 2.442 GHz, S11 -32.5 dB, Z 51-2j ohm, -10 dB band 66 MHz; at 2412/2442/2472 MHz -11.6 / -32.5 / -11.1 dB
+# the head's board: FR4 1.28 mm between layer 1 and layer 3, 20 mm of air, lime-cement plaster (er 5.24, sigma 0.093) — sub=1.28, run 27 Oct 2026 (30 ns)
+patch 30 x 29 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 20 mm: best match 2.453 GHz, S11 -18.9 dB, Z 59-9j ohm, -10 dB band 48 MHz; at 2412/2442/2472 MHz -7.3 / -15.6 / -11.7 dB
+patch 30 x 29 mm, feed 7 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 20 mm: best match 2.453 GHz, S11 -13.2 dB, Z 73-14j ohm, -10 dB band 44 MHz; at 2412/2442/2472 MHz -7.0 / -11.8 / -11.1 dB
+patch 29 x 29 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 20 mm: best match 2.528 GHz, S11 -22.9 dB, Z 58-2j ohm, -10 dB band 52 MHz; at 2412/2442/2472 MHz -1.7 / -2.6 / -4.9 dB
+patch 30 x 29 mm, feed 8 mm in, FR4 1.28 mm, no wall, gap 20 mm: best match 2.449 GHz, S11 -15.9 dB, Z 66-10j ohm, -10 dB band 44 MHz; at 2412/2442/2472 MHz -7.1 / -14.4 / -10.1 dB
+# the same board under 20 mm of foam: dense (er 1.2) and light (er 1.05), run 28 Oct 2026 (30 ns)
+patch 30 x 29 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 20 mm filled with er 1.2: best match 2.421 GHz, S11 -21.0 dB, Z 58-5j ohm, -10 dB band 48 MHz; at 2412/2442/2472 MHz -17.8 / -12.3 / -5.9 dB
+patch 30 x 29 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 20 mm filled with er 1.05: best match 2.445 GHz, S11 -19.4 dB, Z 59-8j ohm, -10 dB band 48 MHz; at 2412/2442/2472 MHz -8.9 / -19.1 / -9.6 dB
+# under 15 mm of foam, light (er 1.05) and dense (er 1.2), the head's board, run 28 Oct 2026 (30 ns)
+patch 30 x 29 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 15 mm filled with er 1.05: best match 2.445 GHz, S11 -23.6 dB, Z 54-5j ohm, -10 dB band 55 MHz; at 2412/2442/2472 MHz -9.5 / -23.2 / -10.1 dB
+patch 30 x 29 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 15 mm filled with er 1.2: best match 2.421 GHz, S11 -26.0 dB, Z 54-3j ohm, -10 dB band 55 MHz; at 2412/2442/2472 MHz -19.9 / -12.9 / -6.1 dB

@@ -1,0 +1,3 @@
+__pycache__/
+joints_*.npz
+head_*.npz

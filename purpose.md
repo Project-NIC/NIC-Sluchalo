@@ -1,6 +1,6 @@
 # NIC-Sluchalo — the purpose
 
-*Level 1 of the project: what it does, for whom, and how we know it works. No parts and no numbers
+*Level 1 of the project, closed on 13 Nov 2026: what it does, for whom, and how we know it works. No parts and no numbers
 here — those are in the levels below, for now in [`concept.md`](concept.md).*
 
 ## What it does
@@ -11,6 +11,9 @@ a small box of ours in the next room, or the network the building already has. W
 casts a shadow, and the tool draws the shadows as **a picture of the wall on its own display**, the
 way an X-ray shows a piece of material or a thermal camera a facade. In masonry it also taps the
 wall and listens.
+
+Into the same picture it can lay the mains hum: where there is voltage on a cable, or current in
+it.
 
 ## The picture, not a verdict
 
@@ -38,8 +41,8 @@ does not show.
 ## What it is not
 
 - Not a one-sided radar: it needs the other face of the wall. A radar may follow later.
-- It does not tell whether a cable is live, and it replaces neither a voltage tester nor safe
-  working practice.
+- It may show that a cable is live; it never says that one is not. Silence is no proof, and the
+  tool replaces neither a voltage tester nor safe working practice.
 - Heat — which cable has carried a load — is postponed.
 - Not an app on a phone.
 

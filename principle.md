@@ -14,7 +14,7 @@ their names are in [`architecture.md`](architecture.md).*
 | Kuranty | `budget.py` | as in the concept |
 | Datel | `acoustics.py` | as in the concept |
 | the angle of the head | `picture.py` | below |
-| Iljič | — | to be scripted |
+| **Iljič** | **`hum.py`** | **below** |
 | Gensek's load | `cpu.py` | to be redone once the picture's arithmetic is settled |
 | Pajok | `budget.py` | as in the concept |
 
@@ -73,3 +73,38 @@ What the model says:
 Where the rod stands is left to the prototype, which takes the rod in several places. Open:
 whether the rings are levelled; the same pictures with the head's
 ground plane and the wall's surface in them.
+
+## Iljič: the mains hum and a tracer's signal
+
+Two sensors and several frequencies. **A plate** in the head's ground plane takes the electric
+field: the voltage on a cable, whether current flows or not. **A coil** takes the magnetic field:
+the current. What frequency is listened to is Gensek's choice, not the sensor's — 50 Hz for the
+mains themselves, or the tens of kilohertz to a megahertz that a cable tracer's sender puts on a
+cable from a socket. `hum.py` is a rough calculation of both, to the order of magnitude; its
+figures are in `calc/hum.out`, and the cable's sizes, the wall's conductivity and the tracer's
+volts and milliamps in it are assumed, not taken from a sheet.
+
+What it says:
+
+1. **A wall is a conductor to slow fields and an insulator to fast ones**, and where it changes
+   over depends on its damp: a few hertz for a bone-dry wall, tens of kilohertz for an ordinary
+   one, megahertz for a damp one.
+2. **Where the wall conducts, the plate goes blind.** At 50 Hz it reads well only through a dry
+   wall; through an ordinary one it keeps a few per cent, through a damp one nothing. This is the
+   known weakness of every voltage pen.
+3. **A higher frequency reads through a damper wall**: at 125 kHz an ordinary wall is no
+   obstacle and a damp one costs about half; at 1 MHz not even the damp one does. And the current
+   into the plate grows with the frequency itself.
+4. **The plate sees a cable wide** — one to four tens of centimetres, wider the deeper it lies
+   and the more the wall conducts. It says *here is a live cable*, not where to the centimetre.
+5. **The coil sees it narrow**, about as wide as it is deep, but it needs current: an ampere of
+   load at 50 Hz gives a signal only a few times above a room's own hum, while a tracer's few
+   milliamps at its high frequency give far more.
+
+So the three modes the owner asked for — a tracer's probe, an inductive sensor, a capacitive one
+on 50 Hz — are these two sensors and a choice of frequency. For a tracer to be read, its
+frequency and the form of its code must be known; neither is yet.
+
+Open: the tracer's frequency and code (UNI-T UT25CL, the owner's); where on the head the plate
+and the coil sit — on the axis they give a number, off it they draw a circle as the head turns;
+what the head's own converters and radios put into them.

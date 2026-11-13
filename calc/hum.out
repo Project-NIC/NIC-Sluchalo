@@ -1,0 +1,52 @@
+the plate 20 x 20 mm, 16 mm from the wall; the wall eps 4.0
+
+== the wall stops being a conductor above (sigma / 2 pi eps):
+  bone dry  1e-09 S/m:            4 Hz
+  dry       1e-07 S/m:          449 Hz
+  ordinary  1e-05 S/m:        44938 Hz
+  damp      1e-03 S/m:      4493776 Hz
+
+== the plate: coupling to the live core, fF; and the current at 230 V (50 Hz) or 10 V (a tracer), pA
+  -- bone dry wall; depth: 1 cm, 3 cm, 5 cm, 10 cm
+         50 Hz    48.49 fF      3504 pA    31.19 fF      2254 pA    22.37 fF      1617 pA    12.34 fF       892 pA
+      10000 Hz    48.43 fF     30432 pA    31.12 fF     19552 pA    22.31 fF     14020 pA    12.30 fF      7729 pA
+      33000 Hz    48.43 fF    100427 pA    31.12 fF     64522 pA    22.31 fF     46266 pA    12.30 fF     25505 pA
+     100000 Hz    48.43 fF    304324 pA    31.12 fF    195521 pA    22.31 fF    140201 pA    12.30 fF     77288 pA
+     125000 Hz    48.43 fF    380404 pA    31.12 fF    244402 pA    22.31 fF    175251 pA    12.30 fF     96610 pA
+    1000000 Hz    48.43 fF   3043236 pA    31.12 fF   1955213 pA    22.31 fF   1402009 pA    12.30 fF    772877 pA
+  -- dry wall; depth: 1 cm, 3 cm, 5 cm, 10 cm
+         50 Hz    53.01 fF      3831 pA    43.71 fF      3158 pA    37.26 fF      2692 pA    26.59 fF      1922 pA
+      10000 Hz    48.45 fF     30441 pA    31.14 fF     19563 pA    22.33 fF     14030 pA    12.31 fF      7735 pA
+      33000 Hz    48.44 fF    100430 pA    31.12 fF     64525 pA    22.32 fF     46269 pA    12.30 fF     25507 pA
+     100000 Hz    48.43 fF    304324 pA    31.12 fF    195522 pA    22.31 fF    140202 pA    12.30 fF     77288 pA
+     125000 Hz    48.43 fF    380405 pA    31.12 fF    244402 pA    22.31 fF    175252 pA    12.30 fF     96610 pA
+    1000000 Hz    48.43 fF   3043236 pA    31.12 fF   1955213 pA    22.31 fF   1402009 pA    12.30 fF    772877 pA
+  -- ordinary wall; depth: 1 cm, 3 cm, 5 cm, 10 cm
+         50 Hz     1.36 fF        98 pA     1.01 fF        73 pA     0.81 fF        59 pA     0.53 fF        38 pA
+      10000 Hz    56.04 fF     35212 pA    45.84 fF     28804 pA    38.59 fF     24246 pA    26.82 fF     16851 pA
+      33000 Hz    53.84 fF    111640 pA    39.16 fF     81189 pA    30.04 fF     62290 pA    17.97 fF     37266 pA
+     100000 Hz    49.67 fF    312100 pA    32.69 fF    205377 pA    23.71 fF    148947 pA    13.23 fF     83146 pA
+     125000 Hz    49.27 fF    386942 pA    32.16 fF    252583 pA    23.23 fF    182470 pA    12.91 fF    101416 pA
+    1000000 Hz    48.45 fF   3044133 pA    31.14 fF   1956308 pA    22.33 fF   1402965 pA    12.31 fF    773506 pA
+  -- damp wall; depth: 1 cm, 3 cm, 5 cm, 10 cm
+         50 Hz     0.01 fF         1 pA     0.01 fF         1 pA     0.01 fF         1 pA     0.01 fF         0 pA
+      10000 Hz     2.71 fF      1702 pA     2.01 fF      1263 pA     1.62 fF      1019 pA     1.06 fF       666 pA
+      33000 Hz     8.85 fF     18341 pA     6.58 fF     13642 pA     5.31 fF     11016 pA     3.48 fF      7214 pA
+     100000 Hz    24.55 fF    154223 pA    18.61 fF    116961 pA    15.17 fF     95337 pA    10.07 fF     63274 pA
+     125000 Hz    29.23 fF    229556 pA    22.38 fF    175768 pA    18.33 fF    143959 pA    12.25 fF     96224 pA
+    1000000 Hz    56.04 fF   3521167 pA    45.84 fF   2880373 pA    38.59 fF   2424571 pA    26.82 fF   1685128 pA
+
+== the plate: how wide the cable looks (full width at half height), cm
+  bone dry        50 Hz  1 cm deep: 8  3 cm deep: 12  5 cm deep: 16  10 cm deep: 26
+  ordinary        50 Hz  1 cm deep: 16  3 cm deep: 22  5 cm deep: 28  10 cm deep: 38
+  ordinary    125000 Hz  1 cm deep: 8  3 cm deep: 14  5 cm deep: 18  10 cm deep: 26
+  damp       1000000 Hz  1 cm deep: 14  3 cm deep: 20  5 cm deep: 24  10 cm deep: 34
+
+== the coil, 200 turns of 1 cm2: microvolts; depth: 1 cm, 3 cm, 5 cm, 10 cm
+         50 Hz, 1 A of load              6.51        2.08        1.01        0.33
+         50 Hz, 10 A of load            65.06       20.79       10.10        3.27
+      33000 Hz, 10 mA of a tracer       42.94       13.72        6.66        2.16
+     125000 Hz, 10 mA of a tracer      162.66       51.96       25.24        8.17
+    1000000 Hz, 10 mA of a tracer     1301.25      415.71      201.94       65.37
+  for scale: a room's own 50 Hz field of 0.1 uT gives 0.63 uV
+  how wide the cable looks to the coil, cm: 1 cm deep: 4  3 cm deep: 6  5 cm deep: 8  10 cm deep: 12

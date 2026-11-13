@@ -92,6 +92,7 @@ we can. The project grows with what they show, and as far as time and means allo
 - [`purpose.md`](purpose.md) — what it does, for whom, and how we know it works, on one page.
 - [`requirements.md`](requirements.md) — what it must do, in ranges.
 - [`architecture.md`](architecture.md) — the blocks and what passes between them.
+- [`principle.md`](principle.md) — the physics block by block, begun: the pass and the picture.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for

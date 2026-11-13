@@ -1,6 +1,6 @@
 # NIC-Sluchalo — the requirements
 
-*Level 2 of the project: what the tool must do, in ranges and orders of magnitude. No exact values
+*Level 2 of the project, closed on 13 Nov 2026: what the tool must do, in ranges and orders of magnitude. No exact values
 and no parts — a figure here is a bound for the levels below, and this page is its one home. What
 it is for is in [`purpose.md`](purpose.md); the reasoning and the calculations so far are in
 [`concept.md`](concept.md).*

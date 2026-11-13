@@ -491,7 +491,9 @@ The electronics are assembly; what is hard is in the physics (*Known and not kno
   5.825 GHz; whether the EU setting lets 165 through is **[open]**; 52–140 need radar detection and
   are left out). Each of the head's chips hears one channel at a time, so the receivers hop in any
   case, and the head already names the channel; three fixed senders would be six boards and save
-  nothing. These bands have no duty-cycle limit — the chip listens before it sends. The first head
+  nothing. A receiver locks to a new channel at a new phase (*What one clock does not fix*), so
+  every hop is followed by the calibration over the air — the hops are slow, a band a pass rather
+  than a band a frame, where the phase is used. These bands have no duty-cycle limit — the chip listens before it sends. The first head
   hears 2.4 GHz only; the 5 GHz channels wait for the trials and a dual-band patch (*A real wall*).
 - **The body** **[calc, `budget.py`, rough]**: the head 167 mm across. The foam weighs about 15 g,
   its sheet 21 g, the two boards 130 g, the cells 94 g, the display about 100 g — about 0.36 kg

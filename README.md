@@ -41,11 +41,16 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 
 | part | what it is |
 |---|---|
-| **Fonar** | the lantern: the sender behind the wall, two ESP32-C5 boards with crossed dipoles taking turns, 1000 frames a second |
-| **Kolchoz** | the collective farm: the ring of nine receivers that work as one, and the crossed pair in the middle |
+| **Fonar** | the lantern: the sender behind the wall, two ESP32-C5 boards with crossed dipoles taking turns — **Serp** and **Molot** — 1000 frames a second |
+| **Kolchoz** | the collective farm: the ring of nine receivers that work as one |
+| **Předseda** | its chairman (Czech): the crossed pair in the middle, which leads the calibration over the air — **Samokritika** |
+| **Kuranty** | the Kremlin's chimes: the one 48 MHz clock everything goes by |
 | **Datel** | the woodpecker: the knock and the eight microphones |
 | **Razvedčik** | the scout: two optical-flow sensors that track the head over the wall |
+| **Iljič** | Ilyich's lamp: a sensor of the mains hum, a layer of the picture |
 | **Gensek** | the general secretary: one STM32H7A3 over everything — the reports, the position, the knock, the display |
+| **Pravda** | the newspaper: the display and the buttons |
+| **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
 | **Pajok** | the ration: two 18650 cells |
 | **Gradusnik** | the thermometer: a thermal sensor, postponed — a thermal camera beside the head does it for now |
 
@@ -58,8 +63,8 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 | the middle | one square patch fed twice at right angles, on two receivers; a hole through its centre for the knock's rod |
 | marking | a pencil by notches on the head's rim, two pairs on its two axes |
 | the receivers | eleven ESP32-C5, as bare chips on the back of the antenna board, each fed straight up to its patch by a via — no coax |
-| the boards | the antenna board, 4 layers, 1.6 mm; the electronics board 11 mm behind it |
-| against the wall | 15 mm of foam, a 1 mm polyethylene sheet on its face that slides |
+| the boards | **Front**, the antenna board, 4 layers, 1.6 mm; **Tyl**, the electronics board, 11 mm behind it |
+| against the wall | **Valenki**, the felt boots: 15 mm of foam, a 1 mm polyethylene sheet on its face that slides |
 | power | about 5.7 W; about three hours from the cells |
 
 Details, sources and every figure: [`concept.md`](concept.md).

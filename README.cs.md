@@ -40,11 +40,16 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 
 | část | co to je |
 |---|---|
-| **Fonar** | lucerna: vysílač za zdí, dvě desky ESP32-C5 se zkříženými dipóly, které se střídají, 1000 rámců za sekundu |
-| **Kolchoz** | kolchoz: kruh devíti přijímačů, které pracují jako jeden, a zkřížená dvojice uprostřed |
+| **Fonar** | lucerna: vysílač za zdí, dvě desky ESP32-C5 se zkříženými dipóly, které se střídají — **Serp** a **Molot** — 1000 rámců za sekundu |
+| **Kolchoz** | kolchoz: kruh devíti přijímačů, které pracují jako jeden |
+| **Předseda** | jeho předseda: zkřížená dvojice uprostřed, která vede kalibraci vzduchem — **Samokritiku** |
+| **Kuranty** | kremelské hodiny: jedny hodiny 48 MHz, podle kterých jde všechno |
 | **Datel** | datel: ťukání a osm mikrofonů |
 | **Razvedčik** | zvěd: dva optické snímače pohybu, které sledují hlavu po zdi |
+| **Iljič** | Iljičova žárovka: snímač síťového brumu, jedna z vrstev obrazu |
 | **Gensek** | generální tajemník: jeden STM32H7A3 nade vším — hlášení, poloha, ťukání, displej |
+| **Pravda** | noviny: displej a tlačítka |
+| **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
 | **Pajok** | příděl: dva články 18650 |
 | **Gradusnik** | teploměr: tepelný snímač, odložený — zatím to zastane termokamera vedle hlavy |
 
@@ -57,8 +62,8 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 | střed | jeden čtvercový patch napájený dvakrát v pravém úhlu, na dvou přijímačích; jeho středem prochází díra pro tyčinku ťukání |
 | značení | tužkou podle zářezů na okraji hlavy, dva páry na dvou osách |
 | přijímače | jedenáct ESP32-C5 jako holé čipy na zadní straně anténní desky, každý napájí svůj patch prokovem přímo nahoru — žádný koax |
-| desky | anténní deska čtyřvrstvá, 1,6 mm; deska elektroniky 11 mm za ní |
-| ke zdi | 15 mm pěny, na jejím líci 1 mm polyetylenové fólie, která klouže |
+| desky | **Front**, anténní deska, čtyřvrstvá, 1,6 mm; **Tyl**, deska elektroniky, 11 mm za ní |
+| ke zdi | **Valenki**, válenky: 15 mm pěny, na jejím líci 1 mm polyetylenové fólie, která klouže |
 | napájení | asi 5,7 W; z článků asi tři hodiny |
 
 Podrobnosti, zdroje a všechna čísla: [`concept.md`](concept.md) (anglicky).

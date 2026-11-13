@@ -1,6 +1,6 @@
 # NIC-Sluchalo — the architecture
 
-*Level 3 of the project: the blocks and what passes between them. No part types, no packages, no
+*Level 3 of the project, closed on 13 Nov 2026: the blocks and what passes between them. No part types, no packages, no
 processors — those are level 5, and for now in [`concept.md`](concept.md). What the tool is for is
 in [`purpose.md`](purpose.md), what it must do in [`requirements.md`](requirements.md).*
 

@@ -486,6 +486,13 @@ The electronics are assembly; what is hard is in the physics (*Known and not kno
   the frame names. The head talks back over the same ESP-NOW: channel, start, stop. A USB power bank
   feeds it; its power is set so that with the dipole's gain it stays within 20 dBm EIRP. Whether its
   frames can go out at an HE rate — the 242 subcarriers — or only at legacy OFDM's 52 is **[open]**.
+  **It is built to hop, not tripled:** the same two boards step through three channels — 1 in the
+  2.4 GHz band, the first and the last the ESP32-C5 may use in the 5 GHz band (36 and 165, 5.18 and
+  5.825 GHz; whether the EU setting lets 165 through is **[open]**; 52–140 need radar detection and
+  are left out). Each of the head's chips hears one channel at a time, so the receivers hop in any
+  case, and the head already names the channel; three fixed senders would be six boards and save
+  nothing. These bands have no duty-cycle limit — the chip listens before it sends. The first head
+  hears 2.4 GHz only; the 5 GHz channels wait for the trials and a dual-band patch (*A real wall*).
 - **The body** **[calc, `budget.py`, rough]**: the head 167 mm across. The foam weighs about 15 g,
   its sheet 21 g, the two boards 130 g, the cells 94 g, the display about 100 g — about 0.36 kg
   before the housing; the cells go in the handle. The 5.7 W leave through the back and the rim,

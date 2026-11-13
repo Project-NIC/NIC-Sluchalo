@@ -70,5 +70,6 @@ What the model says:
 9. **Two cables four centimetres apart are not told apart** — and here the model is weak as well:
    it adds the two fields and leaves out what one cable does to the other.
 
-Open: where the rod stands; whether the rings are levelled; the same pictures with the head's
+Where the rod stands is left to the prototype, which takes the rod in several places. Open:
+whether the rings are levelled; the same pictures with the head's
 ground plane and the wall's surface in them.

@@ -61,7 +61,7 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
 | **Pajok** | the ration: two 18650 cells |
 | **Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
-| **Gradusnik** | the thermometer: a thermal sensor, postponed — a thermal camera beside the head does it for now |
+| **Gradusnik** | the thermometer: a thermal camera, postponed — for now one beside the head |
 
 ## The head
 

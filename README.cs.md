@@ -59,7 +59,7 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 | **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
 | **Pajok** | příděl: dva články 18650 |
 | **Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
-| **Gradusnik** | teploměr: tepelný snímač, odložený — zatím to zastane termokamera vedle hlavy |
+| **Gradusnik** | teploměr: termokamera, odložená — zatím ji zastane termokamera vedle hlavy |
 
 ## Hlava
 

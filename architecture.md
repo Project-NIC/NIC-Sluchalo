@@ -140,6 +140,7 @@ not changed below this level.
 | the sender | **Iskra** | the spark, and the Bolsheviks' paper | the sender behind the wall |
 | the tool | **Fonar** | the lantern | what is held to the wall: Valenki and Kolchoz |
 | a body | **Valenki** | felt boots | the undercarriage: all that stands |
+| in Valenki | **Kuří nožka** | Czech: the chicken leg Baba Yaga's hut turns on | the rod with its rubber foot, the axis Kolchoz turns about |
 | the construction | **Levša** | Leskov's left-handed smith of Tula, who shod a steel flea | everything of metal and plastic that holds the units: Front's disc and its face, Kolchoz's housing, Valenki's foot, rod and bearing |
 | a body | **Kolchoz** | the collective farm | the head: all that turns |
 | in Kolchoz | **Brigáda** | the work brigade | the ring of eight receivers that work as one |

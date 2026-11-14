@@ -48,7 +48,7 @@ The scanners on sale put everything in one box: Bosch's D-tect 200 C pairs a rad
 inductive sensor, and thermal cameras show which cable has carried a load. Sluchalo does not try to:
 it is one experiment — whether the shadow Wi-Fi casts through a wall can be drawn — with a plain
 voltage tester beside it. The rest — a cable tracer read both by its charge and by its current,
-metal, the knock, a thermal camera laid over an ordinary one — is NIC-Ariadna, a hand-held probe of
+metal, a thermal camera laid over an ordinary one — is NIC-Ariadna, a hand-held probe of
 its own, not yet published.
 
 ## The parts

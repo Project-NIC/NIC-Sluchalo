@@ -45,7 +45,7 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 Detektory na trhu dávají všechno do jedné krabičky: Bosch D-tect 200 C spojuje radar s indukčním
 snímačem a termokamery ukážou, kterým kabelem tekl proud. Sluchalo se o to nesnaží: je to jeden pokus
 — jestli jde nakreslit stín, který Wi-Fi vrhá skrz zeď — a vedle něj obyčejná zkoušečka napětí.
-Zbytek — hledačka kabelů, čtená nábojem i proudem, kov, ťukání, termokamera prolnutá s obyčejnou —
+Zbytek — hledačka kabelů, čtená nábojem i proudem, kov, termokamera prolnutá s obyčejnou —
 je NIC-Ariadna, samostatná ruční sonda, zatím nezveřejněná.
 
 ## Části

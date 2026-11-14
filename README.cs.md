@@ -56,7 +56,7 @@ je NIC-Ariadna, samostatná ruční sonda, zatím nezveřejněná.
 | **Fonar** | lucerna: přístroj přiložený ke zdi — Valenki a Kolchoz |
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | válenky: podvozek — gumová noha přitlačená ke zdi, tyčka a rukojeť; drží hlavu od zdi a kolmo k ní |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | kolchoz: hlava — všechno, co se točí na tyčce |
-| **Levša** | Leskovův levoruký kovář: konstrukce, všechno z kovu a plastu, co drží jednotky |
+| <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskovův levoruký kovář: konstrukce, všechno z kovu a plastu, co drží jednotky |
 | **Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
 | **Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
 | **Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |

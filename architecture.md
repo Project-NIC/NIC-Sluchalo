@@ -107,7 +107,7 @@ Kolchoz's two boards: **Front** faces the wall, **Tyl** is behind it.
 5. **Keep** — the picture and what it was made from go to Kádrovák.
 
 **Samokritika** — the receivers calibrating one another by sending in turn — is the other way to
-step 3, and the check on it.
+step 3, and the check on it; not a required step (the owner, 14 Nov 2026).
 
 ## The body
 
@@ -161,7 +161,6 @@ Not yet named: the levelling of the receivers from the pass.
 
 ## Open at this level
 
-- **Whether Samokritika by sending is a required step** or only the check.
 - **Where the rod stands on the head** — left to the prototype, which takes it in several places.
 - **Whether a motor turns the head** — a thought.
 - **Where Iljič senses** — on the axis it gives a number, off it it draws a circle.

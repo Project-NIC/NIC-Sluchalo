@@ -69,7 +69,6 @@ In Kolchoz:
 | **Matjugalnik** | the sound: tells by ear what the picture shows and what Iljič hears, in a tone and a loudness the user sets, so that a turn can be heard as well as seen; silent while Iljič measures | — |
 | **Kádrovák** | the store: keeps every picture with its raw data; gives them to a computer | — |
 | **Pajok** | the power: the battery and its charging; one supply for the radios, one for the rest | — |
-| **Gradusnik** | the heat: a thermal camera, to show which cable has carried a load — postponed, nothing reserved for it; for now a thermal camera beside the tool | — |
 
 Kolchoz has a face and a board: **Front**, the face towards the wall that carries the antennas and
 shields what is behind them, and **Tyl**, the board behind it.
@@ -154,7 +153,6 @@ not changed below this level.
 | in Kolchoz | **Pajok** | the ration | the power |
 | in Kolchoz | **Karanténa** | quarantine | the watch over every unit; it stops the tool on a fault |
 | in Karanténa | **Felčar** | the village medic | the checks Karanténa runs |
-| in Kolchoz | **Gradusnik** | the thermometer | the thermal camera, postponed |
 | in Kolchoz | **Front**, **Tyl** | the front, the rear | the face at the wall with the antennas, the board behind it |
 | a way of doing | **Samokritika** | self-criticism | the chairman swings sickle and hammer, the peasants report what reached them |
 | a way of doing | **Samizdat** | what gets out | taking the pictures out to a computer |

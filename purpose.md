@@ -42,7 +42,10 @@ does not show.
 - Not a one-sided radar: it needs the other face of the wall. A radar may follow later.
 - It may show that a cable is live; it never says that one is not. Silence is no proof, and the
   tool replaces neither a voltage tester nor safe working practice.
-- Heat — which cable has carried a load — is postponed.
+- Not every finder in one. The scanners on sale pair a radar with an inductive sensor and a
+  mains sensor, and thermal cameras show which cable has carried a load; Sluchalo is one
+  experiment — the shadow Wi-Fi casts through a wall — and a plain voltage tester beside it. The
+  tracer, metal, the knock and the thermal camera belong to NIC-Ariadna.
 - Not an app on a phone.
 
 ## How we know it works

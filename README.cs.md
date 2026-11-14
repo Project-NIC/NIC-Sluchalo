@@ -40,6 +40,14 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
   snímač zvukem a sloupcem ukáže, kde je živý kabel nebo signál hledačky; nikdy netvrdí, že
   kabel pod napětím není.
 
+## Jen tento jeden pokus
+
+Detektory na trhu dávají všechno do jedné krabičky: Bosch D-tect 200 C spojuje radar s indukčním
+snímačem a termokamery ukážou, kterým kabelem tekl proud. Sluchalo se o to nesnaží: je to jeden pokus
+— jestli jde nakreslit stín, který Wi-Fi vrhá skrz zeď — a vedle něj obyčejná zkoušečka napětí.
+Zbytek — hledačka kabelů, čtená nábojem i proudem, kov, ťukání, termokamera prolnutá s obyčejnou —
+je NIC-Ariadna, samostatná ruční sonda, zatím nezveřejněná.
+
 ## Části
 
 | část | co to je |
@@ -59,7 +67,6 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 | **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
 | **Pajok** | příděl: dva články 18650 |
 | **Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
-| **Gradusnik** | teploměr: termokamera, odložená — zatím ji zastane termokamera vedle hlavy |
 
 ## Hlava
 

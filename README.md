@@ -42,6 +42,15 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
   capacitive sensor tells by sound and a bar where a live cable is — or a cable tracer's signal;
   it never says that a cable is dead.
 
+## Only this one experiment
+
+The scanners on sale put everything in one box: Bosch's D-tect 200 C pairs a radar with an
+inductive sensor, and thermal cameras show which cable has carried a load. Sluchalo does not try to:
+it is one experiment — whether the shadow Wi-Fi casts through a wall can be drawn — with a plain
+voltage tester beside it. The rest — a cable tracer read both by its charge and by its current,
+metal, the knock, a thermal camera laid over an ordinary one — is NIC-Ariadna, a hand-held probe of
+its own, not yet published.
+
 ## The parts
 
 | part | what it is |
@@ -61,7 +70,6 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
 | **Pajok** | the ration: two 18650 cells |
 | **Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
-| **Gradusnik** | the thermometer: a thermal camera, postponed — for now one beside the head |
 
 ## The head
 

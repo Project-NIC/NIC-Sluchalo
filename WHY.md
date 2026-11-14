@@ -46,7 +46,7 @@ on record to run eight C5s from a shared clock (a DigiKey forum thread, June 202
 and found no fix. Even with a shared clock, every chip's synthesizer locks at a new phase after
 each reset and change of channel (the ESPARGOS authors). And level 4's `nosync.py` showed that a
 head with **every receiver on its own crystal**, its phases thrown away, draws the same pictures
-from the amplitudes alone — scaled within each receiver by the ratio of Serp's frame to Molot's,
+from the amplitudes alone — scaled within each receiver by the ratio of the sender's upright frame to its level one,
 levelled over the turn, and focused as an in-line hologram with Fonar's own wave as its reference.
 What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to tam natvrdo"):
 
@@ -56,6 +56,8 @@ What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to
 | 8 | The radio layer is drawn from the amplitudes: self-scaled, levelled, focused. Samokritika checks gains only. | `nosync.py`. |
 | 9 | A receiver is a unit, **Mužík**, with one interface — an antenna input of 50 ohm, a serial link, the reset and boot lines, the sync line, 3.3 V — so that a ready-made module can be one now and a bare chip later. The first head is built from ready-made, certified modules, joined to the patches by short lines. | Ready-made modules need no work on the radio and keep their certification; nothing in them has to be opened. |
 | 10 | **Karanténa** is the watch over every unit, its **Felčar** the checks; on a fault the tool declares it and stops. | The owner. |
+| 11 | **Names:** Sluchalo is the project; **Fonar** is now the tool held to the wall (Valenki and Kolchoz); the sender behind the wall is **Iskra**; **Serp** and **Molot** are Předseda's two halves, the only senders in Fonar. Iskra's two senders are simply upright and level. | The owner: the project and its parts named apart, as in NIC-Strelka; Předseda hands out the calibration. |
+| 12 | **Samokritika** is a regular step of every pass: Předseda swings Serp, then Molot; every Mužík measures what arrives, against the state last known good. Amplitudes only. | The owner: it calibrates the antennas against knocks, damp and detuning, and gives Felčar its check. |
 
 **What stops holding below**
 

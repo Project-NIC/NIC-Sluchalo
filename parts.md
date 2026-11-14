@@ -40,7 +40,7 @@ before the part is bought.*
 
 | part | type | meets |
 |---|---|---|
-| Front's disc | **aluminium, at least 3 mm** (threads for the screws), about 177 mm across, drilled for the cables (3–4 mm, beside each antenna), for Datel's rod, its microphones and Kuří nožka | the antennas' ground and the shield; the frame everything is screwed to |
+| Front's disc | **aluminium, at least 3 mm** (threads for the screws), about 177 mm across, drilled for the cables (3–4 mm, beside each antenna) and for Kuří nožka | the antennas' ground and the shield; the frame everything is screwed to |
 | Front's face | **polycarbonate 2 mm** (the maker recommends 1.5 mm over metal; 2 mm sheet is easier to get) | the antennas' spacer over metal |
 | Kuří nožka | a **rod with a rubber foot**, its **bearing** in the disc, a **friction clutch**, the **magnet** for Razvedčik | the axis; stands firm on the wall; a turn by hand without slipping |
 | felt | **hard, smooth, synthetic felt** ~5 mm where the head may brush the wall | slides on paint, marks nothing; synthetic, since damp wool is lossy at 2.4 GHz — the microwave test first |
@@ -50,7 +50,7 @@ before the part is bought.*
 
 | part | type | for |
 |---|---|---|
-| receiver and sender | **Seeed XIAO ESP32-C5** (bare chip, own crystal, U.FL) | the wall trials; Datel's sound trial apart |
+| receiver and sender | **Seeed XIAO ESP32-C5** (bare chip, own crystal, U.FL) | the wall trials |
 | antennas | the same FlexPIFA, on an aluminium plate | the trials as the head will see them |
 
 ## Open at this level

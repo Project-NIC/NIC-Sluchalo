@@ -35,7 +35,7 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
   hologram.
 - **A turn as the scan.** The head turns once on a rod held to the wall, off its own centre, so
   each of the eight antennas of the ring draws its own circle and together they fill a disc
-  about 24 cm across. The head does not touch the wall.
+  about 23 cm across. The head does not touch the wall.
 - **Samokritika.** Before a turn the middle pair sends a short frame in each polarization and
   every receiver measures what arrives — against knocks, damp and drift.
 - **The mains voltage, as a tester.** In a mode of its own, held like a voltage tester, a
@@ -67,6 +67,7 @@ its own, not yet published.
 | **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
 | **Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound |
 | **Pravda** | the newspaper: the display and the buttons |
+| **Matjugalnik** | the loudhailer (soldiers' slang): the sound — what the picture and Iljič show, by ear, in a tone and a loudness the user sets |
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
 | **Pajok** | the ration: two 18650 cells |
 | **Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
@@ -78,7 +79,7 @@ its own, not yet published.
 | size | about 18 cm across |
 | the ring | **Brigáda**: eight bought dual-band antennas (2.4 and 5 GHz), each turned radially |
 | the middle | **Předseda**: two of the same antennas at right angles, round the middle |
-| the rod | between the middle and the ring; one turn covers a disc about 24 cm across |
+| the rod | between the middle and the ring; one turn covers a disc about 23 cm across |
 | marking | a pencil by notches on the head's rim, once it has stopped |
 | the receivers | ten ready-made ESP32-C5 modules, each on its own crystal, each joined to its antenna by a short cable |
 | Front | the face towards the wall: a metal disc with a thin insulating face, the antennas on it — their ground and the shield behind them |
@@ -99,7 +100,13 @@ levels hold ([`WHY.md`](WHY.md)). The head's layout is redrawn for the bought an
 - **Whether the amplitudes alone, with no clock in common, draw a real wall** as well as they
   draw the modelled one.
 
-The trials that decide it are at the end of [`concept.md`](concept.md).
+**The trial that decides it:** two ready-made ESP32-C5 boards, one sending behind the wall and one
+listening in front, the gain fixed and the CSI logged by a laptop; a cable and a conduit behind
+drywall and in a grooved brick wall, both bands, both polarizations; then the listening antenna on
+metal, as on the head, and turned by hand about a rod, as the head turns. It passes when the cable
+shows a repeatable dip of at least 2 dB at its place, above the wall's own pattern, and in the turn
+crosses the antenna's circle at the right angles every time. If it does not pass, the project
+stops. (The trials at the end of [`concept.md`](concept.md) are the earlier ones.)
 
 ## What next
 

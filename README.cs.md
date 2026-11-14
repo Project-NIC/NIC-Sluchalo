@@ -33,7 +33,7 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
   jako u hologramu.
 - **Otáčka jako snímání.** Hlava se jednou otočí na tyčce přitlačené ke zdi, mimo svůj střed,
   takže každá z osmi antén kruhu opíše vlastní kružnici a dohromady vyplní kruh o průměru asi
-  24 cm. Zdi se hlava nedotýká.
+  23 cm. Zdi se hlava nedotýká.
 - **Samokritika.** Před otáčkou vyšle prostřední dvojice krátký rámec v každé polarizaci a každý
   přijímač změří, co k němu dorazilo — proti ťuknutí, vlhkosti a rozladění.
 - **Síťové napětí jako zkoušečka.** V samostatném režimu, drženém jako zkoušečka, kapacitní
@@ -64,6 +64,7 @@ je NIC-Ariadna, samostatná ruční sonda, zatím nezveřejněná.
 | **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
 | **Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk |
 | **Pravda** | noviny: displej a tlačítka |
+| **Matjugalnik** | amplion (vojácky): zvuk — co ukazuje obraz a co slyší Iljič, sluchem, tónem a hlasitostí, jakou si uživatel nastaví |
 | **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
 | **Pajok** | příděl: dva články 18650 |
 | **Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
@@ -75,7 +76,7 @@ je NIC-Ariadna, samostatná ruční sonda, zatím nezveřejněná.
 | velikost | průměr asi 18 cm |
 | kruh | **Brigáda**: osm koupených dvoupásmových antén (2,4 a 5 GHz), každá natočená radiálně |
 | střed | **Předseda**: dvě stejné antény v pravém úhlu, kolem středu |
-| tyčka | mezi středem a kruhem; jedna otáčka pokryje kruh o průměru asi 24 cm |
+| tyčka | mezi středem a kruhem; jedna otáčka pokryje kruh o průměru asi 23 cm |
 | značení | tužkou podle zářezů na okraji hlavy, když stojí |
 | přijímače | deset hotových modulů ESP32-C5, každý na vlastním krystalu, každý připojený ke své anténě krátkým kabelem |
 | Front | čelo ke zdi: kovový kotouč s tenkou izolační vrstvou a na ní antény — kotouč je jejich zemí a stíněním |
@@ -95,7 +96,12 @@ platí úrovně ([`WHY.md`](WHY.md)). Rozložení hlavy se kreslí znovu pro kou
 - **Jestli samotné amplitudy, bez společných hodin, nakreslí skutečnou zeď** tak dobře jako tu
   v modelu.
 
-Rozhodnou zkoušky popsané na konci [`concept.md`](concept.md).
+**Pokus, který to rozhodne:** dvě hotové desky s ESP32-C5, jedna vysílá za zdí a druhá poslouchá
+před ní, zesílení pevné a CSI zapisuje notebook; kabel a chránička za sádrokartonem a v drážce
+v cihelné zdi, obě pásma, obě polarizace; pak přijímací anténa na kovu, jako na hlavě, a otáčená
+rukou kolem tyčky, jako se otáčí hlava. Projde, když kabel dá na svém místě opakovatelný pokles
+aspoň 2 dB nad vlastní kresbou zdi a při otáčce protne kruh antény ve správných úhlech pokaždé.
+Když neprojde, projekt končí. (Zkoušky na konci [`concept.md`](concept.md) jsou ty dřívější.)
 
 ## Co dál
 

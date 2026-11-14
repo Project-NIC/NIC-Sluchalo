@@ -57,8 +57,8 @@ its own, not yet published.
 |---|---|
 | **Iskra** | the spark: the sender behind the wall, a ready-made board with two crossed antennas taking turns, upright and level |
 | **Fonar** | the lantern: the tool held to the wall — Valenki and Kolchoz |
-| **Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
-| **Kolchoz** | the collective farm: the head — everything that turns on the rod |
+| <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
+| <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | the collective farm: the head — everything that turns on the rod |
 | **Levša** | Leskov's left-handed smith: the construction, all of metal and plastic that holds the units |
 | **Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
 | **Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |

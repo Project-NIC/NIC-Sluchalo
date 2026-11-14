@@ -27,16 +27,18 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 - **Why a shadow, not a radar.** The signal crosses the wall once. There is no echo from the
   near surface and no transmitter leaking into the receiver — the two things that blind a
   one-sided radar.
-- **The ratio between receivers.** Every receiver measures the channel of the same packet on
-  every subcarrier (the CSI). Dividing one receiver by another removes everything the sender
-  does — its power, its phase, its rate — and leaves the wall.
-- **One clock for all ten receivers.** They run from one 48 MHz source, so their phases can be
-  compared. Over a whole turn the receivers are levelled against one another from the pass
-  itself; they can also calibrate one another over the air — **Samokritika** — with no switch
-  anywhere.
+- **Amplitudes, not phases.** Every receiver measures the channel of the same frame on every
+  subcarrier (the CSI), its gain held fixed. Every receiver runs on its own crystal, so only the
+  amplitudes are compared: on each frame the receivers against one another, which removes the
+  sender and the room; in each receiver the frames of the sender's two crossed antennas against
+  each other, which removes the receiver's own gain; and over a whole turn each receiver against
+  its own circle. The sender's own wave is the reference that focuses the picture, as in a
+  hologram.
 - **A turn as the scan.** The head turns once on a rod held to the wall, off its own centre, so
   each of the eight antennas of the ring draws its own circle and together they fill a disc
   about 24 cm across. The head does not touch the wall.
+- **Samokritika.** Before a turn the middle pair sends a short frame in each polarization and
+  every receiver measures what arrives — against knocks, damp and drift.
 - **The mains voltage, as a layer.** A capacitive sensor in the head shows where a live cable
   is; it never says that one is dead.
 - **For masonry, a knock.** A buzzer disc taps the wall through a plastic rod in the middle;
@@ -46,47 +48,51 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 
 | part | what it is |
 |---|---|
-| **Fonar** | the lantern: the sender behind the wall, two ESP32-C5 boards with crossed dipoles taking turns — **Serp** and **Molot** — 1000 frames a second |
+| **Iskra** | the spark: the sender behind the wall, a ready-made board with two crossed antennas taking turns, upright and level |
+| **Fonar** | the lantern: the tool held to the wall — Valenki and Kolchoz |
 | **Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
 | **Kolchoz** | the collective farm: the head — everything that turns on the rod |
-| **Brigáda** | the work brigade: the ring of eight receivers that work as one |
-| **Předseda** | its chairman (Czech): the crossed pair in the middle, which leads the calibration over the air — **Samokritika** |
-| **Kuranty** | the Kremlin's chimes: the one 48 MHz clock everything goes by |
+| **Levša** | Leskov's left-handed smith: the construction, all of metal and plastic that holds the units |
+| **Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
+| **Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
+| **Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | **Datel** | the woodpecker: the knock and the eight microphones |
 | **Razvedčik** | the scout: the sensor of the head's angle on the rod |
 | **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a layer of the picture |
-| **Gensek** | the general secretary: one STM32H7A3 over everything — the reports, the position, the knock, the display |
+| **Gensek** | the general secretary: one processor over everything — the reports, the angle, the knock, the picture, the display |
 | **Pravda** | the newspaper: the display and the buttons |
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
 | **Pajok** | the ration: two 18650 cells |
+| **Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
 | **Gradusnik** | the thermometer: a thermal sensor, postponed — a thermal camera beside the head does it for now |
 
 ## The head
 
 | | |
 |---|---|
-| size | 176 mm across |
-| the ring | **Brigáda**: eight patches 30 × 37 mm on a circle of 69.5 mm radius, 53 mm apart, each turned radially |
-| the middle | one square patch fed twice at right angles, on two receivers; a hole through its centre for the knock's rod |
-| the rod | 35 mm from the centre, between the middle patch and the ring; one turn covers a disc about 24 cm across |
+| size | about 18 cm across |
+| the ring | **Brigáda**: eight bought dual-band antennas (2.4 and 5 GHz), each turned radially |
+| the middle | **Předseda**: two of the same antennas at right angles, beside the knock's rod |
+| the rod | between the middle and the ring; one turn covers a disc about 24 cm across |
 | marking | a pencil by notches on the head's rim, once it has stopped |
-| the receivers | ten ESP32-C5, as bare chips on the back of the antenna board, each fed straight up to its patch by a via — no coax |
-| the boards | **Front**, the antenna board, 4 layers, 1.6 mm; **Tyl**, the electronics board, 11 mm behind it |
-| against the wall | it does not touch: **Valenki** holds it 15 mm off; felt on the head where it may brush the wall |
-| power | about three hours from two 18650 cells (5.7 W was computed for eleven receivers) |
+| the receivers | ten ready-made ESP32-C5 modules, each on its own crystal, each joined to its antenna by a short cable |
+| Front | the face towards the wall: a metal disc with a thin insulating face, the antennas on it — their ground and the shield behind them |
+| Tyl | the board behind it: the processor, the power, the knock, the display |
+| against the wall | it does not touch: **Valenki** holds it off; felt on the head where it may brush the wall |
+| power | about three hours from two 18650 cells |
 
-The head as decided on 13 Nov 2026: [`calc/ring8.py`](calc/ring8.py), its patch in
-`calc/patch8.out`. The concept of 28 Oct ([`concept.md`](concept.md)) describes the earlier head —
-nine in the ring, on foam, slid over the wall; where it differs from the levels, the levels hold
-([`WHY.md`](WHY.md)).
+The concept of 28 Oct ([`concept.md`](concept.md)) describes the earlier head — nine patches of
+our own, one clock for all, on foam, slid over the wall; where it differs from the levels, the
+levels hold ([`WHY.md`](WHY.md)). The head's layout is redrawn for the bought antennas;
+[`calc/ring8.py`](calc/ring8.py) has it for the earlier patches.
 
 ## What is not known
 
-- **Whether the ESP32-C5 runs from an outside 48 MHz clock.** Its documents call the crystal
-  compulsory. This decides the board; a raw-I/Q radio is the plan B.
 - **Whether a real wall behaves as the models do** — the permittivity of real mortar and
   plaster, wet joints, and whether 8-bit CSI with a fixed gain holds a change of 20–30 % in
-  amplitude and phase steadily.
+  amplitude steadily.
+- **Whether the amplitudes alone, with no clock in common, draw a real wall** as well as they
+  draw the modelled one.
 - **Whether the knock and the microphones hear anything useful** through dry contact on plaster.
 
 The trials that decide it are at the end of [`concept.md`](concept.md).

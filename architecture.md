@@ -1,25 +1,27 @@
 # NIC-Sluchalo — the architecture
 
-*Level 3 of the project, closed on 13 Nov 2026, reopened the same day ([`WHY.md`](WHY.md)) and
-closed again on 14 Nov 2026: the bodies, the units and what passes between them. No part types,
-no packages, no processors — those are level 5, and for now in [`concept.md`](concept.md). What
+*Level 3 of the project, closed on 13 Nov 2026, reopened the same day, closed again on 14 Nov,
+reopened the same day for the head without a shared clock, and closed again on 14 Nov 2026
+([`WHY.md`](WHY.md)): the bodies, the units and what passes between them. No part types, no materials, no packages, no
+processors — those are level 5, and for now in [`concept.md`](concept.md). What
 the tool is for is in [`purpose.md`](purpose.md), what it must do in
 [`requirements.md`](requirements.md).*
 
-## Three bodies
+## Iskra and Fonar
 
-The tool is three bodies. **Fonar**, the sender, stands behind the wall. **Valenki**, the
-undercarriage, is held to the near face: everything that stands and does not turn. **Kolchoz**,
-the head, turns on Valenki's rod just off the wall: everything that turns. Between Fonar and
-Kolchoz there is only radio; between Valenki and Kolchoz, a bearing.
+**Sluchalo** is the project. It is two things: **Iskra**, the sender, which lights the wall from
+behind, and **Fonar**, the tool held to the near face. Fonar is two bodies: **Valenki**, the
+undercarriage — everything that stands and does not turn — and **Kolchoz**, the head, which turns
+on Valenki's rod just off the wall — everything that turns. Between Iskra and Fonar there is only
+radio; between Valenki and Kolchoz, a bearing.
 
 Each body is made of units, and a unit is whole — what senses, the electronics behind it, and its
 share of the arithmetic go under one name.
 
 ```mermaid
 flowchart LR
-  subgraph F[Fonar — the sender, behind the wall]
-    FA[Serp<br/>upright] ~~~ FB[Molot<br/>level]
+  subgraph F[Iskra — the sender, behind the wall]
+    FA[upright] ~~~ FB[level]
   end
   subgraph V[Valenki — the undercarriage, on the wall]
     VF[the foot] --- VR[the rod and the grip]
@@ -27,7 +29,9 @@ flowchart LR
   subgraph K[Kolchoz — the head, turning on the rod]
     B[Brigáda<br/>the ring of eight] -->|reports| G[Gensek<br/>the processor]
     PR[Předseda<br/>the crossed pair] -->|reports| G
-    C[Kuranty<br/>the clock] --> B & PR & G
+    C[Kuranty<br/>the time base] --> B & PR
+    G --> C
+    Q[Karanténa<br/>the watch] -.- B & PR & G & P
     D[Datel<br/>the sound] <--> G
     R[Razvedčik<br/>the angle] --> G
     I[Iljič<br/>the mains voltage] --> G
@@ -44,46 +48,43 @@ flowchart LR
 
 | body | what it is | what it does not |
 |---|---|---|
-| **Fonar** | the sender's box: sends frames through the wall from two crossed senders taking turns; every frame says which of them it came from and carries a counter; goes to the channel the head names | measure anything; know anything about the wall |
+| **Iskra** | the sender's box, behind the wall: sends frames through it from two crossed senders taking turns, one upright, one level; every frame says which of them it came from and carries a counter; goes to the channel Kolchoz names | measure anything; know anything about the wall |
 | **Valenki** | the undercarriage: the foot that is pressed to the wall, stands firm there and holds the head off it and square to it; the rod; the grip | turn; carry anything electrical |
-| **Kolchoz** | the head: the disc that turns on the rod, with the two boards and every unit below; faced with felt where it may brush the wall, so that it slides and marks nothing | rest on the wall |
+| **Kolchoz** | the head: the disc that turns on the rod, with Front, Tyl and every unit below; faced with felt where it may brush the wall, so that it slides and marks nothing | rest on the wall |
 
 ## The units
-
-In Fonar:
-
-| unit | what it does |
-|---|---|
-| **Serp**, **Molot** | the two senders, crossed: one upright, one level |
 
 In Kolchoz:
 
 | unit | what it does | what it does not |
 |---|---|---|
-| **Brigáda** | the ring of eight receivers, each with its own antenna facing the wall; each measures the channel of every frame and sends a reduced report | compute the picture; keep anything |
-| **Předseda** | the crossed pair in the middle of the ring, two receivers more; listens as the eight do; when the head calibrates itself by sending, it sends first | — |
-| **Kuranty** | the clock: one source for all ten receivers and for Gensek, so that their phases can be compared and everything counts the same time | — |
+| **Brigáda** | the ring of eight receivers, the **Mužíci**, each with its own antenna facing the wall; each measures the channel of every frame and reports it | compute the picture; keep anything |
+| **Předseda** | the chairman in the middle of the ring: two antennas at right angles to each other, beside Datel's rod, one to each of its two receivers, so that the middle measures both components of the field — the work of two Mužíci at once. It holds **Serp** in one hand and **Molot** in the other, the only senders in Fonar, and with them hands out the calibration | — |
+| **Kuranty** | the time base: one edge from Gensek on a line shared by Brigáda and Předseda, ten receivers, each catching it in its own timer, so that every report carries the same time | make the receivers' phases comparable — each runs on its own crystal |
 | **Datel** | the sound: taps the wall through the middle of the head and hears its surface with a ring of microphones, the head held still | work while the head turns |
 | **Razvedčik** | the angle: reads how far the head has turned on the rod | know where on the wall the rod stands |
 | **Iljič** | the mains voltage: senses the electric field at the wall, amplifies it with a gain and in a band the user sets, and gives its layer of the picture | say that a cable is dead; say where to the centimetre |
-| **Gensek** | the processor: tells the receivers what to do, collects their reports, the angle, the microphones and Iljič's signal; levels the receivers; computes the layers of the picture; draws them; stores them; takes the user's settings | any radio work |
+| **Gensek** | the processor: tells the receivers what to do, collects their reports, the angle, the microphones and Iljič's signal; draws the radio layer from the amplitudes — self-scaled, levelled, focused; computes the other layers; draws them; stores them; takes the user's settings | any radio work |
+| **Karanténa** | the watch: its **Felčar** keeps checking every unit while the tool runs — that every receiver reports, that its gain and noise are sane and it agrees with its neighbours, the time base, the supplies, the warmth; on a fault Karanténa declares it on Pravda and the tool stops measuring | carry on with a unit that has failed |
 | **Pravda** | the display and the buttons: show the picture; set the contrast, the thresholds and the layer | — |
 | **Kádrovák** | the store: keeps every picture with its raw data; gives them to a computer | — |
 | **Pajok** | the power: the battery and its charging; one supply for the radios, one for the rest | — |
 | **Gradusnik** | the heat: a thermal sensor — postponed, nothing reserved for it | — |
 
-Kolchoz's two boards: **Front** faces the wall, **Tyl** is behind it.
+Kolchoz has a face and a board: **Front**, the face towards the wall that carries the antennas and
+shields what is behind them, and **Tyl**, the board behind it.
 
 ## What passes between them
 
 | from | to | what | over what |
 |---|---|---|---|
-| Fonar | Brigáda, Předseda | frames: Serp or Molot, a counter | radio, through the wall |
-| Kolchoz | Fonar | channel, start, stop | radio, the same kind of frame |
-| Předseda, Brigáda | each other | Samokritika's frames, receiver to receiver — when it is run | radio, across the head's face |
-| Kuranty | each receiver, Gensek | one frequency, lines of equal length | a line each, from one buffer |
-| Gensek | each receiver | channel, gain, start on a common edge, send; a new program | a serial link each; a reset and a start line shared by all |
-| each receiver | Gensek | a report for every frame: which frame, the channel measured, reduced | the same serial link |
+| Iskra | Brigáda, Předseda | frames: upright or level, a counter | radio, through the wall |
+| Kolchoz | Iskra | channel, start, stop | radio, the same kind of frame |
+| Předseda (Serp, Molot) | Brigáda | Samokritika's frames, one in each polarization | radio, across the head's face |
+| Gensek | Kuranty, every receiver | the sync edge | one line shared by all |
+| Gensek | each receiver | channel, gain, send; a new program | a serial link each; a reset and a boot line shared by all |
+| each receiver | Gensek | a report for every frame: which frame, the time, the channel measured | the same serial link |
+| every unit | Karanténa | its state, as Felčar asks for it | the links above |
 | Gensek | Datel | the knock's timing | a drive signal |
 | Datel | Gensek | the microphones' streams | digital streams and their clock |
 | Valenki | Kolchoz | the axis the head turns on; the mark Razvedčik reads | a bearing; nothing electrical |
@@ -98,24 +99,35 @@ Kolchoz's two boards: **Front** faces the wall, **Tyl** is behind it.
 ## How a picture comes to be
 
 1. **Stand** — Valenki is pressed to the wall and holds Kolchoz off it.
-2. **Turn** — Kolchoz goes once round the rod; Fonar sends; every receiver reports every frame;
+2. **Samokritika** — Předseda swings Serp, then Molot: a short frame in each polarization, and every
+   Mužík measures how much of it arrives. Set against the state stored when the tool was last
+   known good, it shows what a knock, damp or a shifted antenna has done to each Mužík; Gensek
+   scales by it, and Felčar takes it as a check. Amplitudes only: with no shared clock it says
+   nothing of the delays between Mužíci.
+3. **Turn** — Kolchoz goes once round the rod; Iskra sends; every receiver reports every frame;
    Razvedčik gives the angle of each.
-3. **Level** — each receiver is set against its own circle: over a whole turn a wall with nothing
-   laid in rings about the rod looks the same to all of them, so what differs is the receiver.
-4. **Draw** — the radio layer; the voltage layer on it; the sound layer where the head stood still
+4. **Scale** — only the amplitudes are used, each receiver's gain held fixed. In every receiver
+   Iskra's upright frame is set against its level one, which cancels the receiver's gain; on every
+   frame the receivers are set against one another, which cancels the sender and the room; over a
+   whole turn each receiver is set against its own circle.
+5. **Draw** — the radio layer, focused as an in-line hologram with Iskra's wave as its reference;
+   the voltage layer on it; the sound layer where the head stood still
    and knocked.
-5. **Keep** — the picture and what it was made from go to Kádrovák.
+6. **Keep** — the picture and what it was made from go to Kádrovák.
 
-**Samokritika** — the receivers calibrating one another by sending in turn — is the other way to
-step 3, and the check on it; not a required step (the owner, 14 Nov 2026).
+Samokritika is a regular step; the picture does not hang on it — the turn's own scaling (step 4)
+draws it without.
 
 ## The body
 
 Valenki stands on the wall, its rod running out to the grip. Kolchoz is a disc on that rod, off
-its own centre. Front faces the wall with the antennas, the receivers right behind them, Kuranty
-and Datel's microphones; Tyl, behind it, carries Gensek, Pajok, Datel's knock and Pravda. On the
-head an arrow for where a turn begins and ends; on its rim, notches to mark the wall by when it
-has stopped.
+its own centre. Front faces the wall: a metal disc with a thin insulating face, the antennas on
+that face, each turned radially — they are of a kind made to sit over metal, and the disc is their
+ground and the shield behind them — Datel's rod through the middle and its microphones by the
+ring, each over a hole of its own. Behind Front sit the eight Mužíci and Předseda's two receivers,
+each joined to its antenna by a short cable through Front; behind them Tyl carries Gensek, Pajok,
+Datel's knock and Pravda. On the head an arrow for where a turn begins and ends; on its rim,
+notches to mark the wall by when it has stopped. Levša is all of it that is metal and plastic.
 
 ## The names
 
@@ -124,14 +136,18 @@ not changed below this level.
 
 | | name | from | what it is |
 |---|---|---|---|
-| the tool | **Sluchalo** | the listener of *The Flying Ship* | all of it |
-| a body | **Fonar** | the lantern | the sender behind the wall |
+| the project | **Sluchalo** | the listener of *The Flying Ship* | Iskra and Fonar |
+| the sender | **Iskra** | the spark, and the Bolsheviks' paper | the sender behind the wall |
+| the tool | **Fonar** | the lantern | what is held to the wall: Valenki and Kolchoz |
 | a body | **Valenki** | felt boots | the undercarriage: all that stands |
+| the construction | **Levša** | Leskov's left-handed smith of Tula, who shod a steel flea | everything of metal and plastic that holds the units: Front's disc and its face, Kolchoz's housing, Valenki's foot, rod and bearing |
 | a body | **Kolchoz** | the collective farm | the head: all that turns |
-| in Fonar | **Serp**, **Molot** | the sickle, the hammer | the two crossed senders |
 | in Kolchoz | **Brigáda** | the work brigade | the ring of eight receivers that work as one |
-| in Kolchoz | **Předseda** | Czech: the chairman | the crossed pair in the middle |
-| in Kolchoz | **Kuranty** | the Kremlin's chimes | the one clock everything goes by |
+| in Brigáda | **Mužík** | a peasant | one of the eight receivers of the ring |
+| in a Mužík's hands | **Kosa** | the scythe | its antenna |
+| in Kolchoz | **Předseda** | Czech: the chairman | the crossed pair in the middle; does the work of two Mužíci |
+| in Předseda's hands | **Serp**, **Molot** | the sickle, the hammer | the senders of Samokritika, one in each hand |
+| in Kolchoz | **Kuranty** | the Kremlin's chimes | the one time everything goes by |
 | in Kolchoz | **Datel** | Czech: the woodpecker, after the Duga radar | the sound unit |
 | in Kolchoz | **Razvedčik** | the scout | the angle unit |
 | in Kolchoz | **Iljič** | Ilyich's lamp, the electrification | the mains-voltage unit |
@@ -139,20 +155,22 @@ not changed below this level.
 | in Kolchoz | **Pravda** | the newspaper | the display and the buttons |
 | in Kolchoz | **Kádrovák** | Czech: the keeper of everyone's file | the store |
 | in Kolchoz | **Pajok** | the ration | the power |
+| in Kolchoz | **Karanténa** | quarantine | the watch over every unit; it stops the tool on a fault |
+| in Karanténa | **Felčar** | the village medic | the checks Karanténa runs |
 | in Kolchoz | **Gradusnik** | the thermometer | the heat unit, postponed |
-| a board | **Front**, **Tyl** | the front, the rear | the board at the wall, the board behind it |
-| a way of doing | **Samokritika** | self-criticism | the calibration by sending: each speaks in turn, the others listen |
+| in Kolchoz | **Front**, **Tyl** | the front, the rear | the face at the wall with the antennas, the board behind it |
+| a way of doing | **Samokritika** | self-criticism | the chairman swings sickle and hammer, the peasants report what reached them |
 | a way of doing | **Samizdat** | what gets out | taking the pictures out to a computer |
 | beside the tool | **Bukvar** | the primer | the book of examples the picture is learnt from |
 
-Not yet named: the levelling of the receivers from the pass.
+Not yet named: the levelling of the receivers from the pass, and the self-scaling.
 
 ## The words
 
 | word | meaning |
 |---|---|
 | frame | one radio packet from a sender |
-| report | what one receiver measured on one frame, reduced, as it goes to Gensek |
+| report | what one receiver measured on one frame, as it goes to Gensek |
 | layer | one kind of picture of the same piece of wall: radio, voltage, sound |
 | picture | the layers together, with the raw data they were made from |
 | pass | one turn of Kolchoz about the rod |
@@ -165,3 +183,4 @@ Not yet named: the levelling of the receivers from the pass.
 - **Whether a motor turns the head** — a thought.
 - **Where Iljič senses** — on the axis it gives a number, off it it draws a circle.
 - **How often the channel can change.**
+- **Which module a receiver is** — level 5.

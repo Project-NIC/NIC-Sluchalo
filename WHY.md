@@ -37,7 +37,7 @@ A thought, not a change: a small motor to turn the head.
 | `README.md` and its Czech and Russian | *The parts* and *The head* tables | to be brought up to date when levels 2 and 3 are published |
 | the trials and the questions as posted | the foam and the optical sensors in them | to be gone through |
 
-## 14 Nov 2026 — level 3 reopened: no shared clock
+## 14 Nov 2026 — level 3 reopened: no shared clock; closed again the same day
 
 **What changed, and why.** The head was to run all its receivers from one 48 MHz clock, so that
 their phases could be compared (the owner, 27 Oct). Three things undid it the same day. The
@@ -64,7 +64,7 @@ What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to
 
 | where | what no longer holds | state |
 |---|---|---|
-| `architecture.md` | Kuranty as one clock; the steps to a picture; Předseda's part in calibration; the body | rewritten, to be closed |
+| `architecture.md` | Kuranty as one clock; the steps to a picture; Předseda's part in calibration; the body | rewritten with entries 11–13 and the names Kosa and Levša; closed again on 14 Nov 2026 |
 | level 4, not yet published | the clock lines on the board (`body.py`, *Kuranty*); the receivers' phase as the way to depth | the clock part to be marked as the upgrade; the rest holds |
 | the trials | the clock trial as the trial that decides the board | it decides only the later, sharper variant |
 | level 4: `ring8.py`, `calc/patch8.out`, `coupling8.py`, `head8.py` | the patch 30 × 37 mm, its tuning, its coupling, the ground plane behind it, the ring's spacing set by the patch's width | to be redone with the bought antenna's size and pattern once it is chosen; the picture's principle holds |

@@ -26,64 +26,70 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 
 - **Proč stín, a ne radar.** Signál projde zdí jen jednou. Nevzniká ozvěna od blízkého povrchu
   a vysílač neprosakuje do přijímače — dvě věci, které jednostranný radar oslepují.
-- **Poměr mezi přijímači.** Každý přijímač změří kanál téhož paketu na každé podnosné (CSI).
-  Vydělením jednoho přijímače druhým zmizí všechno, co dělá vysílač — jeho výkon, jeho fáze,
-  jeho rychlost — a zůstane zeď.
-- **Jedny hodiny pro všech deset přijímačů.** Běží z jednoho taktu 48 MHz, takže se jejich fáze
-  dají porovnat. Při celé otáčce se přijímače srovnají navzájem z přejezdu samotného; umějí se
-  i zkalibrovat vzduchem — **Samokritika** — bez jediného přepínače.
+- **Amplitudy, ne fáze.** Každý přijímač změří kanál téhož rámce na každé podnosné (CSI)
+  s pevným ziskem. Každý přijímač jede na vlastním krystalu, takže se porovnávají jen amplitudy:
+  na každém rámci přijímače navzájem, čímž zmizí vysílač a místnost; v každém přijímači rámce
+  obou zkřížených antén vysílače proti sobě, čímž zmizí vlastní zisk přijímače; a během celé
+  otáčky každý přijímač proti své kružnici. Vlna vysílače sama je referencí, která obraz zaostří,
+  jako u hologramu.
 - **Otáčka jako snímání.** Hlava se jednou otočí na tyčce přitlačené ke zdi, mimo svůj střed,
   takže každá z osmi antén kruhu opíše vlastní kružnici a dohromady vyplní kruh o průměru asi
   24 cm. Zdi se hlava nedotýká.
+- **Samokritika.** Před otáčkou vyšle prostřední dvojice krátký rámec v každé polarizaci a každý
+  přijímač změří, co k němu dorazilo — proti ťuknutí, vlhkosti a rozladění.
 - **Síťové napětí jako vrstva.** Kapacitní snímač v hlavě ukáže, kde je živý kabel; nikdy
   netvrdí, že kabel pod napětím není.
 - **U zdiva ťuknutí.** Bzučákový disk ťuká do zdi plastovou tyčinkou uprostřed; osm mikrofonů
-  kolem ní uslyší povrchovou vlnu zdi dřív než zvuk, který jde vzduchem.
+  kolem uslyší povrchovou vlnu zdi dřív než zvuk vzduchem.
 
 ## Části
 
 | část | co to je |
 |---|---|
-| **Fonar** | lucerna: vysílač za zdí, dvě desky ESP32-C5 se zkříženými dipóly, které se střídají — **Serp** a **Molot** — 1000 rámců za sekundu |
+| **Iskra** | jiskra: vysílač za zdí, hotová deska se dvěma zkříženými anténami, které se střídají, svislou a vodorovnou |
+| **Fonar** | lucerna: přístroj přiložený ke zdi — Valenki a Kolchoz |
 | **Valenki** | válenky: podvozek — gumová noha přitlačená ke zdi, tyčka a rukojeť; drží hlavu od zdi a kolmo k ní |
 | **Kolchoz** | kolchoz: hlava — všechno, co se točí na tyčce |
-| **Brigáda** | brigáda: kruh osmi přijímačů, které pracují jako jeden |
-| **Předseda** | jeho předseda: zkřížená dvojice uprostřed, která vede kalibraci vzduchem — **Samokritiku** |
-| **Kuranty** | kremelské hodiny: jedny hodiny 48 MHz, podle kterých jde všechno |
+| **Levša** | Leskovův levoruký kovář: konstrukce, všechno z kovu a plastu, co drží jednotky |
+| **Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
+| **Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
+| **Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | **Datel** | datel: ťukání a osm mikrofonů |
 | **Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
 | **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, jedna z vrstev obrazu |
-| **Gensek** | generální tajemník: jeden STM32H7A3 nade vším — hlášení, poloha, ťukání, displej |
+| **Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, ťukání, obraz, displej |
 | **Pravda** | noviny: displej a tlačítka |
 | **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
 | **Pajok** | příděl: dva články 18650 |
+| **Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
 | **Gradusnik** | teploměr: tepelný snímač, odložený — zatím to zastane termokamera vedle hlavy |
 
 ## Hlava
 
 | | |
 |---|---|
-| velikost | průměr 176 mm |
-| kruh | **Brigáda**: osm patchů 30 × 37 mm na kružnici o poloměru 69,5 mm, 53 mm od sebe, každý natočený radiálně |
-| střed | jeden čtvercový patch napájený dvakrát v pravém úhlu, na dvou přijímačích; jeho středem prochází díra pro tyčinku ťukání |
-| tyčka | 35 mm od středu, mezi prostředním patchem a kruhem; jedna otáčka pokryje kruh o průměru asi 24 cm |
+| velikost | průměr asi 18 cm |
+| kruh | **Brigáda**: osm koupených dvoupásmových antén (2,4 a 5 GHz), každá natočená radiálně |
+| střed | **Předseda**: dvě stejné antény v pravém úhlu, vedle tyčinky ťukání |
+| tyčka | mezi středem a kruhem; jedna otáčka pokryje kruh o průměru asi 24 cm |
 | značení | tužkou podle zářezů na okraji hlavy, když stojí |
-| přijímače | deset ESP32-C5 jako holé čipy na zadní straně anténní desky, každý napájí svůj patch prokovem přímo nahoru — žádný koax |
-| desky | **Front**, anténní deska, čtyřvrstvá, 1,6 mm; **Tyl**, deska elektroniky, 11 mm za ní |
-| ke zdi | nedotýká se jí: **Valenki** ji drží 15 mm od zdi; kde by se o zeď mohla otřít, má hlava filc |
-| napájení | ze dvou článků 18650 asi tři hodiny (5,7 W bylo spočítáno pro jedenáct přijímačů) |
+| přijímače | deset hotových modulů ESP32-C5, každý na vlastním krystalu, každý připojený ke své anténě krátkým kabelem |
+| Front | čelo ke zdi: kovový kotouč s tenkou izolační vrstvou a na ní antény — kotouč je jejich zemí a stíněním |
+| Tyl | deska za ním: procesor, napájení, ťukání, displej |
+| ke zdi | nedotýká se jí: **Valenki** ji drží od zdi; kde by se o zeď mohla otřít, má hlava filc |
+| napájení | ze dvou článků 18650 asi tři hodiny |
 
-Hlava, jak byla rozhodnuta 13. 11. 2026: [`calc/ring8.py`](calc/ring8.py), její patch
-v `calc/patch8.out`. Koncept z 28. 10. ([`concept.md`](concept.md), anglicky) popisuje dřívější
-hlavu — devět v kruhu, na pěně, posouvanou po zdi; kde se liší od úrovní, platí úrovně
-([`WHY.md`](WHY.md)).
+Koncept z 28. 10. ([`concept.md`](concept.md), anglicky) popisuje dřívější hlavu — devět
+vlastních patchů, jedny hodiny pro všechny, na pěně, posouvanou po zdi; kde se liší od úrovní,
+platí úrovně ([`WHY.md`](WHY.md)). Rozložení hlavy se kreslí znovu pro koupené antény;
+[`calc/ring8.py`](calc/ring8.py) ho má pro dřívější patche.
 
 ## Co nevíme
 
-- **Jestli ESP32-C5 poběží z vnějšího taktu 48 MHz.** Jeho dokumentace označuje krystal za
-  povinný. Rozhoduje to desku; záložním plánem je rádio s přímými I/Q vzorky.
 - **Jestli se skutečná zeď chová jako modely** — permitivita skutečné malty a omítky, mokré spáry
-  a jestli 8bitové CSI s pevným ziskem udrží stabilně změnu 20–30 % v amplitudě a fázi.
+  a jestli 8bitové CSI s pevným ziskem udrží stabilně změnu amplitudy o 20–30 %.
+- **Jestli samotné amplitudy, bez společných hodin, nakreslí skutečnou zeď** tak dobře jako tu
+  v modelu.
 - **Jestli ťukání a mikrofony uslyší něco užitečného** přes suchý kontakt na omítce.
 
 Rozhodnou zkoušky popsané na konci [`concept.md`](concept.md).

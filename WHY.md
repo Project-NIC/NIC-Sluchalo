@@ -36,3 +36,31 @@ A thought, not a change: a small motor to turn the head.
 | `concept.md` | *The head* (nine, the foam, the notches), *The electronics* (eleven chips, 22 UART lines, optical sensors, the calibration's "both ways cancels the paths"), *The trials* (the foam in the microwave; the clock trial's second question) | not edited: the concept is the record of 28 Oct; the levels replace it as they close |
 | `README.md` and its Czech and Russian | *The parts* and *The head* tables | to be brought up to date when levels 2 and 3 are published |
 | the trials and the questions as posted | the foam and the optical sensors in them | to be gone through |
+
+## 14 Nov 2026 — level 3 reopened: no shared clock
+
+**What changed, and why.** The head was to run all its receivers from one 48 MHz clock, so that
+their phases could be compared (the owner, 27 Oct). Three things undid it the same day. The
+ESP32-C5 has no clock input; Espressif's checklist calls its crystal compulsory; the one attempt
+on record to run eight C5s from a shared clock (a DigiKey forum thread, June 2026) failed to boot
+and found no fix. Even with a shared clock, every chip's synthesizer locks at a new phase after
+each reset and change of channel (the ESPARGOS authors). And level 4's `nosync.py` showed that a
+head with **every receiver on its own crystal**, its phases thrown away, draws the same pictures
+from the amplitudes alone — scaled within each receiver by the ratio of Serp's frame to Molot's,
+levelled over the turn, and focused as an in-line hologram with Fonar's own wave as its reference.
+What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to tam natvrdo"):
+
+| # | change | why |
+|---|---|---|
+| 7 | Every receiver runs on its own crystal; there is no shared clock. **Kuranty** becomes the time base: one edge from Gensek on a shared line, caught by each chip's timer. | Above. A shared clock may come back with bare chips, only to sharpen depth. |
+| 8 | The radio layer is drawn from the amplitudes: self-scaled, levelled, focused. Samokritika checks gains only. | `nosync.py`. |
+| 9 | A receiver is a unit, **Mužík**, with one interface — an antenna input of 50 ohm, a serial link, the reset and boot lines, the sync line, 3.3 V — so that a ready-made module can be one now and a bare chip later. The first head is built from ready-made, certified modules, joined to the patches by short lines. | Ready-made modules need no work on the radio and keep their certification; nothing in them has to be opened. |
+| 10 | **Karanténa** is the watch over every unit, its **Felčar** the checks; on a fault the tool declares it and stops. | The owner. |
+
+**What stops holding below**
+
+| where | what no longer holds | state |
+|---|---|---|
+| `architecture.md` | Kuranty as one clock; the steps to a picture; Předseda's part in calibration; the body | rewritten, to be closed |
+| level 4, not yet published | the clock lines on the board (`body.py`, *Kuranty*); the receivers' phase as the way to depth | the clock part to be marked as the upgrade; the rest holds |
+| the trials | the clock trial as the trial that decides the board | it decides only the later, sharper variant |

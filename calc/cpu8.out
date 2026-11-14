@@ -7,6 +7,5 @@ the picture a disc 23 cm across in 5 mm pixels, 1654 of them; capacity 140 M MAC
     the 3 x 3 solve in every pixel: 2.9 M = 20 ms
     carrying it back through the wall (FFT): 5.6 M = 40 ms
     together: 100 M = 0.72 s after the turn
-  Datel while the head stands (lock-in and band energies, as cpu.py): 9.6 M/s = 7 %
   memory: the reduced reports of one turn 1.02 MB, the pixel sums 1.91 MB, against about 1.4 MB of RAM;
           the raw reports of one turn 5.1 MB go straight on to Kádrovák, not into RAM

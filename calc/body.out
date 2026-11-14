@@ -2,11 +2,10 @@
   10 ESP32-C5 receiving, 2.4 GHz HE20, 87 mA each with the CPU idle (datasheet v1.5, Table 5-7); 100 mA taken for the CSI work: 1000 mA [sheet + assumed]
   STM32H7A3 at 280 MHz, all peripherals on, with the LDO (DS13195, Table 35): 132 mA [sheet]
   the 48 MHz oscillator and the fan-out buffer: 30 mA [assumed]
-  Datel: eight PDM microphones, about 1 mA each: 8 mA [assumed]
   Razvedčik: a magnetic angle sensor: 10 mA [assumed, a part not chosen]
   Iljič: its amplifier: 3 mA [assumed]
   Pravda, the 5" display with its backlight: 1.5 W [assumed, open]
-  all at once: 1184 mA at 3.3 V = 3.9 W, with the display 5.4 W
+  all at once: 1176 mA at 3.3 V = 3.9 W, with the display 5.4 W
   Pajok, two 18650 cells in parallel, about 6 Ah at 3.6 V: 21.6 Wh -> about 3.4 h at 85 % conversion
   the supply to Front: 1.04 A, 1.36 A while a C5 sends (Samokritika)
 == Kolchoz: weight and warmth (rough)

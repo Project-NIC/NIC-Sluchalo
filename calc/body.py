@@ -17,7 +17,6 @@ loads = [  # name, mA, source
     (f'{N_RX} ESP32-C5 receiving, 2.4 GHz HE20, 87 mA each with the CPU idle (datasheet v1.5, Table 5-7); 100 mA taken for the CSI work', N_RX * 100, 'sheet + assumed'),
     ('STM32H7A3 at 280 MHz, all peripherals on, with the LDO (DS13195, Table 35)', 132.5, 'sheet'),
     ('the 48 MHz oscillator and the fan-out buffer', 30, 'assumed'),
-    ('Datel: eight PDM microphones, about 1 mA each', 8, 'assumed'),
     ('Razvedčik: a magnetic angle sensor', 10, 'assumed, a part not chosen'),
     ('Iljič: its amplifier', 3, 'assumed'),
 ]

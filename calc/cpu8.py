@@ -34,8 +34,6 @@ for name, v in (('levelling the receivers (40 rounds)', level), ('blurring the s
                 ('the 3 x 3 solve in every pixel', solve), ('carrying it back through the wall (FFT)', fft)):
     print(f'    {name}: {v/1e6:.1f} M = {v/CAP*1000:.0f} ms')
 print(f'    together: {end/1e6:.0f} M = {end/CAP:.2f} s after the turn')
-datel = 8 * 200e3 * 2 + 8 * 200e3 * 4
-print(f'  Datel while the head stands (lock-in and band energies, as cpu.py): {datel/1e6:.1f} M/s = {datel/CAP*100:.0f} %')
 
 held = FRAMES * N_RX * GROUPS * 8                 # the reduced reports, complex single precision, kept for the levelling
 raw = FRAMES * N_RX * ((242 + 53) * 2 + 50)       # what the receivers measured, int8, for Kádrovák

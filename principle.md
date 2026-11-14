@@ -88,8 +88,8 @@ it further (`picture.py`); that is the variant for later, if a C5 is ever easy t
 Ezurio dual-band FlexPIFA, 38.5 × 12.7 mm, made to sit over metal — keeping the maker's 5 mm beside
 every antenna and round every hole: the eight of the ring, radial, on a circle of 64 mm; Předseda's
 two at right angles as a pinwheel round the middle, which leaves the middle free; Kuří nožka 32
-mm out, in the quarter the pinwheel leaves free. (The layout still keeps the middle and eight places
-by the ring for Datel, which went to NIC-Ariadna on 14 Nov — `WHY.md` 17; they cost the ring nothing.) **The head is 177 mm across**, and a turn covers a disc about 23 cm across.
+mm out, in the quarter the pinwheel leaves free. (The middle is kept free as it was laid out for
+Datel, dropped on 14 Nov — `WHY.md` 19 — so that every figure computed on this face stands.) **The head is 177 mm across**, and a turn covers a disc about 23 cm across.
 Předseda off the centre costs nothing: Samokritika no longer needs the symmetry, and its two antennas
 draw two circles instead of one (a run with four antennas round the middle drew the same picture).
 
@@ -208,7 +208,3 @@ the record, and [`WHY.md`](WHY.md) says why:
   (`samokritika.py`). Left: the C5 has no clock input and the one attempt on record failed.
 - **Foam as a spacer and absorbers between the antennas** — above. Left for Valenki holding the head
   off the wall and for the disc.
-- **Datel, the knock and its eight microphones** — moved to NIC-Ariadna on 14 Nov 2026 (`WHY.md` 17).
-  What was computed for it here stays as its record: the knock in the middle, the microphones 64 mm
-  out, the head 15 mm off the wall — the wall's surface wave reaches them 65 to 114 µs before the
-  sound through the air (`datel8.py`, `acoustics.py`); `body.py` and `cpu8.py` still count it.

@@ -61,7 +61,7 @@ its own, not yet published.
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | the collective farm: the head — everything that turns on the rod |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskov's left-handed smith: the construction, all of metal and plastic that holds the units |
 | **Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
-| **Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
+| <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
 | **Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | **Razvedčik** | the scout: the sensor of the head's angle on the rod |
 | **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |

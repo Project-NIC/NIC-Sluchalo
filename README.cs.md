@@ -58,7 +58,7 @@ je NIC-Ariadna, samostatná ruční sonda, zatím nezveřejněná.
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | kolchoz: hlava — všechno, co se točí na tyčce |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskovův levoruký kovář: konstrukce, všechno z kovu a plastu, co drží jednotky |
 | **Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
-| **Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
+| <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
 | **Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | **Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
 | **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |

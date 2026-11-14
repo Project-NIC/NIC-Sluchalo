@@ -1,0 +1,24 @@
+the charge amplifier: C_f 10 pF, the input 20 pF; the ADC's step 50 uV
+== the charge amplifier's output, peak, cable 3 cm deep
+  50 Hz mains, 230 V           bone dry   717.317 mV  ordinary    23.131 mV  damp     0.231 mV
+  a tracer, 10 V at 33 kHz     bone dry    31.118 mV  ordinary    39.156 mV  damp     6.579 mV
+  a tracer, 10 V at 125 kHz    bone dry    31.118 mV  ordinary    32.160 mV  damp    22.379 mV
+  from 231.4 uV to 717 mV: a range of 70 dB — so the gain is switched, not fixed
+== what the op-amp must carry (gain-bandwidth product)
+  GBW    1 MHz: the charge amplifier, noise gain 3, holds to  0.33 MHz; a second stage of gain 10 to    100 kHz, of gain 100 to    10 kHz
+  GBW   10 MHz: the charge amplifier, noise gain 3, holds to  3.33 MHz; a second stage of gain 10 to   1000 kHz, of gain 100 to   100 kHz
+  GBW   50 MHz: the charge amplifier, noise gain 3, holds to 16.67 MHz; a second stage of gain 10 to   5000 kHz, of gain 100 to   500 kHz
+== the gain the weakest case wants before the ADC
+  second stage x1  :     231.4 uV peak =    4.59 ADC steps; a narrow filter in software over 0.1 s at 125 kHz gains about 38 dB more
+  second stage x10 :    2313.6 uV peak =   45.95 ADC steps; a narrow filter in software over 0.1 s at 125 kHz gains about 38 dB more
+  second stage x100:   23135.9 uV peak =  459.47 ADC steps; a narrow filter in software over 0.1 s at 125 kHz gains about 38 dB more
+== the gain set for about 80 % of an ADC of 1.8 V full scale (1440 mV peak)
+  50 Hz mains, 230 V           bone dry  C_f    10 pF, x1 , PGA x2 :   1435 mV =  80 % of the ADC
+  50 Hz mains, 230 V           ordinary  C_f    10 pF, x10, PGA x4 :    925 mV =  51 % of the ADC
+  50 Hz mains, 230 V           damp      C_f     1 pF, x10, PGA x16:    370 mV =  21 % of the ADC
+  a tracer, 10 V at 33 kHz     bone dry  C_f    10 pF, x10, PGA x4 :   1245 mV =  69 % of the ADC
+  a tracer, 10 V at 33 kHz     ordinary  C_f    10 pF, x10, PGA x2 :    783 mV =  44 % of the ADC
+  a tracer, 10 V at 33 kHz     damp      C_f     1 pF, x10, PGA x2 :   1316 mV =  73 % of the ADC
+  a tracer, 10 V at 125 kHz    bone dry  C_f    10 pF, x10, PGA x4 :   1245 mV =  69 % of the ADC
+  a tracer, 10 V at 125 kHz    ordinary  C_f    10 pF, x10, PGA x4 :   1286 mV =  71 % of the ADC
+  a tracer, 10 V at 125 kHz    damp      C_f    10 pF, x10, PGA x4 :    895 mV =  50 % of the ADC

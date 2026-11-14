@@ -8,8 +8,8 @@
 
 **English** · [Čeština](README.cs.md) · [Русский](README.ru.md)
 
-**What is in a wall, seen by the shadow Wi-Fi casts through it. A hand-held head with eleven
-Wi-Fi receivers slides along one face of the wall; a small box on the other side sends. A cable,
+**What is in a wall, seen by the shadow Wi-Fi casts through it. A hand-held head with ten
+Wi-Fi receivers turns on a rod held to one face of the wall; a small box on the other side sends. A cable,
 a pipe or a steel stud between them dims the field, and the head maps where. For masonry it also
 taps the wall and listens. Every setting and all the raw data stay open to whoever uses it.**
 
@@ -30,10 +30,15 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 - **The ratio between receivers.** Every receiver measures the channel of the same packet on
   every subcarrier (the CSI). Dividing one receiver by another removes everything the sender
   does — its power, its phase, its rate — and leaves the wall.
-- **Phase from the first build.** All eleven receivers run from one 48 MHz clock. The crossed
-  pair in the middle calibrates the ring over the air, between strokes, with no switch anywhere.
-- **The stroke as an aperture.** As the head slides, the phase along the stroke focuses: a cable
-  3 cm deep is placed to about 6 mm in depth over a 20 cm stroke.
+- **One clock for all ten receivers.** They run from one 48 MHz source, so their phases can be
+  compared. Over a whole turn the receivers are levelled against one another from the pass
+  itself; they can also calibrate one another over the air — **Samokritika** — with no switch
+  anywhere.
+- **A turn as the scan.** The head turns once on a rod held to the wall, off its own centre, so
+  each of the eight antennas of the ring draws its own circle and together they fill a disc
+  about 24 cm across. The head does not touch the wall.
+- **The mains voltage, as a layer.** A capacitive sensor in the head shows where a live cable
+  is; it never says that one is dead.
 - **For masonry, a knock.** A buzzer disc taps the wall through a plastic rod in the middle;
   eight microphones around it hear the wall's surface wave before the sound through the air.
 
@@ -42,12 +47,14 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 | part | what it is |
 |---|---|
 | **Fonar** | the lantern: the sender behind the wall, two ESP32-C5 boards with crossed dipoles taking turns — **Serp** and **Molot** — 1000 frames a second |
-| **Kolchoz** | the collective farm: the ring of nine receivers that work as one |
+| **Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
+| **Kolchoz** | the collective farm: the head — everything that turns on the rod |
+| **Brigáda** | the work brigade: the ring of eight receivers that work as one |
 | **Předseda** | its chairman (Czech): the crossed pair in the middle, which leads the calibration over the air — **Samokritika** |
 | **Kuranty** | the Kremlin's chimes: the one 48 MHz clock everything goes by |
 | **Datel** | the woodpecker: the knock and the eight microphones |
-| **Razvedčik** | the scout: two optical-flow sensors that track the head over the wall |
-| **Iljič** | Ilyich's lamp: a sensor of the mains hum, a layer of the picture |
+| **Razvedčik** | the scout: the sensor of the head's angle on the rod |
+| **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a layer of the picture |
 | **Gensek** | the general secretary: one STM32H7A3 over everything — the reports, the position, the knock, the display |
 | **Pravda** | the newspaper: the display and the buttons |
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
@@ -58,16 +65,20 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 
 | | |
 |---|---|
-| size | 167 mm across; about 0.36 kg before the housing |
-| the ring | nine patches 30 × 29 mm on a circle of 65.8 mm radius, 45 mm apart, each turned radially |
+| size | 176 mm across |
+| the ring | **Brigáda**: eight patches 30 × 37 mm on a circle of 69.5 mm radius, 53 mm apart, each turned radially |
 | the middle | one square patch fed twice at right angles, on two receivers; a hole through its centre for the knock's rod |
-| marking | a pencil by notches on the head's rim, two pairs on its two axes |
-| the receivers | eleven ESP32-C5, as bare chips on the back of the antenna board, each fed straight up to its patch by a via — no coax |
+| the rod | 35 mm from the centre, between the middle patch and the ring; one turn covers a disc about 24 cm across |
+| marking | a pencil by notches on the head's rim, once it has stopped |
+| the receivers | ten ESP32-C5, as bare chips on the back of the antenna board, each fed straight up to its patch by a via — no coax |
 | the boards | **Front**, the antenna board, 4 layers, 1.6 mm; **Tyl**, the electronics board, 11 mm behind it |
-| against the wall | **Valenki**, the felt boots: 15 mm of foam, a 1 mm polyethylene sheet on its face that slides |
-| power | about 5.7 W; about three hours from the cells |
+| against the wall | it does not touch: **Valenki** holds it 15 mm off; felt on the head where it may brush the wall |
+| power | about three hours from two 18650 cells (5.7 W was computed for eleven receivers) |
 
-Details, sources and every figure: [`concept.md`](concept.md).
+The head as decided on 13 Nov 2026: [`calc/ring8.py`](calc/ring8.py), its patch in
+`calc/patch8.out`. The concept of 28 Oct ([`concept.md`](concept.md)) describes the earlier head —
+nine in the ring, on foam, slid over the wall; where it differs from the levels, the levels hold
+([`WHY.md`](WHY.md)).
 
 ## What is not known
 
@@ -82,16 +93,18 @@ The trials that decide it are at the end of [`concept.md`](concept.md).
 
 ## What next
 
-Version 0.1 is the concept in one document, with its scripts beside it; the parts get folders of
-their own only in later versions. Next we send our questions — to Espressif, to the authors of
-ESPARGOS, to the forums on radio and on non-destructive testing — and build the trials as soon as
-we can. The project grows with what they show, and as far as time and means allow.
+The project is grown level by level. The purpose, the requirements and the architecture are
+closed; the physics is being computed block by block. The concept of 28 Oct stays as the record
+of where it began. Our questions are out — to Espressif, to the authors of ESPARGOS, to the
+forums — and the trials are built as soon as we can. The project grows with what they show, and
+as far as time and means allow.
 
 ## Files
 
 - [`purpose.md`](purpose.md) — what it does, for whom, and how we know it works, on one page.
 - [`requirements.md`](requirements.md) — what it must do, in ranges.
-- [`architecture.md`](architecture.md) — the blocks and what passes between them.
+- [`architecture.md`](architecture.md) — the bodies, the units and what passes between them; the names.
+- [`WHY.md`](WHY.md) — why closed levels were reopened, and what that changed below.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for

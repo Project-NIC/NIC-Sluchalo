@@ -1,0 +1,38 @@
+# NIC-Sluchalo — why closed levels were reopened
+
+## 13 Nov 2026 — levels 2 and 3, reopened the day they were closed; closed again on 14 Nov
+
+Levels 1 to 3 were closed in the morning. Working through level 4 the same day, the owner changed
+how the head is moved and held, and the calculations changed what it needs. Level 1, the
+purpose, stands as closed.
+
+**What changed, and why**
+
+| # | change | why |
+|---|---|---|
+| 1 | The head is turned about a rod, not slid over the wall. | The owner: a small picture is enough, best taken by turning; then "na kraji udělat čep a točit kolem něj", then the plain form — a grip, a rod with a rubber tip, the head a disc on it turned by the other hand. `picture.py`: about its centre the head draws only a ring, about a rod off the centre a full disc. |
+| 2 | The head's angle is measured on the rod; the optical-flow sensors go. | With a turn only the angle is wanted. The owner: "any magnetic sensor"; the sensor stays in even if the radio can give the angle too. |
+| 3 | Eight patches around Předseda, each at its full width; ten receivers, not eleven. | The owner's question and decision. The nine were for a head that slides under a sender of unknown field; a turned head takes every direction anyway. Eight fit the middle's square, Datel's eight microphones, and the full patch; in the model they draw what nine did. |
+| 4 | Iljič is a capacitive plate only, on the processor's own converter, gain and band adjustable. | The owner. The coil, the rods and the tracer's signal went to a project of their own, NIC-Ariadna. |
+| 5 | The foam spacer goes; the head does not touch the wall. Valenki is the undercarriage: a wide foot on the rod, pressed to the wall and standing firm. Where the turning head, Kolchoz, may brush the wall it wears hard smooth felt. | The owner: foam grips and is soft; good felt slides on paint and scuffs nothing. |
+| 6 | The receivers are levelled from the pass itself; sending between the chips is no longer the only way. | `picture.py`, `samokritika.py`: over a whole turn an uncalibrated head draws the same picture once each receiver is levelled against its own circle. Whether Samokritika by sending stays a required step is the owner's to say. |
+
+A thought, not a change: a small motor to turn the head.
+
+**What stops holding below, to be worked off before anything new**
+
+| where | what no longer holds | state |
+|---|---|---|
+| `requirements.md` | the picture's size and how it is taken; one hand holding and one marking; the hum "voltage, current, or both" | rewritten; closed again on 14 Nov 2026 |
+| `architecture.md` | Kolchoz as a ring of nine; Razvedčik as optical sensors; Iljič's form; Valenki as foam; the body; the steps to a picture; the names, now in three tiers | rewritten; closed again on 14 Nov 2026 |
+| level 4, the principle and its scripts — not yet published | — written on the new head | holds |
+| `calc/ring8.py` | — | the new head's layout, published with this |
+| `calc/array.py` | the ring of nine as the layout | replaced by `ring8.py`; kept as the record of the three layouts weighed |
+| `calc/patch_fdtd.out` | the patch 30 × 29 mm under 15 mm of foam | done: the 30 × 37 mm patch tuned, `calc/patch8.out` |
+| `calc/head.py` and its outputs | the head's ground plane 167 mm across on foam; the spacer's choice | the tolerance read off the existing 5 mm steps: a millimetre or two of gap, about a degree of tilt (in the requirements); the rerun for 176 mm and a tilted head still to do |
+| `calc/acoustics.py`, Datel in the concept | the microphones' pipes through the foam; the knock's rod resting on the wall under a head that slides | Datel stays (the owner, 13 Nov); to be gone through for an air gap and a head that turns |
+| `calc/budget.py` | the head's size and weight with foam and sheet; eleven C5s in the power and the data rates; the optical sensors' current | to be rerun |
+| `calc/cpu.py` | eleven receivers; the stroke's focusing | to be redone with the picture's arithmetic as `picture.py` has it |
+| `concept.md` | *The head* (nine, the foam, the notches), *The electronics* (eleven chips, 22 UART lines, optical sensors, the calibration's "both ways cancels the paths"), *The trials* (the foam in the microwave; the clock trial's second question) | not edited: the concept is the record of 28 Oct; the levels replace it as they close |
+| `README.md` and its Czech and Russian | *The parts* and *The head* tables | to be brought up to date when levels 2 and 3 are published |
+| the trials and the questions as posted | the foam and the optical sensors in them | to be gone through |

@@ -1,0 +1,4 @@
+# the patch for the ring of eight, 37 mm wide: python3 patch_fdtd.py s11 15 5.24 0.093 37 30 <feed> 1.05 0 sub=1.28, run 13 Nov 2026
+patch 30 x 37 mm, feed 6 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 15 mm filled with er 1.05: best match 2.437 GHz, S11 -19.5 dB, Z 60-6j ohm, -10 dB band 59 MHz; at 2412/2442/2472 MHz -11.4 / -19.3 / -9.5 dB
+patch 30 x 37 mm, feed 7 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 15 mm filled with er 1.05: best match 2.437 GHz, S11 -32.3 dB, Z 50-2j ohm, -10 dB band 55 MHz; at 2412/2442/2472 MHz -12.2 / -24.0 / -8.5 dB
+patch 30 x 37 mm, feed 8 mm in, FR4 1.28 mm, wall er 5.24, sigma 0.093, gap 15 mm filled with er 1.05: best match 2.433 GHz, S11 -20.9 dB, Z 43+4j ohm, -10 dB band 48 MHz; at 2412/2442/2472 MHz -11.9 / -17.3 / -7.1 dB

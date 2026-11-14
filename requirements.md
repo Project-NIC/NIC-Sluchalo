@@ -1,9 +1,9 @@
 # NIC-Sluchalo — the requirements
 
-*Level 2 of the project, closed on 13 Nov 2026: what the tool must do, in ranges and orders of magnitude. No exact values
-and no parts — a figure here is a bound for the levels below, and this page is its one home. What
-it is for is in [`purpose.md`](purpose.md); the reasoning and the calculations so far are in
-[`concept.md`](concept.md).*
+*Level 2 of the project, closed on 13 Nov 2026, reopened the same day ([`WHY.md`](WHY.md)) and
+closed again on 14 Nov 2026: what the tool must do, in ranges and orders of magnitude. No exact
+values and no parts — a figure here is a bound for the levels below, and this page is its one
+home. What it is for is in [`purpose.md`](purpose.md).*
 
 ## The walls
 
@@ -25,14 +25,15 @@ does not show.
 
 | | requirement |
 |---|---|
-| the area of one picture | small — about the size of the head, one to two tens of centimetres across |
-| how it is taken | by turning the head on the spot, if that gives a picture; by sliding it otherwise (decided at level 4, by calculation) |
+| the area of one picture | a disc about two tens of centimetres across |
+| how it is taken | by one turn of the head about a rod held to the wall |
 | a larger area | several pictures side by side |
-| where a shape is | to about a centimetre |
+| where a shape is | to about a centimetre — so the head's angle to about a degree |
 | two things apart | told apart once several centimetres lie between them |
 | depth, and what the thing is | not required; welcome if they come |
-| speed | the picture grows under the hand, within a fraction of a second of the movement |
-| the mains hum | a layer of the same picture: voltage on a cable, current in it; from how deep is open |
+| speed | the picture grows as the head turns and is whole after one turn of a few seconds |
+| without turning | a quick look: the head at rest says whether anything is under it |
+| the mains voltage | a layer of the same picture: that a live cable is under the head, not where to the centimetre |
 | contrast and thresholds | set by the user, per layer |
 
 ## The sender
@@ -44,7 +45,9 @@ has. Licence-free bands only, within their power limits, with no licence and no 
 
 | | requirement |
 |---|---|
-| held | in one hand; the other marks the wall with a pencil |
+| held | one hand presses the rod to the wall, the other turns the head; the wall is marked once the head has stopped |
+| against the wall | the foot is pressed to it and stands firm; the head does not rest on it, and where it brushes it, it slides and leaves no mark |
+| off the wall | the head keeps its distance to within a millimetre or two, and so stays square to the wall to about a degree |
 | display | its own; no phone, no computer needed to work |
 | size and weight | a head of one to two tens of centimetres; well under a kilogram |
 | running time | a few hours of scanning on one charge |
@@ -62,5 +65,4 @@ The tool may show that a cable is live; it never says that one is not.
 
 ## Open at this level
 
-- From how deep the mains hum must show.
 - How much a damp wall may cost.

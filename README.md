@@ -39,8 +39,9 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
   about 24 cm across. The head does not touch the wall.
 - **Samokritika.** Before a turn the middle pair sends a short frame in each polarization and
   every receiver measures what arrives — against knocks, damp and drift.
-- **The mains voltage, as a layer.** A capacitive sensor in the head shows where a live cable
-  is; it never says that one is dead.
+- **The mains voltage, as a tester.** In a mode of its own, held like a voltage tester, a
+  capacitive sensor tells by sound and a bar where a live cable is — or a cable tracer's signal;
+  it never says that a cable is dead.
 - **For masonry, a knock.** A buzzer disc taps the wall through a plastic rod in the middle;
   eight microphones around it hear the wall's surface wave before the sound through the air.
 
@@ -58,7 +59,7 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 | **Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | **Datel** | the woodpecker: the knock and the eight microphones |
 | **Razvedčik** | the scout: the sensor of the head's angle on the rod |
-| **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a layer of the picture |
+| **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
 | **Gensek** | the general secretary: one processor over everything — the reports, the angle, the knock, the picture, the display |
 | **Pravda** | the newspaper: the display and the buttons |
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |

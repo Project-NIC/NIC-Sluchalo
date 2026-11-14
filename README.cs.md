@@ -37,8 +37,9 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
   24 cm. Zdi se hlava nedotýká.
 - **Samokritika.** Před otáčkou vyšle prostřední dvojice krátký rámec v každé polarizaci a každý
   přijímač změří, co k němu dorazilo — proti ťuknutí, vlhkosti a rozladění.
-- **Síťové napětí jako vrstva.** Kapacitní snímač v hlavě ukáže, kde je živý kabel; nikdy
-  netvrdí, že kabel pod napětím není.
+- **Síťové napětí jako zkoušečka.** V samostatném režimu, drženém jako zkoušečka, kapacitní
+  snímač zvukem a sloupcem ukáže, kde je živý kabel nebo signál hledačky; nikdy netvrdí, že
+  kabel pod napětím není.
 - **U zdiva ťuknutí.** Bzučákový disk ťuká do zdi plastovou tyčinkou uprostřed; osm mikrofonů
   kolem uslyší povrchovou vlnu zdi dřív než zvuk vzduchem.
 
@@ -56,7 +57,7 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 | **Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | **Datel** | datel: ťukání a osm mikrofonů |
 | **Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
-| **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, jedna z vrstev obrazu |
+| **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
 | **Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, ťukání, obraz, displej |
 | **Pravda** | noviny: displej a tlačítka |
 | **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |

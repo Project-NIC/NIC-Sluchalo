@@ -64,11 +64,11 @@ In Kolchoz:
 | **Kuranty** | the time base: one edge from Gensek on a line shared by Brigáda and Předseda, ten receivers, each catching it in its own timer, so that every report carries the same time | make the receivers' phases comparable — each runs on its own crystal |
 | **Datel** | the sound: taps the wall through the middle of the head and hears its surface with a ring of microphones, the head held still | work while the head turns |
 | **Razvedčik** | the angle: reads how far the head has turned on the rod | know where on the wall the rod stands |
-| **Iljič** | the mains voltage: senses the electric field at the wall, amplifies it with a gain and in a band the user sets, and gives its layer of the picture | say that a cable is dead; say where to the centimetre |
+| **Iljič** | the mains voltage, in a mode of its own: the tool held by its grip like a tester, a light where it senses; it picks up the electric field at the wall — the mains, or the signals of cable tracers on their own frequencies, several at once — with a gain and in a band the user sets, and tells it by sound, a bar and the display | say that a cable is dead; say where to the centimetre |
 | **Gensek** | the processor: tells the receivers what to do, collects their reports, the angle, the microphones and Iljič's signal; draws the radio layer from the amplitudes — self-scaled, levelled, focused; computes the other layers; draws them; stores them; takes the user's settings | any radio work |
 | **Karanténa** | the watch: its **Felčar** keeps checking every unit while the tool runs — that every receiver reports, that its gain and noise are sane and it agrees with its neighbours, the time base, the supplies, the warmth; on a fault Karanténa declares it on Pravda and the tool stops measuring | carry on with a unit that has failed |
 | **Pravda** | the display and the buttons: show the picture; set the contrast, the thresholds and the layer | — |
-| **Matjugalnik** | the sound: tells by ear what the picture and Iljič show, in a tone and a loudness the user sets, so that a turn can be heard as well as seen; silent while Iljič measures | — |
+| **Matjugalnik** | the sound: tells by ear what the picture shows and what Iljič hears, in a tone and a loudness the user sets, so that a turn can be heard as well as seen; silent while Iljič measures | — |
 | **Kádrovák** | the store: keeps every picture with its raw data; gives them to a computer | — |
 | **Pajok** | the power: the battery and its charging; one supply for the radios, one for the rest | — |
 | **Gradusnik** | the heat: a thermal sensor — postponed, nothing reserved for it | — |
@@ -186,6 +186,6 @@ Not yet named: the levelling of the receivers from the pass, and the self-scalin
 
 - **Where the rod stands on the head** — left to the prototype, which takes it in several places.
 - **Whether a motor turns the head** — a thought.
-- **Where Iljič senses** — on the axis it gives a number, off it it draws a circle.
+- **Where on the head Iljič senses** — by the rim, where the light shows it.
 - **How often the channel can change.**
 - **Which module a receiver is** — level 5.

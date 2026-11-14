@@ -33,7 +33,7 @@ does not show.
 | depth, and what the thing is | not required; welcome if they come |
 | speed | the picture grows as the head turns and is whole after one turn of a few seconds |
 | without turning | a quick look: the head at rest says whether anything is under it |
-| the mains voltage | a layer of the same picture: that a live cable is under the head, not where to the centimetre |
+| the mains voltage | a mode of its own, not with the turn: the tool held by its grip like a voltage tester, a light showing where it senses, a sound and a bar telling that a live cable — or a tracer's signal — is near; not where to the centimetre |
 | contrast and thresholds | set by the user, per layer |
 
 ## The sender

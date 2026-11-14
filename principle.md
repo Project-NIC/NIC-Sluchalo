@@ -17,13 +17,12 @@ their names are in [`architecture.md`](architecture.md).*
 | block | script | what it says |
 |---|---|---|
 | Iskra, the wall, the shadow | `budget.py`, `shadow.py`, `wall_fdtd.py`, `joints.py` | as in the concept: what a wall costs, the shadow of a cable, the joints' pattern |
-| the face of the head | `layout.py` | where the antennas, the rod and Datel sit — below |
+| the face of the head | `layout.py` | where the antennas and the rod sit — below |
 | the pass and the picture | `picture.py`, `nosync.py` | a turn about a rod, and the picture drawn from amplitudes alone — below |
 | the head against the wall | `head8.py` | how far the head may stand off, and the depths each band sees — below |
 | Samokritika | `samokritika.py` | below |
 | behind the antennas | `absorber.py` | below |
 | Iljič | `hum.py` | below |
-| Datel | `datel8.py`, `acoustics.py` | below; the rest as in the concept |
 | Pajok, the body, the frames | `body.py` | below |
 | Gensek | `cpu8.py` | below |
 
@@ -88,11 +87,11 @@ it further (`picture.py`); that is the variant for later, if a C5 is ever easy t
 `layout.py` (`layout.out`, `layout.png`) places everything on Front for the bought antenna — the
 Ezurio dual-band FlexPIFA, 38.5 × 12.7 mm, made to sit over metal — keeping the maker's 5 mm beside
 every antenna and round every hole: the eight of the ring, radial, on a circle of 64 mm; Předseda's
-two at right angles as a pinwheel round the middle, which leaves the middle to Datel; Kuří nožka 32
-mm out, in the quarter the pinwheel leaves free; Datel's eight microphones 64 mm out, each between
-two antennas of the ring. **The head is 177 mm across**, and a turn covers a disc about 23 cm across.
+two at right angles as a pinwheel round the middle, which leaves the middle free; Kuří nožka 32
+mm out, in the quarter the pinwheel leaves free. (The layout still keeps the middle and eight places
+by the ring for Datel, which went to NIC-Ariadna on 14 Nov — `WHY.md` 17; they cost the ring nothing.) **The head is 177 mm across**, and a turn covers a disc about 23 cm across.
 Předseda off the centre costs nothing: Samokritika no longer needs the symmetry, and its two antennas
-draw two circles instead of one (a run with four antennas round Datel drew the same picture).
+draw two circles instead of one (a run with four antennas round the middle drew the same picture).
 
 ## The head against the wall
 
@@ -162,18 +161,9 @@ from bone dry to damp.
 
 The coil and the tracer went to NIC-Ariadna; `hum.py` keeps both halves as they were computed.
 
-## Datel
-
-The knock in the middle, the microphones 64 mm out, the head 15 mm off the wall (`datel8.py`): the
-wall's surface wave leaks into the air at a steep angle and reaches the microphones **65 to 114 µs
-before** the sound straight through the air from the knock's tip, over the whole range of brick —
-so a knock shorter than a few tens of microseconds keeps them apart, by time alone. That far out the
-surface wave is weaker; the sound trial shows by how much. The rod is pushed out to knock with the
-head at rest and drawn back before a turn.
-
 ## The body: power, weight, frames
 
-`body.py` (`body.out`): ten receivers, the processor, Datel, Razvedčik, Iljič and the display draw
+`body.py` (`body.out`): ten receivers, the processor, Razvedčik, Iljič and the display draw
 about **5.4 W — about 3.4 h** from two 18650 cells. Front's aluminium, 3 mm at least for the screws'
 threads, weighs about 200 g; the head before its modules, antennas and housing about 470 g. Off the
 wall it sheds its heat from both faces, about 8 K over the room.
@@ -193,8 +183,7 @@ Iskra uses.
 `cpu8.py` (`cpu8.out`) counts what `picture.py` does, for a turn of four seconds at a hundred frames
 a second from each sender, the subcarriers in sixteen groups. **Time is no trouble**: putting every
 report into the picture takes half a per cent of the processor while the head turns; at the end of
-the turn levelling, solving and focusing take about three quarters of a second; Datel, while the head
-stands, about 7 %. **Memory binds**: a turn's reduced reports are about a megabyte and the picture's
+the turn levelling, solving and focusing take about three quarters of a second. **Memory binds**: a turn's reduced reports are about a megabyte and the picture's
 sums two more, against about 1.4 MB in the processor — four groups of subcarriers fit, or memory
 beside it; for the parts. The raw reports, five megabytes a turn, go straight to Kádrovák.
 
@@ -219,3 +208,7 @@ the record, and [`WHY.md`](WHY.md) says why:
   (`samokritika.py`). Left: the C5 has no clock input and the one attempt on record failed.
 - **Foam as a spacer and absorbers between the antennas** — above. Left for Valenki holding the head
   off the wall and for the disc.
+- **Datel, the knock and its eight microphones** — moved to NIC-Ariadna on 14 Nov 2026 (`WHY.md` 17).
+  What was computed for it here stays as its record: the knock in the middle, the microphones 64 mm
+  out, the head 15 mm off the wall — the wall's surface wave reaches them 65 to 114 µs before the
+  sound through the air (`datel8.py`, `acoustics.py`); `body.py` and `cpu8.py` still count it.

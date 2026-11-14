@@ -9,8 +9,7 @@ It shows what lies in a wall before the wall is drilled, chased or broken into. 
 is pressed to one face of the wall and slid over it. From the other face the wall is lit by Wi-Fi —
 a small box of ours in the next room, or the network the building already has. What is in the wall
 casts a shadow, and the tool draws the shadows as **a picture of the wall on its own display**, the
-way an X-ray shows a piece of material or a thermal camera a facade. In masonry it also taps the
-wall and listens.
+way an X-ray shows a piece of material or a thermal camera a facade.
 
 Into the same picture it can lay the mains hum: where there is voltage on a cable, or current in
 it.
@@ -54,5 +53,5 @@ does not show.
 3. This holds on drywall and on plastered brick.
 4. A person who did not build the tool reads the picture after the book of examples.
 
-Before anything is built, cheap trials with two boards decide. If neither the radio nor the sound
-passes, the project stops and the results are published.
+Before anything is built, cheap trials with two boards decide. If the radio does not pass, the
+project stops and the results are published.

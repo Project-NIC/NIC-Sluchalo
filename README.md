@@ -10,8 +10,7 @@
 
 **What is in a wall, seen by the shadow Wi-Fi casts through it. A hand-held head with ten
 Wi-Fi receivers turns on a rod held to one face of the wall; a small box on the other side sends. A cable,
-a pipe or a steel stud between them dims the field, and the head maps where. For masonry it also
-taps the wall and listens. Every setting and all the raw data stay open to whoever uses it.**
+a pipe or a steel stud between them dims the field, and the head maps where. Every setting and all the raw data stay open to whoever uses it.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
@@ -42,8 +41,6 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 - **The mains voltage, as a tester.** In a mode of its own, held like a voltage tester, a
   capacitive sensor tells by sound and a bar where a live cable is — or a cable tracer's signal;
   it never says that a cable is dead.
-- **For masonry, a knock.** A buzzer disc taps the wall through a plastic rod in the middle;
-  eight microphones around it hear the wall's surface wave before the sound through the air.
 
 ## The parts
 
@@ -57,10 +54,9 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 | **Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
 | **Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
 | **Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
-| **Datel** | the woodpecker: the knock and the eight microphones |
 | **Razvedčik** | the scout: the sensor of the head's angle on the rod |
 | **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
-| **Gensek** | the general secretary: one processor over everything — the reports, the angle, the knock, the picture, the display |
+| **Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound |
 | **Pravda** | the newspaper: the display and the buttons |
 | **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
 | **Pajok** | the ration: two 18650 cells |
@@ -73,12 +69,12 @@ taps the wall and listens. Every setting and all the raw data stay open to whoev
 |---|---|
 | size | about 18 cm across |
 | the ring | **Brigáda**: eight bought dual-band antennas (2.4 and 5 GHz), each turned radially |
-| the middle | **Předseda**: two of the same antennas at right angles, beside the knock's rod |
+| the middle | **Předseda**: two of the same antennas at right angles, round the middle |
 | the rod | between the middle and the ring; one turn covers a disc about 24 cm across |
 | marking | a pencil by notches on the head's rim, once it has stopped |
 | the receivers | ten ready-made ESP32-C5 modules, each on its own crystal, each joined to its antenna by a short cable |
 | Front | the face towards the wall: a metal disc with a thin insulating face, the antennas on it — their ground and the shield behind them |
-| Tyl | the board behind it: the processor, the power, the knock, the display |
+| Tyl | the board behind it: the processor, the power, the display, the sound |
 | against the wall | it does not touch: **Valenki** holds it off; felt on the head where it may brush the wall |
 | power | about three hours from two 18650 cells |
 
@@ -94,7 +90,6 @@ levels hold ([`WHY.md`](WHY.md)). The head's layout is redrawn for the bought an
   amplitude steadily.
 - **Whether the amplitudes alone, with no clock in common, draw a real wall** as well as they
   draw the modelled one.
-- **Whether the knock and the microphones hear anything useful** through dry contact on plaster.
 
 The trials that decide it are at the end of [`concept.md`](concept.md).
 

@@ -10,8 +10,7 @@
 
 **Co je ve zdi, poznané podle stínu, který skrz ni vrhá Wi-Fi. Ruční hlava s deseti přijímači
 Wi-Fi se otáčí na tyčce přitlačené k jedné straně zdi, malá krabička na druhé straně vysílá. Kabel, trubka nebo
-ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. U zděných stěn do zdi navíc ťuká
-a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená tomu, kdo s ní pracuje.**
+ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení i všechna surová data zůstávají otevřená tomu, kdo s ní pracuje.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
@@ -40,8 +39,6 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 - **Síťové napětí jako zkoušečka.** V samostatném režimu, drženém jako zkoušečka, kapacitní
   snímač zvukem a sloupcem ukáže, kde je živý kabel nebo signál hledačky; nikdy netvrdí, že
   kabel pod napětím není.
-- **U zdiva ťuknutí.** Bzučákový disk ťuká do zdi plastovou tyčinkou uprostřed; osm mikrofonů
-  kolem uslyší povrchovou vlnu zdi dřív než zvuk vzduchem.
 
 ## Části
 
@@ -55,10 +52,9 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 | **Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
 | **Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
 | **Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
-| **Datel** | datel: ťukání a osm mikrofonů |
 | **Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
 | **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
-| **Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, ťukání, obraz, displej |
+| **Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk |
 | **Pravda** | noviny: displej a tlačítka |
 | **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
 | **Pajok** | příděl: dva články 18650 |
@@ -71,12 +67,12 @@ a poslouchá. Každé nastavení i všechna surová data zůstávají otevřená
 |---|---|
 | velikost | průměr asi 18 cm |
 | kruh | **Brigáda**: osm koupených dvoupásmových antén (2,4 a 5 GHz), každá natočená radiálně |
-| střed | **Předseda**: dvě stejné antény v pravém úhlu, vedle tyčinky ťukání |
+| střed | **Předseda**: dvě stejné antény v pravém úhlu, kolem středu |
 | tyčka | mezi středem a kruhem; jedna otáčka pokryje kruh o průměru asi 24 cm |
 | značení | tužkou podle zářezů na okraji hlavy, když stojí |
 | přijímače | deset hotových modulů ESP32-C5, každý na vlastním krystalu, každý připojený ke své anténě krátkým kabelem |
 | Front | čelo ke zdi: kovový kotouč s tenkou izolační vrstvou a na ní antény — kotouč je jejich zemí a stíněním |
-| Tyl | deska za ním: procesor, napájení, ťukání, displej |
+| Tyl | deska za ním: procesor, napájení, displej, zvuk |
 | ke zdi | nedotýká se jí: **Valenki** ji drží od zdi; kde by se o zeď mohla otřít, má hlava filc |
 | napájení | ze dvou článků 18650 asi tři hodiny |
 
@@ -91,7 +87,6 @@ platí úrovně ([`WHY.md`](WHY.md)). Rozložení hlavy se kreslí znovu pro kou
   a jestli 8bitové CSI s pevným ziskem udrží stabilně změnu amplitudy o 20–30 %.
 - **Jestli samotné amplitudy, bez společných hodin, nakreslí skutečnou zeď** tak dobře jako tu
   v modelu.
-- **Jestli ťukání a mikrofony uslyší něco užitečného** přes suchý kontakt na omítce.
 
 Rozhodnou zkoušky popsané na konci [`concept.md`](concept.md).
 

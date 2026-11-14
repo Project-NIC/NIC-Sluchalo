@@ -58,6 +58,7 @@ What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to
 | 10 | **Karanténa** is the watch over every unit, its **Felčar** the checks; on a fault the tool declares it and stops. | The owner. |
 | 11 | **Names:** Sluchalo is the project; **Fonar** is now the tool held to the wall (Valenki and Kolchoz); the sender behind the wall is **Iskra**; **Serp** and **Molot** are Předseda's two halves, the only senders in Fonar. Iskra's two senders are simply upright and level. | The owner: the project and its parts named apart, as in NIC-Strelka; Předseda hands out the calibration. |
 | 12 | **Samokritika** is a regular step of every pass: Předseda swings Serp, then Molot; every Mužík measures what arrives, against the state last known good. Amplitudes only. | The owner: it calibrates the antennas against knocks, damp and detuning, and gives Felčar its check. |
+| 13 | **Every antenna is bought** — the receivers', Předseda's and Iskra's — dual-band, 2.4 GHz and the whole 5 GHz band, 50 ohm, on a short cable to its module. No antenna of our own: Front becomes a carrier for bought antennas, turned radially. Předseda sends; every sender's power is capped in software so that its EIRP stays under the 20 dBm of the band. | The owner: an antenna of our own varies from piece to piece, a bad one radiates into its neighbours, and one that holds 50 ohm over 2.4 GHz and all of 5 GHz is beyond what we would design and could not have measured; a bought antenna of a type its maker certifies with modules is the smaller evil. |
 
 **What stops holding below**
 
@@ -66,3 +67,5 @@ What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to
 | `architecture.md` | Kuranty as one clock; the steps to a picture; Předseda's part in calibration; the body | rewritten, to be closed |
 | level 4, not yet published | the clock lines on the board (`body.py`, *Kuranty*); the receivers' phase as the way to depth | the clock part to be marked as the upgrade; the rest holds |
 | the trials | the clock trial as the trial that decides the board | it decides only the later, sharper variant |
+| level 4: `ring8.py`, `calc/patch8.out`, `coupling8.py`, `head8.py` | the patch 30 × 37 mm, its tuning, its coupling, the ground plane behind it, the ring's spacing set by the patch's width | to be redone with the bought antenna's size and pattern once it is chosen; the picture's principle holds |
+| `concept.md`, `calc/patch_fdtd.py`, `head.py` | the head's own patches and ground plane | the concept's record; not edited |

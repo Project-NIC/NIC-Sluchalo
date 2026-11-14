@@ -1,0 +1,5 @@
+# python3 coupling8.py <case> <wall|nowall>, run 14 Nov 2026 (30 ns)
+ring, no wall, the head lifted: S21 at 2412/2442/2472 MHz -32.2 / -34.5 / -36.8 dB; the most in 2.3-2.6 GHz -21.2 dB at 2.302 GHz
+mid, no wall, the head lifted: S21 at 2412/2442/2472 MHz -40.9 / -42.9 / -44.9 dB; the most in 2.3-2.6 GHz -31.3 dB at 2.302 GHz
+ring, wall: S21 at 2412/2442/2472 MHz -33.6 / -36.0 / -38.5 dB; the most in 2.3-2.6 GHz -23.1 dB at 2.302 GHz
+mid, wall: S21 at 2412/2442/2472 MHz -40.0 / -41.3 / -42.5 dB; the most in 2.3-2.6 GHz -34.4 dB at 2.302 GHz

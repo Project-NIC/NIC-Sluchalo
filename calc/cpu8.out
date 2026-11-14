@@ -1,0 +1,12 @@
+the head of 10; a turn of 4 s at 100 frames a second from each sender; 16 groups of subcarriers;
+the picture a disc 23 cm across in 5 mm pixels, 1654 of them; capacity 140 M MAC/s
+  while turning, every report into the picture: 0.64 M/s = 0.5 %
+  at the end of the turn, once:
+    levelling the receivers (40 rounds): 81.9 M = 585 ms
+    blurring the sums: 10.0 M = 71 ms
+    the 3 x 3 solve in every pixel: 2.9 M = 20 ms
+    carrying it back through the wall (FFT): 5.6 M = 40 ms
+    together: 100 M = 0.72 s after the turn
+  Datel while the head stands (lock-in and band energies, as cpu.py): 9.6 M/s = 7 %
+  memory: the reduced reports of one turn 1.02 MB, the pixel sums 1.91 MB, against about 1.4 MB of RAM;
+          the raw reports of one turn 5.1 MB go straight on to Kádrovák, not into RAM

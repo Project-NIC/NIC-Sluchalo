@@ -96,8 +96,8 @@ Rozhodnou zkoušky popsané na konci [`concept.md`](concept.md).
 
 ## Co dál
 
-Projekt roste po úrovních. Účel, požadavky a architektura jsou zavřené; fyzika se počítá blok po
-bloku. Koncept z 28. 10. zůstává jako záznam, odkud se vyšlo. Otázky jsou rozeslané — Espressifu,
+Projekt roste po úrovních. Účel, požadavky, architektura i princip — hrubě spočítaná fyzika
+každého bloku — jsou zavřené; na řadě jsou součástky.
 autorům ESPARGOS a na fóra — a zkoušky postavíme, jakmile to půjde. Projekt poroste podle toho,
 co ukážou, a tak daleko, jak dovolí čas a prostředky.
 
@@ -106,6 +106,7 @@ co ukážou, a tak daleko, jak dovolí čas a prostředky.
 - [`purpose.md`](purpose.md) — co to dělá, pro koho a jak poznáme, že to funguje; jedna stránka, anglicky.
 - [`requirements.md`](requirements.md) — co to musí umět, v rozsazích; anglicky.
 - [`architecture.md`](architecture.md) — tělesa, jednotky a co mezi nimi teče; jména; anglicky.
+- [`principle.md`](principle.md) — fyzika každého bloku, hrubě spočítaná, a co zbývá změřit; anglicky.
 - [`WHY.md`](WHY.md) — proč se zavřené úrovně znovu otevřely a co to změnilo níž; anglicky.
 - [`concept.md`](concept.md) — celý koncept, anglicky: k čemu je, hlava, proč by to mělo fungovat,
   elektronika, zvuk, teplo, opuštěné cesty a proč, co nevíme, zkoušky.

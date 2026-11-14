@@ -29,12 +29,12 @@ A thought, not a change: a small motor to turn the head.
 | `calc/ring8.py` | — | the new head's layout, published with this |
 | `calc/array.py` | the ring of nine as the layout | replaced by `ring8.py`; kept as the record of the three layouts weighed |
 | `calc/patch_fdtd.out` | the patch 30 × 29 mm under 15 mm of foam | done: the 30 × 37 mm patch tuned, `calc/patch8.out` |
-| `calc/head.py` and its outputs | the head's ground plane 167 mm across on foam; the spacer's choice | the tolerance read off the existing 5 mm steps: a millimetre or two of gap, about a degree of tilt (in the requirements); the rerun for 176 mm and a tilted head still to do |
-| `calc/acoustics.py`, Datel in the concept | the microphones' pipes through the foam; the knock's rod resting on the wall under a head that slides | Datel stays (the owner, 13 Nov); to be gone through for an air gap and a head that turns |
-| `calc/budget.py` | the head's size and weight with foam and sheet; eleven C5s in the power and the data rates; the optical sensors' current | to be rerun |
-| `calc/cpu.py` | eleven receivers; the stroke's focusing | to be redone with the picture's arithmetic as `picture.py` has it |
+| `calc/head.py` and its outputs | the head's ground plane 167 mm across on foam; the spacer's choice | redone for the head as decided: `head8.py` (the disc, both bands; the gap) — level 4, closed 14 Nov 2026 |
+| `calc/acoustics.py`, Datel in the concept | the microphones' pipes through the foam; the knock's rod resting on the wall under a head that slides | gone through: `datel8.py` — level 4, closed 14 Nov 2026 |
+| `calc/budget.py` | the head's size and weight with foam and sheet; eleven C5s in the power and the data rates; the optical sensors' current | redone: `body.py` — level 4, closed 14 Nov 2026 |
+| `calc/cpu.py` | eleven receivers; the stroke's focusing | redone: `cpu8.py` — level 4, closed 14 Nov 2026 |
 | `concept.md` | *The head* (nine, the foam, the notches), *The electronics* (eleven chips, 22 UART lines, optical sensors, the calibration's "both ways cancels the paths"), *The trials* (the foam in the microwave; the clock trial's second question) | not edited: the concept is the record of 28 Oct; the levels replace it as they close |
-| `README.md` and its Czech and Russian | *The parts* and *The head* tables | to be brought up to date when levels 2 and 3 are published |
+| `README.md` and its Czech and Russian | *The parts* and *The head* tables | brought up to date with levels 3 and 4, 14 Nov 2026 |
 | the trials and the questions as posted | the foam and the optical sensors in them | to be gone through |
 
 ## 14 Nov 2026 — level 3 reopened: no shared clock; closed again the same day
@@ -66,7 +66,7 @@ What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to
 | where | what no longer holds | state |
 |---|---|---|
 | `architecture.md` | Kuranty as one clock; the steps to a picture; Předseda's part in calibration; the body | rewritten with entries 11–13 and the names Kosa and Levša; closed again on 14 Nov 2026 |
-| level 4, not yet published | the clock lines on the board (`body.py`, *Kuranty*); the receivers' phase as the way to depth | the clock part to be marked as the upgrade; the rest holds |
+| level 4, not yet published | the clock lines on the board (`body.py`, *Kuranty*); the receivers' phase as the way to depth | the clock kept as the record of a variant left (`principle.md`, *Computed and left*); level 4 closed 14 Nov 2026 |
 | the trials | the clock trial as the trial that decides the board | it decides only the later, sharper variant |
-| level 4: `ring8.py`, `calc/patch8.out`, `coupling8.py`, `head8.py` | the patch 30 × 37 mm, its tuning, its coupling, the ground plane behind it, the ring's spacing set by the patch's width | to be redone with the bought antenna's size and pattern once it is chosen; the picture's principle holds |
+| level 4: `ring8.py`, `calc/patch8.out`, `coupling8.py`, `head8.py` | the patch 30 × 37 mm, its tuning, its coupling, the ground plane behind it, the ring's spacing set by the patch's width | redone with the FlexPIFA: `layout.py`, `head8.py`; the patch scripts kept as the record — level 4 closed 14 Nov 2026 |
 | `concept.md`, `calc/patch_fdtd.py`, `head.py` | the head's own patches and ground plane | the concept's record; not edited |

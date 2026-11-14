@@ -1,0 +1,11 @@
+no shared clock: amplitudes only; gains 3 dB off, a random phase every frame for every receiver,
+the sender and the room changing 2 dB from frame to frame; the head of ten turned once about the rod mid-way out
+how far the object stands out / the spread of the rest, dB
+                                                levelled         focused     self-scaled
+  one cable, upright, 3 cm deep             -1.8 / 2.0      -1.5 / 1.5      -1.3 / 2.0  
+  a 60 mm conduit with a cable in it        -7.4 /10.3      -2.9 / 6.7      -6.0 / 6.5  
+  two cables 4 cm apart                     -0.6 / 2.0      -0.6 / 1.5      -0.3 / 2.1  
+  a cable that turns                        -2.2 / 2.8      -1.6 / 2.2      -2.4 / 2.9  
+  a 22 mm metal pipe, level                 -4.3 / 4.8      -3.1 / 3.4      -3.1 / 4.5  
+  one cable, 10 cm deep                     -0.4 / 1.4      -0.4 / 0.8      -0.3 / 1.6  
+  nothing: the wall alone                   +nan / nan      +nan / nan      +nan / nan  

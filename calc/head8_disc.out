@@ -1,0 +1,9 @@
+== the head with the bought antennas: an aluminium disc 177 mm across, 2 mm of plastic, the antenna
+   on it 15 mm from the wall; gypsum plaster; the antenna over the cable sees, against the groove empty:
+   amplitude in dB, and in brackets the change in amplitude and phase together
+  cable deep  | channel  1          | channel  6          | channel 11          | the three: amplitude
+    20 mm    |  -1.6 dB ( 28 %)   |  -1.4 dB ( 29 %)   |  -1.1 dB ( 29 %)   | best  -1.6, mean  -1.4 dB
+    25 mm    |  -0.4 dB (  5 %)   |  -0.4 dB (  5 %)   |  -0.5 dB (  6 %)   | best  -0.5, mean  -0.4 dB
+    30 mm    |  -0.6 dB ( 23 %)   |  -0.8 dB ( 28 %)   |  -1.4 dB ( 31 %)   | best  -1.4, mean  -0.9 dB
+    35 mm    |  -2.0 dB ( 36 %)   |  -2.3 dB ( 41 %)   |  -2.9 dB ( 43 %)   | best  -2.9, mean  -2.4 dB
+    40 mm    |  -3.0 dB ( 38 %)   |  -3.4 dB ( 41 %)   |  -3.8 dB ( 42 %)   | best  -3.8, mean  -3.4 dB

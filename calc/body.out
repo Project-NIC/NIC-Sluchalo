@@ -1,0 +1,35 @@
+== power: what the head draws (3.3 V rail unless said)
+  10 ESP32-C5 receiving, 2.4 GHz HE20, 87 mA each with the CPU idle (datasheet v1.5, Table 5-7); 100 mA taken for the CSI work: 1000 mA [sheet + assumed]
+  STM32H7A3 at 280 MHz, all peripherals on, with the LDO (DS13195, Table 35): 132 mA [sheet]
+  the 48 MHz oscillator and the fan-out buffer: 30 mA [assumed]
+  Datel: eight PDM microphones, about 1 mA each: 8 mA [assumed]
+  Razvedčik: a magnetic angle sensor: 10 mA [assumed, a part not chosen]
+  Iljič: its amplifier: 3 mA [assumed]
+  Pravda, the 5" display with its backlight: 1.5 W [assumed, open]
+  all at once: 1184 mA at 3.3 V = 3.9 W, with the display 5.4 W
+  Pajok, two 18650 cells in parallel, about 6 Ah at 3.6 V: 21.6 Wh -> about 3.4 h at 85 % conversion
+  the supply to Front: 1.04 A, 1.36 A while a C5 sends (Samokritika)
+== Kolchoz: weight and warmth (rough)
+  the head 177 mm across: Front, 3 mm of aluminium, 199 g; Tyl 73 g; two cells 94 g; the display 100 g: 466 g before the modules, the antennas and the housing
+  felt 5 mm on the whole wall side 37 g, or on a 15 mm band round the rim 13 g
+  5.4 W out through both faces and the rim (714 cm2) at about 10 W/m2K: about 8 K over the room outside, more inside; no fan
+== frames: how many a turn needs
+  a turn in 2 s: the outermost antenna, 95 mm from the rod, moves 30 cm/s; a frame every 8 mm (lambda/8 in brick) needs 39 a second from each of the two senders of Iskra
+  a turn in 4 s: the outermost antenna, 95 mm from the rod, moves 15 cm/s; a frame every 8 mm (lambda/8 in brick) needs 19 a second from each of the two senders of Iskra
+  a turn in 8 s: the outermost antenna, 95 mm from the rod, moves 8 cm/s; a frame every 8 mm (lambda/8 in brick) needs 10 a second from each of the two senders of Iskra
+== 10 receivers into one processor (CSI as int8 I/Q + 50 B of header)
+  20 MHz, 100 frames/s: 0.1 Mbit/s a receiver, 0.18 MB/s for 10
+  20 MHz, 1000 frames/s: 1.4 Mbit/s a receiver, 1.78 MB/s for 10
+  HE20 + LLTF, 100 frames/s: 0.5 Mbit/s a receiver, 0.64 MB/s for 10
+  HE20 + LLTF, 1000 frames/s: 5.1 Mbit/s a receiver, 6.40 MB/s for 10
+== Kuranty: what the clock lines must keep
+  a branch 64 mm to a ring chip: 388 ps; 15 mm to Předseda's: 91 ps; unmatched, the difference is 260 deg at the carrier - fixed, so levelled out with the rest
+  if the delay moves 50 ppm/K: a 64 mm branch drifts 17 mdeg/K, the unmatched difference 13 mdeg/K
+  if the delay moves 200 ppm/K: a 64 mm branch drifts 68 mdeg/K, the unmatched difference 52 mdeg/K
+  a tick of the 48 MHz clock is 20.8 ns: the sync edge need only arrive within it, a metre of trace is 6.1 ns
+  the 51st harmonic, 2448 MHz, edges of 0.5 ns: 6.9 mV, -33 dBm into 50 ohm on the line itself
+  the 51st harmonic, 2448 MHz, edges of 1.0 ns: 5.3 mV, -36 dBm into 50 ohm on the line itself
+  the 51st harmonic, 2448 MHz, edges of 2.0 ns: 0.9 mV, -51 dBm into 50 ohm on the line itself
+  channel 1, 2402.4-2421.6 MHz: harmonics of 48 MHz inside: none
+  channel 6, 2427.4-2446.6 MHz: harmonics of 48 MHz inside: none
+  channel 11, 2452.4-2471.6 MHz: harmonics of 48 MHz inside: none

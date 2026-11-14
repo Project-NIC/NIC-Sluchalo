@@ -1,0 +1,7 @@
+the ring of 8, each chip sending in turn; noise 1 % of a report
+how far the paths depart from the ring's symmetry -> the receivers' error after Samokritika
+      0 %   phase   0.1 deg   gain  0.02 dB
+      1 %   phase   0.3 deg   gain  0.04 dB
+      3 %   phase   0.7 deg   gain  0.11 dB
+     10 %   phase   2.5 deg   gain  0.37 dB
+     30 %   phase   6.5 deg   gain  1.06 dB

@@ -1,0 +1,21 @@
+== from the front: what comes back off foam on foil, dB (0 dB = all of it, as off bare metal)
+   foam eps' 1.5, loss tangent as given; at 2.437 / 5.5 GHz
+   thickness    tan d 0.3           tan d 1.0           tan d 3.0           
+     5 mm        -0.0 /   -0.5       -0.1 /   -1.7       -0.4 /   -4.1     
+    10 mm        -0.4 /   -4.0       -1.2 /  -12.7       -3.1 /   -7.2     
+    20 mm        -2.9 /   -6.5       -8.9 /   -9.8       -7.5 /   -6.2     
+    30 mm        -6.9 /  -10.2      -20.0 /  -11.7       -6.3 /   -6.2     
+   the best single uniform foam up to 40 mm for both bands: 31 mm, tan d 0.7: -22.8 / -14.3 dB
+== from behind, through 10 um of aluminium: absorbed in the foil alone 50 dB (skin depth 1.7 um), plus the reflection at its face; in practice the edges and seams decide
+== from behind, through 20 um of aluminium: absorbed in the foil alone 101 dB (skin depth 1.7 um), plus the reflection at its face; in practice the edges and seams decide
+== the thinnest a metal-backed absorber with no magnetic material can be (Rozanov's bound),
+   for the two bands only, 2.4-2.5 and 5.15-5.85 GHz:
+   -10 dB over both: at least 0.7 mm (a bound; reaching it takes a design, and it says nothing of how)
+   -20 dB over both: at least 1.4 mm (a bound; reaching it takes a design, and it says nothing of how)
+== films stacked in front of the foil, all within 5 mm: what comes back from the front, dB at 2.437 / 5.5 GHz
+    1 films of  377 ohm/sq over 5 mm:   -1.0 /   -4.3
+    5 films of 1000 ohm/sq over 5 mm:   -0.9 /   -3.7
+   20 films of 1000 ohm/sq over 5 mm:   -1.9 /   -3.8
+   20 films of  100 ohm/sq over 5 mm:   -0.7 /   -1.1
+   20 films of   10 ohm/sq over 5 mm:   -0.2 /   -0.3
+   the same 377 ohm/sq film a quarter wave in front of the foil (Salisbury):  -68.9 dB at 2.437 GHz, 31 mm thick

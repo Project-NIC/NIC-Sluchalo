@@ -100,7 +100,8 @@ The trials that decide it are at the end of [`concept.md`](concept.md).
 ## What next
 
 The project is grown level by level. The purpose, the requirements and the architecture are
-closed; the physics is being computed block by block. The concept of 28 Oct stays as the record
+closed, and so is the principle — the physics of every block, roughly computed; next come the
+parts. The concept of 28 Oct stays as the record
 of where it began. Our questions are out — to Espressif, to the authors of ESPARGOS, to the
 forums — and the trials are built as soon as we can. The project grows with what they show, and
 as far as time and means allow.
@@ -110,6 +111,7 @@ as far as time and means allow.
 - [`purpose.md`](purpose.md) — what it does, for whom, and how we know it works, on one page.
 - [`requirements.md`](requirements.md) — what it must do, in ranges.
 - [`architecture.md`](architecture.md) — the bodies, the units and what passes between them; the names.
+- [`principle.md`](principle.md) — the physics of every block, roughly computed, and what is left to measure.
 - [`WHY.md`](WHY.md) — why closed levels were reopened, and what that changed below.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.

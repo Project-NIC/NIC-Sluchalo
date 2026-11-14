@@ -36,6 +36,7 @@ flowchart LR
     R[Razvedčik<br/>the angle] --> G
     I[Iljič<br/>the mains voltage] --> G
     G --> S[Pravda<br/>the display]
+    G --> MJ[Matjugalnik<br/>the sound]
     G <--> M[Kádrovák<br/>the store]
     P[Pajok<br/>the power] --> B & G
   end
@@ -67,6 +68,7 @@ In Kolchoz:
 | **Gensek** | the processor: tells the receivers what to do, collects their reports, the angle, the microphones and Iljič's signal; draws the radio layer from the amplitudes — self-scaled, levelled, focused; computes the other layers; draws them; stores them; takes the user's settings | any radio work |
 | **Karanténa** | the watch: its **Felčar** keeps checking every unit while the tool runs — that every receiver reports, that its gain and noise are sane and it agrees with its neighbours, the time base, the supplies, the warmth; on a fault Karanténa declares it on Pravda and the tool stops measuring | carry on with a unit that has failed |
 | **Pravda** | the display and the buttons: show the picture; set the contrast, the thresholds and the layer | — |
+| **Matjugalnik** | the sound: tells by ear what the picture and Iljič show, in a tone and a loudness the user sets, so that a turn can be heard as well as seen; silent while Iljič measures | — |
 | **Kádrovák** | the store: keeps every picture with its raw data; gives them to a computer | — |
 | **Pajok** | the power: the battery and its charging; one supply for the radios, one for the rest | — |
 | **Gradusnik** | the heat: a thermal sensor — postponed, nothing reserved for it | — |
@@ -91,6 +93,7 @@ shields what is behind them, and **Tyl**, the board behind it.
 | Razvedčik | Gensek | the head's angle | a serial bus |
 | Iljič | Gensek | the amplified field | an analog signal |
 | Gensek | Pravda | the picture | a parallel bus |
+| Gensek | Matjugalnik | the sound | a digital audio stream |
 | Pravda | Gensek | the user's settings | lines |
 | Gensek | Kádrovák | pictures with raw data | — |
 | Kádrovák | a computer | Samizdat: the pictures out; programs in | a cable |
@@ -154,6 +157,7 @@ not changed below this level.
 | in Kolchoz | **Iljič** | Ilyich's lamp, the electrification | the mains-voltage unit |
 | in Kolchoz | **Gensek** | the general secretary | the processor |
 | in Kolchoz | **Pravda** | the newspaper | the display and the buttons |
+| in Kolchoz | **Matjugalnik** | Russian soldiers' slang for a loudhailer, from *mat*, swearing | the sound |
 | in Kolchoz | **Kádrovák** | Czech: the keeper of everyone's file | the store |
 | in Kolchoz | **Pajok** | the ration | the power |
 | in Kolchoz | **Karanténa** | quarantine | the watch over every unit; it stops the tool on a fault |

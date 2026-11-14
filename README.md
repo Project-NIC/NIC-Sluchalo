@@ -14,7 +14,7 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.1 — concept](https://img.shields.io/badge/version-0.1%20concept-blue.svg)
+![Version: 0.2 — on paper](https://img.shields.io/badge/version-0.2%20on%20paper-blue.svg)
 
 > ⚠️ **A concept — nothing built, nothing measured.** Every figure is marked by where it comes
 > from: a datasheet, published work, our own calculation, or not known. The calculations are

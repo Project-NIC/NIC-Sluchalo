@@ -15,7 +15,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.1 — concept](https://img.shields.io/badge/version-0.1%20concept-blue.svg)
+![Version: 0.2 — on paper](https://img.shields.io/badge/version-0.2%20on%20paper-blue.svg)
 
 > ⚠️ **Концепция — ничего не построено и не измерено.** Для каждой цифры указано, откуда она:
 > из даташита, из опубликованной работы, из нашего собственного расчёта — или что она неизвестна.

@@ -14,7 +14,7 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.1 — concept](https://img.shields.io/badge/version-0.1%20concept-blue.svg)
+![Version: 0.2 — on paper](https://img.shields.io/badge/version-0.2%20on%20paper-blue.svg)
 
 > ⚠️ **Koncept — nic není postavené ani změřené.** U každého čísla je uvedeno, odkud pochází:
 > z datasheetu, z publikované práce, z našeho vlastního výpočtu, nebo že není známé. Výpočty jsou

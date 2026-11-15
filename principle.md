@@ -159,7 +159,7 @@ from bone dry to damp.
 4. The plate sees a cable wide — one to four tens of centimetres. It says *here is a live cable*, not
    where to the centimetre.
 
-The coil and the tracer went to NIC-Ariadna; `hum.py` keeps both halves as they were computed.
+The coil and the tracer left Sluchalo (`WHY.md` 4); `hum.py` keeps both halves as they were computed.
 
 ## The body: power, weight, frames
 

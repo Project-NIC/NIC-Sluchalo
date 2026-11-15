@@ -44,8 +44,7 @@ does not show.
   tool replaces neither a voltage tester nor safe working practice.
 - Not every finder in one. The scanners on sale pair a radar with an inductive sensor and a
   mains sensor, and thermal cameras show which cable has carried a load; Sluchalo is one
-  experiment — the shadow Wi-Fi casts through a wall — and a plain voltage tester beside it. The
-  tracer, metal and the thermal camera belong to NIC-Ariadna.
+  experiment — the shadow Wi-Fi casts through a wall — and a plain voltage tester beside it.
 - Not an app on a phone.
 
 ## How we know it works

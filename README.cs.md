@@ -56,17 +56,17 @@ zeď — a vedle něj obyčejné kapacitní snímání napětí.
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | válenky: podvozek — gumová noha přitlačená ke zdi, tyčka a rukojeť; drží hlavu od zdi a kolmo k ní |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | kolchoz: hlava — všechno, co se točí na tyčce |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskovův levoruký kovář: konstrukce, všechno z kovu a plastu, co drží jednotky |
-| **Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
+| <img src="pictures/brigada.jpg" width="90"/><br/>**Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
 | <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
 | **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
-| **Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk |
-| **Pravda** | noviny: displej a tlačítka |
-| **Matjugalnik** | amplion (vojácky): zvuk — co ukazuje obraz a co slyší Iljič, sluchem, tónem a hlasitostí, jakou si uživatel nastaví |
-| **Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
-| **Pajok** | příděl: dva články 18650 |
-| **Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
+| <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk |
+| <img src="pictures/pravda.jpg" width="90"/><br/>**Pravda** | noviny: displej a tlačítka |
+| <img src="pictures/matjugalnik.jpg" width="90"/><br/>**Matjugalnik** | amplion (vojácky): zvuk — co ukazuje obraz a co slyší Iljič, sluchem, tónem a hlasitostí, jakou si uživatel nastaví |
+| <img src="pictures/kadrovak.jpg" width="90"/><br/>**Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
+| <img src="pictures/pajok.jpg" width="90"/><br/>**Pajok** | příděl: dva články 18650 |
+| <img src="pictures/karantena.jpg" width="90"/><br/>**Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
 
 ## Hlava
 

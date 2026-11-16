@@ -58,17 +58,17 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | the collective farm: the head — everything that turns on the rod |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskov's left-handed smith: the construction, all of metal and plastic that holds the units |
-| **Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
+| <img src="pictures/brigada.jpg" width="90"/><br/>**Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
 | <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | the scout: the sensor of the head's angle on the rod |
 | **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
-| **Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound |
-| **Pravda** | the newspaper: the display and the buttons |
-| **Matjugalnik** | the loudhailer (soldiers' slang): the sound — what the picture and Iljič show, by ear, in a tone and a loudness the user sets |
-| **Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
-| **Pajok** | the ration: two 18650 cells |
-| **Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
+| <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound |
+| <img src="pictures/pravda.jpg" width="90"/><br/>**Pravda** | the newspaper: the display and the buttons |
+| <img src="pictures/matjugalnik.jpg" width="90"/><br/>**Matjugalnik** | the loudhailer (soldiers' slang): the sound — what the picture and Iljič show, by ear, in a tone and a loudness the user sets |
+| <img src="pictures/kadrovak.jpg" width="90"/><br/>**Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
+| <img src="pictures/pajok.jpg" width="90"/><br/>**Pajok** | the ration: two 18650 cells |
+| <img src="pictures/karantena.jpg" width="90"/><br/>**Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
 
 ## The head
 

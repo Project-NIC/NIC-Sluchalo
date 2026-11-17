@@ -60,7 +60,7 @@ zeď — a vedle něj obyčejné kapacitní snímání napětí.
 | <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
-| **Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
+| <img src="pictures/iljic.jpg" width="90"/><br/>**Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
 | <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk |
 | <img src="pictures/pravda.jpg" width="90"/><br/>**Pravda** | noviny: displej a tlačítka |
 | <img src="pictures/matjugalnik.jpg" width="90"/><br/>**Matjugalnik** | amplion (vojácky): zvuk — co ukazuje obraz a co slyší Iljič, sluchem, tónem a hlasitostí, jakou si uživatel nastaví |

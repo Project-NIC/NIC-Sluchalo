@@ -62,7 +62,7 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | the scout: the sensor of the head's angle on the rod |
-| **Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
+| <img src="pictures/iljic.jpg" width="90"/><br/>**Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
 | <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound |
 | <img src="pictures/pravda.jpg" width="90"/><br/>**Pravda** | the newspaper: the display and the buttons |
 | <img src="pictures/matjugalnik.jpg" width="90"/><br/>**Matjugalnik** | the loudhailer (soldiers' slang): the sound — what the picture and Iljič show, by ear, in a tone and a loudness the user sets |

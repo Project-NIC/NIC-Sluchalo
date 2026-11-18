@@ -1,9 +1,8 @@
 # NIC-Sluchalo — the requirements
 
-*Level 2 of the project, closed on 13 Nov 2026, reopened the same day ([`WHY.md`](WHY.md)) and
-closed again on 14 Nov 2026: what the tool must do, in ranges and orders of magnitude. No exact
-values and no parts — a figure here is a bound for the levels below, and this page is its one
-home. What it is for is in [`purpose.md`](purpose.md).*
+What the tool must do, in ranges and orders of magnitude. No exact values and no parts — a figure
+here is a bound for every page after it, and this page is its one home. What it is for is in
+[`purpose.md`](purpose.md); why it changed in [`WHY.md`](WHY.md).
 
 ## The walls
 
@@ -63,6 +62,6 @@ The parts of one tool, head and sender together: thousands of Czech crowns, not 
 
 The tool may show that a cable is live; it never says that one is not.
 
-## Open at this level
+## Open
 
 - How much a damp wall may cost.

@@ -1,4 +1,4 @@
-"""Does one STM32H7A3 carry the head of ten? The arithmetic as picture.py does it. Level 4; the
+"""Does one STM32H7A3 carry the head of ten? The arithmetic as picture.py does it. The
 concept's cpu.py counted a slid head of eleven and stays as its record.
 
 The H7A3 taken, as there, at half a multiply-accumulate a cycle of its 280 MHz (DS13195 Rev 8).

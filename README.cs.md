@@ -84,8 +84,8 @@ zeď — a vedle něj obyčejné kapacitní snímání napětí.
 | napájení | ze dvou článků 18650 asi tři hodiny |
 
 Koncept z 28. 10. ([`concept.md`](concept.md), anglicky) popisuje dřívější hlavu — devět
-vlastních patchů, jedny hodiny pro všechny, na pěně, posouvanou po zdi; kde se liší od úrovní,
-platí úrovně ([`WHY.md`](WHY.md)). Rozložení hlavy se kreslí znovu pro koupené antény;
+vlastních patchů, jedny hodiny pro všechny, na pěně, posouvanou po zdi; kde se liší od stránek
+níže, platí ony ([`WHY.md`](WHY.md)). Rozložení hlavy se kreslí znovu pro koupené antény;
 [`calc/ring8.py`](calc/ring8.py) ho má pro dřívější patche.
 
 ## Co nevíme
@@ -104,7 +104,7 @@ Když neprojde, projekt končí. (Zkoušky na konci [`concept.md`](concept.md) j
 
 ## Co dál
 
-Projekt roste po úrovních. Účel, požadavky, architektura, princip — hrubě spočítaná fyzika
+Účel, požadavky, architektura, princip — hrubě spočítaná fyzika
 každého bloku — i součástky, všude, kde to jde, koupené a hotové, jsou zavřené. Zbývá postavit
 zkoušky a měřit.
 autorům ESPARGOS a na fóra — a zkoušky postavíme, jakmile to půjde. Projekt poroste podle toho,
@@ -117,7 +117,7 @@ co ukážou, a tak daleko, jak dovolí čas a prostředky.
 - [`architecture.md`](architecture.md) — tělesa, jednotky a co mezi nimi teče; jména; anglicky.
 - [`principle.md`](principle.md) — fyzika každého bloku, hrubě spočítaná, a co zbývá změřit; anglicky.
 - [`parts.md`](parts.md) — součástky, každá s požadavkem, který plní; anglicky.
-- [`WHY.md`](WHY.md) — proč se zavřené úrovně znovu otevřely a co to změnilo níž; anglicky.
+- [`WHY.md`](WHY.md) — co se změnilo, proč a co to změnilo jinde; anglicky.
 - [`concept.md`](concept.md) — celý koncept, anglicky: k čemu je, hlava, proč by to mělo fungovat,
   elektronika, zvuk, teplo, opuštěné cesty a proč, co nevíme, zkoušky.
 - [`calc/`](calc) — skripty za každým spočítaným číslem, Python 3 s numpy (dva z nich se scipy),

@@ -1,10 +1,9 @@
 # NIC-Sluchalo — the parts
 
-*Level 5 of the project, closed on 14 Nov 2026: the types, packages and processors,
-each with the requirement it meets. No pin assignments — those are level 6. Bought, ready-made and
-certified wherever there is a choice (the owner: "všechno z koupených dílů"). Where a figure is
-marked **to confirm**, it is named from what is known and is checked against its maker's datasheet
-before the part is bought.*
+The types, packages and processors, each with the requirement it meets. No pin assignments yet.
+Bought, ready-made and certified wherever there is a choice (the owner: "všechno z koupených
+dílů"). Where a figure is marked **to confirm**, it is named from what is known and is checked
+against its maker's datasheet before the part is bought.
 
 ## Fonar — the receivers and their antennas
 
@@ -44,7 +43,7 @@ before the part is bought.*
 | Front's face | **polycarbonate 2 mm** (the maker recommends 1.5 mm over metal; 2 mm sheet is easier to get) | the antennas' spacer over metal |
 | Kuří nožka | a **rod with a rubber foot**, its **bearing** in the disc, a **friction clutch**, the **magnet** for Razvedčik | the axis; stands firm on the wall; a turn by hand without slipping |
 | felt | **hard, smooth, synthetic felt** ~5 mm where the head may brush the wall | slides on paint, marks nothing; synthetic, since damp wool is lossy at 2.4 GHz — the microwave test first |
-| housing | to be drawn at level 6 | — |
+| housing | to be drawn | — |
 
 ## For the trials, before the head
 
@@ -53,7 +52,7 @@ before the part is bought.*
 | receiver and sender | **Seeed XIAO ESP32-C5** (bare chip, own crystal, U.FL) | the wall trials |
 | antennas | the same FlexPIFA, on an aluminium plate | the trials as the head will see them |
 
-## Open at this level
+## Open
 
 - **The prices and stock** of every part, at ordering (WROOM-1U-N8R8: $7.93 at Mouser, $4.19 at LCSC
   when in stock, 14 Nov 2026).

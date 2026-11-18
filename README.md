@@ -86,8 +86,8 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | power | about three hours from two 18650 cells |
 
 The concept of 28 Oct ([`concept.md`](concept.md)) describes the earlier head — nine patches of
-our own, one clock for all, on foam, slid over the wall; where it differs from the levels, the
-levels hold ([`WHY.md`](WHY.md)). The head's layout is redrawn for the bought antennas;
+our own, one clock for all, on foam, slid over the wall; where it differs from the pages
+listed below, they hold ([`WHY.md`](WHY.md)). The head's layout is redrawn for the bought antennas;
 [`calc/ring8.py`](calc/ring8.py) has it for the earlier patches.
 
 ## What is not known
@@ -108,8 +108,8 @@ stops. (The trials at the end of [`concept.md`](concept.md) are the earlier ones
 
 ## What next
 
-The project is grown level by level. The purpose, the requirements and the architecture are
-closed, and so are the principle — the physics of every block, roughly computed — and the parts,
+The purpose, the requirements and the architecture are
+settled, and so are the principle — the physics of every block, roughly computed — and the parts,
 all bought and ready-made where there is a choice. What is left is to build the trials and measure. The concept of 28 Oct stays as the record
 of where it began. Our questions are out — to Espressif, to the authors of ESPARGOS, to the
 forums — and the trials are built as soon as we can. The project grows with what they show, and
@@ -122,7 +122,7 @@ as far as time and means allow.
 - [`architecture.md`](architecture.md) — the bodies, the units and what passes between them; the names.
 - [`principle.md`](principle.md) — the physics of every block, roughly computed, and what is left to measure.
 - [`parts.md`](parts.md) — the parts, each with the requirement it meets.
-- [`WHY.md`](WHY.md) — why closed levels were reopened, and what that changed below.
+- [`WHY.md`](WHY.md) — why things changed, and what that changed elsewhere.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for

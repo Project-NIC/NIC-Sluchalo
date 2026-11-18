@@ -1,6 +1,6 @@
-"""Iljič's amplifier: how much gain, and how fast an op-amp. Level 5.
+"""Iljič's amplifier: how much gain, and how fast an op-amp.
 
-The plate's coupling to the live core comes from hum.py (published, level 4): the charge on the plate
+The plate's coupling to the live core comes from hum.py (published): the charge on the plate
 per volt on the core, for walls from bone dry to damp. The first stage is a charge amplifier: its
 output is the charge over its feedback capacitor, so its "gain" is set by that capacitor, not by the
 op-amp; what the op-amp's bandwidth must carry is the noise gain, 1 + C_in / C_f. The second stage

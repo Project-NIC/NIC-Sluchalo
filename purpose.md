@@ -1,7 +1,7 @@
 # NIC-Sluchalo — the purpose
 
-*Level 1 of the project, closed on 13 Nov 2026: what it does, for whom, and how we know it works. No parts and no numbers
-here — those are in the levels below, for now in [`concept.md`](concept.md).*
+What it does, for whom, and how we know it works. No parts and no numbers here — the ranges are
+in [`requirements.md`](requirements.md), the parts in [`parts.md`](parts.md).
 
 ## What it does
 

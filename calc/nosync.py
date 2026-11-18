@@ -1,4 +1,4 @@
-"""The principle without a shared clock: every receiver on its own crystal. Level 4.
+"""The principle without a shared clock: every receiver on its own crystal.
 
 What a receiver gives without a common clock: for every frame the channel it measured, whose phase
 is worthless — each chip's oscillator runs at its own frequency, so the phase between two receivers

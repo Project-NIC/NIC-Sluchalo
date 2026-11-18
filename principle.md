@@ -1,8 +1,8 @@
 # NIC-Sluchalo — the principle
 
-*Level 4 of the project, closed on 14 Nov 2026: for every block the physics and a rough calculation,
-always as a script in [`calc/`](calc). No part numbers — those are level 5. The bodies, the units and
-their names are in [`architecture.md`](architecture.md).*
+For every block the physics and a rough calculation, always as a script in [`calc/`](calc). No
+part numbers — those are in [`parts.md`](parts.md). The bodies, the units and their names are in
+[`architecture.md`](architecture.md).
 
 > **What these figures are.** Rough calculations, made to choose between ways of building the tool,
 > not to promise what it will see. The wall is a model: a slab, or a 2D section through it, at single

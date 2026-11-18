@@ -1,11 +1,9 @@
 # NIC-Sluchalo — the architecture
 
-*Level 3 of the project, closed on 13 Nov 2026, reopened the same day, closed again on 14 Nov,
-reopened the same day for the head without a shared clock, and closed again on 14 Nov 2026
-([`WHY.md`](WHY.md)): the bodies, the units and what passes between them. No part types, no materials, no packages, no
-processors — those are level 5, and for now in [`concept.md`](concept.md). What
-the tool is for is in [`purpose.md`](purpose.md), what it must do in
-[`requirements.md`](requirements.md).*
+The bodies, the units and what passes between them. No part types, no materials, no packages, no
+processors — those are in [`parts.md`](parts.md). What the tool is for is in
+[`purpose.md`](purpose.md), what it must do in [`requirements.md`](requirements.md); why it changed
+in [`WHY.md`](WHY.md).
 
 ## Iskra and Fonar
 
@@ -127,7 +125,7 @@ notches to mark the wall by when it has stopped. Levša is all of it that is met
 ## The names
 
 In the spirit of the tale the tool is named after, and meant as a joke. They are settled here and
-not changed below this level.
+not changed.
 
 | | name | from | what it is |
 |---|---|---|---|
@@ -171,10 +169,10 @@ Not yet named: the levelling of the receivers from the pass, and the self-scalin
 | level | to set the receivers against one another from a pass |
 | grain | what the wall itself shows in a picture: joints, stones, noise |
 
-## Open at this level
+## Open
 
 - **Where the rod stands on the head** — left to the prototype, which takes it in several places.
 - **Whether a motor turns the head** — a thought.
 - **Where on the head Iljič senses** — by the rim, where the light shows it.
 - **How often the channel can change.**
-- **Which module a receiver is** — level 5.
+- **Which module a receiver is** — chosen in [`parts.md`](parts.md).

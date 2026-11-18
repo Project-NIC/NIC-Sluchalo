@@ -1,5 +1,5 @@
 """A carbon-loaded foam with aluminium foil behind it: how much of a wave from the front comes back,
-and how much from behind gets through. Level 4. A plane wave at normal incidence on a lossy slab on
+and how much from behind gets through. A plane wave at normal incidence on a lossy slab on
 a perfect conductor (a transmission line ended in a short). The foam is taken as a permittivity
 eps' with a loss tangent — assumed, not a product's figures: carbon foams differ widely, and the
 good ones are graded. The foil: household aluminium, 10-20 um, against a skin depth of 1.7 um at

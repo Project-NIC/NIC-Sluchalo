@@ -1,4 +1,4 @@
-"""The face of the head of ten with the bought antennas: where everything sits on Front. Level 4.
+"""The face of the head of ten with the bought antennas: where everything sits on Front.
 
 The antenna is the Ezurio dual-band FlexPIFA (datasheet: 38.5 x 12.7 x 2.5 mm), made to sit over
 metal; the maker asks 5 mm free of raised metal beside its long sides. The ring: eight, each turned
@@ -100,7 +100,7 @@ if __name__ == '__main__':
     ax.set_aspect('equal'); ax.set_xlabel('mm'); ax.set_title('Front, seen from the wall: Kosy (blue), Serp and Molot (red)', fontsize=8)
     fig.tight_layout(); fig.savefig('layout.png')
 
-# the names the other scripts of level 4 take the head from (they took them from ring8.py before)
+# the names the other scripts take the head from (they took them from ring8.py before)
 N_RING, RING_R, HEAD_R_, ROD_R = N, R, HEAD_R, R_ROD
 ROD_AT = math.atan2(ROD[1], ROD[0])                     # the rod's direction, from the first ring antenna's axis
 PATCH_L, PATCH_W = L, W

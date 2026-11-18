@@ -1,4 +1,4 @@
-"""The head of ten against the wall: how closely must Valenki keep the gap? Level 4.
+"""The head of ten against the wall: how closely must Valenki keep the gap?
 
 head.py's 2D model (the concept's, published) with the new head put in: the ground plane 176 mm
 wide, the patch 37 mm, air in the gap (no foam), the gap in steps of one millimetre about 15 mm.

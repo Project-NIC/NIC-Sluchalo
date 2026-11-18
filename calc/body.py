@@ -1,5 +1,5 @@
 """The head of ten as decided on 13 Nov 2026: what it draws, weighs and sheds, and how many frames
-a turn needs. Level 4; the layout is layout.py's. The concept's budget.py did the same for the head
+a turn needs. The layout is layout.py's. The concept's budget.py did the same for the head
 of eleven on foam and stays as the record of 28 Oct; the sheet figures below are the ones it
 cites, with its sources.
 

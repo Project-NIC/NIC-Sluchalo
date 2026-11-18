@@ -6,13 +6,13 @@ in [`requirements.md`](requirements.md), the parts in [`parts.md`](parts.md).
 ## What it does
 
 It shows what lies in a wall before the wall is drilled, chased or broken into. A hand-held head
-is pressed to one face of the wall and slid over it. From the other face the wall is lit by Wi-Fi —
+is pressed to one face of the wall and turned once round the rod it stands on. From the other face the wall is lit by Wi-Fi —
 a small box of ours in the next room, or the network the building already has. What is in the wall
 casts a shadow, and the tool draws the shadows as **a picture of the wall on its own display**, the
 way an X-ray shows a piece of material or a thermal camera a facade.
 
-Into the same picture it can lay the mains hum: where there is voltage on a cable, or current in
-it.
+In a mode of its own, held by its grip like a voltage tester, it also listens for the mains: where
+a cable carries voltage.
 
 ## The picture, not a verdict
 
@@ -50,7 +50,7 @@ does not show.
 ## How we know it works
 
 1. On a wall whose contents are known, the picture shows the cable as a shape where the cable is —
-   at every pass, the same.
+   at every turn, the same.
 2. Where there is nothing, the picture shows only the wall's grain.
 3. This holds on drywall and on plastered brick.
 4. A person who did not build the tool reads the picture after the book of examples.

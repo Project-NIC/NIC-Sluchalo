@@ -14,12 +14,22 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.2 — on paper](https://img.shields.io/badge/version-0.2%20on%20paper-blue.svg)
+![Version: 0.3 — on paper](https://img.shields.io/badge/version-0.3%20on%20paper-blue.svg)
 
 > ⚠️ **A concept — nothing built, nothing measured.** Every figure is marked by where it comes
 > from: a datasheet, published work, our own calculation, or not known. The calculations are
 > models — 2D and 3D FDTD and simpler physics — not measurements. Nobody has yet seen a cable's
 > shadow through a real wall this way. Questions and corrections are why it is published.
+
+## Two tools that listen
+
+Sluchalo is two tools. **Fonar**, with **Iskra** behind the wall, listens to the shadow Wi-Fi
+casts through it — the rest of this page. **[Datel](datel/README.md)**, the woodpecker, listens to
+sound: an acoustic camera with 32 microphones that shows where a gas under pressure escapes, and
+by a knock which patch of a surface rings hollow. Both stand on the same base — one core board
+with an STM32N6, one supply from a sodium cell, one display.
+
+<p align="center"><a href="datel/README.md"><img src="datel/datel.jpg" width="420" alt="Datel"/></a></p>
 
 ## How it works
 
@@ -63,11 +73,11 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | the scout: the sensor of the head's angle on the rod |
 | <img src="pictures/iljic.jpg" width="90"/><br/>**Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
-| <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound |
+| <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | the general secretary: one processor over everything — the reports, the angle, the picture, the display, the sound — an STM32N6 on a ready core board, the same base as Datel's |
 | <img src="pictures/pravda.jpg" width="90"/><br/>**Pravda** | the newspaper: the display and the buttons |
 | <img src="pictures/matjugalnik.jpg" width="90"/><br/>**Matjugalnik** | the loudhailer (soldiers' slang): the sound — what the picture and Iljič show, by ear, in a tone and a loudness the user sets |
 | <img src="pictures/kadrovak.jpg" width="90"/><br/>**Kádrovák** | the keeper of files (Czech): the store of every picture with its raw data; **Samizdat** takes them out to a computer |
-| <img src="pictures/pajok.jpg" width="90"/><br/>**Pajok** | the ration: two 18650 cells |
+| <img src="pictures/pajok.jpg" width="90"/><br/>**Pajok** | the ration: a 1S sodium-ion pack |
 | <img src="pictures/karantena.jpg" width="90"/><br/>**Karanténa** | quarantine: the watch over every unit, its **Felčar** the checks; on a fault the tool stops |
 
 ## The head
@@ -81,9 +91,9 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | marking | a pencil by notches on the head's rim, once it has stopped |
 | the receivers | ten ready-made ESP32-C5 modules, each on its own crystal, each joined to its antenna by a short cable |
 | Front | the face towards the wall: a metal disc with a thin insulating face, the antennas on it — their ground and the shield behind them |
-| Tyl | the board behind it: the processor, the power, the display, the sound |
+| Tyl | the board behind it: the processor's core board (STM32N6), the power, the display, the sound |
 | against the wall | it does not touch: **Valenki** holds it off; felt on the head where it may brush the wall |
-| power | about three hours from two 18650 cells |
+| power | a 1S sodium-ion pack, its size by the running time wanted |
 
 The concept of 28 Oct ([`concept.md`](concept.md)) describes the earlier head — nine patches of
 our own, one clock for all, on foam, slid over the wall; where it differs from the pages
@@ -125,6 +135,7 @@ as far as time and means allow.
 - [`WHY.md`](WHY.md) — why things changed, and what that changed elsewhere.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
+- [`datel/`](datel/README.md) — Datel, the acoustic camera: its purpose, its build, why things changed, its scripts.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for
   two of them), and their outputs. `budget.py`, `array.py`, `acoustics.py` and `cpu.py` run at
   once; the FDTD models take minutes to an hour a case.

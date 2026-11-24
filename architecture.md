@@ -58,7 +58,7 @@ In Kolchoz:
 |---|---|---|
 | **Brigáda** | the ring of eight receivers, the **Mužíci**, each with its own antenna facing the wall; each measures the channel of every frame and reports it | compute the picture; keep anything |
 | **Předseda** | the chairman in the middle of the ring: two antennas at right angles to each other, round the middle, one to each of its two receivers, so that the middle measures both components of the field — the work of two Mužíci at once. It holds **Serp** in one hand and **Molot** in the other, the only senders in Fonar, and with them hands out the calibration | — |
-| **Kuranty** | the time base: one edge from Gensek on a line shared by Brigáda and Předseda, ten receivers, each catching it in its own timer, so that every report carries the same time | make the receivers' phases comparable — each runs on its own crystal |
+| **Kuranty** | the time base: one edge from Gensek, fanned out to every receiver of Brigáda and Předseda, each catching it in its own timer, so that every report carries the same time | make the receivers' phases comparable — each runs on its own crystal |
 | **Razvedčik** | the angle: reads how far the head has turned on the rod | know where on the wall the rod stands |
 | **Iljič** | the mains voltage, in a mode of its own: the tool held by its grip like a tester, a light where it senses; it picks up the electric field at the wall — the mains, or the signals of cable tracers on their own frequencies, several at once — with a gain and in a band the user sets, and tells it by sound, a bar and the display | say that a cable is dead; say where to the centimetre |
 | **Gensek** | the processor: tells the receivers what to do, collects their reports, the angle and Iljič's signal; draws the radio layer from the amplitudes — self-scaled, levelled, focused; computes the other layers; draws them; stores them; takes the user's settings | any radio work |
@@ -79,8 +79,9 @@ shields what is behind them, and **Tyl**, the board behind it.
 | Kolchoz | Iskra | channel, start, stop | radio, the same kind of frame |
 | Předseda (Serp, Molot) | Brigáda | Samokritika's frames, one in each polarization | radio, across the head's face |
 | Gensek | Kuranty, every receiver | the sync edge | one line shared by all |
-| Gensek | each receiver | channel, gain, send; a new program | a serial link each; a reset and a boot line shared by all |
-| each receiver | Gensek | a report for every frame: which frame, the time, the channel measured | the same serial link |
+| Gensek | the Mužíci, all at once | channel, gain, mode; a new program | one broadcast serial line to all nine; one reset for all |
+| Gensek | each receiver | its own settings; a program by its loader | the Mužíci: an SPI bus shared by three, its own chip select (which is also its boot strap); Serp and Molot: a serial link each |
+| each receiver | Gensek | a report for every frame: which frame, the time, the channel measured | the Mužíci on their SPI bus, each with a ready line; Serp and Molot on their serial link |
 | every unit | Karanténa | its state, as Felčar asks for it | the links above |
 | Valenki | Kolchoz | the axis the head turns on; the mark Razvedčik reads | a bearing; nothing electrical |
 | Razvedčik | Gensek | the head's angle | a serial bus |

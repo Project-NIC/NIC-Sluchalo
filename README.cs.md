@@ -14,12 +14,22 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.2 — on paper](https://img.shields.io/badge/version-0.2%20on%20paper-blue.svg)
+![Version: 0.3 — on paper](https://img.shields.io/badge/version-0.3%20on%20paper-blue.svg)
 
 > ⚠️ **Koncept — nic není postavené ani změřené.** U každého čísla je uvedeno, odkud pochází:
 > z datasheetu, z publikované práce, z našeho vlastního výpočtu, nebo že není známé. Výpočty jsou
 > modely — 2D a 3D FDTD a jednodušší fyzika — ne měření. Stín kabelu přes skutečnou zeď tímto
 > způsobem zatím nikdo neviděl. Otázky a opravy jsou důvod, proč ho zveřejňujeme.
+
+## Dva nástroje, které poslouchají
+
+Sluchalo jsou dva nástroje. **Fonar** s **Iskrou** za zdí poslouchá stín, který Wi-Fi vrhá skrz
+zeď — o něm je zbytek této stránky. **[Datel](datel/README.md)** poslouchá zvuk: akustická kamera
+s 32 mikrofony, která ukáže, kudy uniká plyn pod tlakem, a po poklepu, které místo povrchu zní
+dutě. Oba stojí na stejném základu — jedna jádrová deska s STM32N6, jeden zdroj ze sodíkového
+článku, jeden displej.
+
+<p align="center"><a href="datel/README.md"><img src="datel/datel.jpg" width="420" alt="Datel"/></a></p>
 
 ## Jak to funguje
 
@@ -61,11 +71,11 @@ zeď — a vedle něj obyčejné kapacitní snímání napětí.
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
 | <img src="pictures/iljic.jpg" width="90"/><br/>**Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
-| <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk |
+| <img src="pictures/gensek.jpg" width="90"/><br/>**Gensek** | generální tajemník: jeden procesor nade vším — hlášení, úhel, obraz, displej, zvuk — STM32N6 na hotové jádrové desce, stejný základ jako u Datla |
 | <img src="pictures/pravda.jpg" width="90"/><br/>**Pravda** | noviny: displej a tlačítka |
 | <img src="pictures/matjugalnik.jpg" width="90"/><br/>**Matjugalnik** | amplion (vojácky): zvuk — co ukazuje obraz a co slyší Iljič, sluchem, tónem a hlasitostí, jakou si uživatel nastaví |
 | <img src="pictures/kadrovak.jpg" width="90"/><br/>**Kádrovák** | kádrovák: úložiště každého obrazu s jeho surovými daty; **Samizdat** je dostane do počítače |
-| <img src="pictures/pajok.jpg" width="90"/><br/>**Pajok** | příděl: dva články 18650 |
+| <img src="pictures/pajok.jpg" width="90"/><br/>**Pajok** | příděl: sodíková sada 1S |
 | <img src="pictures/karantena.jpg" width="90"/><br/>**Karanténa** | karanténa: hlídá všechny jednotky, **Felčar** je kontroluje; při chybě přístroj přestane měřit |
 
 ## Hlava
@@ -79,9 +89,9 @@ zeď — a vedle něj obyčejné kapacitní snímání napětí.
 | značení | tužkou podle zářezů na okraji hlavy, když stojí |
 | přijímače | deset hotových modulů ESP32-C5, každý na vlastním krystalu, každý připojený ke své anténě krátkým kabelem |
 | Front | čelo ke zdi: kovový kotouč s tenkou izolační vrstvou a na ní antény — kotouč je jejich zemí a stíněním |
-| Tyl | deska za ním: procesor, napájení, displej, zvuk |
+| Tyl | deska za ním: jádrová deska procesoru (STM32N6), napájení, displej, zvuk |
 | ke zdi | nedotýká se jí: **Valenki** ji drží od zdi; kde by se o zeď mohla otřít, má hlava filc |
-| napájení | ze dvou článků 18650 asi tři hodiny |
+| napájení | sodíková sada 1S, velikost podle potřebné výdrže |
 
 Koncept z 28. 10. ([`concept.md`](concept.md), anglicky) popisuje dřívější hlavu — devět
 vlastních patchů, jedny hodiny pro všechny, na pěně, posouvanou po zdi; kde se liší od stránek
@@ -120,6 +130,7 @@ co ukážou, a tak daleko, jak dovolí čas a prostředky.
 - [`WHY.md`](WHY.md) — co se změnilo, proč a co to změnilo jinde; anglicky.
 - [`concept.md`](concept.md) — celý koncept, anglicky: k čemu je, hlava, proč by to mělo fungovat,
   elektronika, zvuk, teplo, opuštěné cesty a proč, co nevíme, zkoušky.
+- [`datel/`](datel/README.md) — Datel, akustická kamera: účel, stavba, proč se co změnilo, skripty.
 - [`calc/`](calc) — skripty za každým spočítaným číslem, Python 3 s numpy (dva z nich se scipy),
   a jejich výstupy. `budget.py`, `array.py`, `acoustics.py` a `cpu.py` doběhnou hned; modely FDTD
   počítají minuty až hodinu na případ.

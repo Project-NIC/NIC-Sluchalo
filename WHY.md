@@ -69,6 +69,7 @@ What it loses is sharpness in depth. So (the owner: "přesně, beru to, tlač to
 | 21 | **The receivers on SPI, Předseda on UARTs**: nine Mužíci on three SPI buses, three to a bus, a chip select (which is also each module's boot strap) and a ready line each; Serp and Molot on a UART each; one reset for all, one broadcast line to the Mužíci. | The N6's connectors carry ten usable UARTs and the base takes one; eleven receivers and the module do not fit. Předseda apart, so sending and reading never wait on each other; the broadcast sets all nine at once and loads the same update into all of them. |
 | 22 | **Pajok a 1S sodium-ion pack**, the charger and two buck-boosts holding every rail to its empty 2.5 V. | The project's cells; the pack's size left to when it is bought — cells change by the half-year. |
 | 23 | **Datel back, as a tool of its own in `datel/`**: an acoustic camera for gas leaks with a tap mode, 32 microphones. | Not the knock of entries 17 and 19 inside the head, but its own tool on the same base as Fonar — both listen: Fonar to the radio's shadow, Datel to the sound. |
+| 24 | **Fonar renamed Rys**; the acoustic camera is **Netopýr**, its knock **Datel**. | "Fonar" means the lantern — once the sender's name in the concept, and the lanterns now stand for Iskra in Předseda's picture; the tool that sees what is inside a wall is the lynx — Lynkeus of the Argonauts saw through walls and under the earth. The tools are animals: Rys, Netopýr, Datel. |
 
 **What stops holding below**
 

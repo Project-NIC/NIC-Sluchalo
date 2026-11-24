@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="datel.jpg" width="420" alt="Datel"/>
+  <img src="netopyr.jpg" width="320" alt="Netopýr"/> <img src="datel.jpg" width="320" alt="Datel"/>
 </p>
 
-# Datel — the acoustic camera
+# Netopýr and Datel — the acoustic camera and its knock
 
 **Where a gas under pressure escapes, seen as a spot over the camera's picture: 32 microphones
 hear the leak's hiss — steam, oxygen, argon, nitrogen, compressed air — and draw where it comes
-from. And a knock: which patch of plaster, tile or laminate rings hollow.** Named after the
-woodpecker, which knocks and listens.
+from — Netopýr, the bat, which hears what others do not. And Datel, the woodpecker, its knock:
+which patch of plaster, tile or laminate rings hollow.**
 
 > ⚠️ **A concept — nothing built, nothing measured.** The figures come from the parts' datasheets
 > and our own calculations (`calc/`); the microphone holes, the matching at ultrasound and the

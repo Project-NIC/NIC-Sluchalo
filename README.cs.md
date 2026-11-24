@@ -21,15 +21,17 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 > modely — 2D a 3D FDTD a jednodušší fyzika — ne měření. Stín kabelu přes skutečnou zeď tímto
 > způsobem zatím nikdo neviděl. Otázky a opravy jsou důvod, proč ho zveřejňujeme.
 
-## Dva nástroje, které poslouchají
+## Nástroje, které poslouchají
 
-Sluchalo jsou dva nástroje. **Fonar** s **Iskrou** za zdí poslouchá stín, který Wi-Fi vrhá skrz
-zeď — o něm je zbytek této stránky. **[Datel](datel/README.md)** poslouchá zvuk: akustická kamera
-s 32 mikrofony, která ukáže, kudy uniká plyn pod tlakem, a po poklepu, které místo povrchu zní
-dutě. Oba stojí na stejném základu — jedna jádrová deska s STM32N6, jeden zdroj ze sodíkového
-článku, jeden displej.
+Sluchalo je rodina nástrojů na jednom základu — jedna jádrová deska s STM32N6, jeden zdroj ze
+sodíkového článku, jeden displej:
 
-<p align="center"><a href="datel/README.md"><img src="datel/datel.jpg" width="420" alt="Datel"/></a></p>
+- **Rys** s **Iskrou** za zdí — poslouchá stín, který Wi-Fi vrhá skrz zeď, a vidí, co je uvnitř:
+  o něm je zbytek této stránky.
+- **Netopýr** — akustická kamera s 32 mikrofony, která ukáže, kudy uniká plyn pod tlakem; a
+  **Datel**, jeho poklep — které místo povrchu zní dutě. Oba zatím v [`datel/`](datel/README.md).
+
+<p align="center"><a href="datel/README.md"><img src="datel/netopyr.jpg" width="320" alt="Netopýr"/> <img src="datel/datel.jpg" width="320" alt="Datel"/></a></p>
 
 ## Jak to funguje
 
@@ -62,12 +64,12 @@ zeď — a vedle něj obyčejné kapacitní snímání napětí.
 | část | co to je |
 |---|---|
 | <img src="pictures/iskra.jpg" width="90"/><br/>**Iskra** | jiskra: vysílač za zdí, hotová deska se dvěma zkříženými anténami, které se střídají, svislou a vodorovnou |
-| <img src="pictures/fonar.jpg" width="90"/><br/>**Fonar** | lucerna: přístroj přiložený ke zdi — Valenki a Kolchoz |
+| <img src="pictures/fonar.jpg" width="90"/><br/>**Rys** | rys, který vidí skrz zdi: přístroj přiložený ke zdi — Valenki a Kolchoz |
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | válenky: podvozek — gumová noha přitlačená ke zdi, tyčka a rukojeť; drží hlavu od zdi a kolmo k ní |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | kolchoz: hlava — všechno, co se točí na tyčce |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskovův levoruký kovář: konstrukce, všechno z kovu a plastu, co drží jednotky |
 | <img src="pictures/brigada.jpg" width="90"/><br/>**Brigáda** | brigáda: kruh osmi přijímačů, **Mužíků**, každý se svou anténou, **Kosou** |
-| <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Fonaru, pro **Samokritiku** |
+| <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | předseda: dvojice uprostřed v pravém úhlu — práce dvou Mužíků — se **Srpem** a **Molotem** v rukou, jedinými vysílači ve Rysa, pro **Samokritiku** |
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | kremelské hodiny: časová osa — jedna hrana na lince společné všem přijímačům |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | zvěd: snímač úhlu hlavy na tyčce |
 | <img src="pictures/iljic.jpg" width="90"/><br/>**Iljič** | Iljičova žárovka: jednotka síťového napětí — kapacitní snímač s vlastním zesílením a pásmem, samostatný režim, drží se jako zkoušečka |
@@ -130,7 +132,7 @@ co ukážou, a tak daleko, jak dovolí čas a prostředky.
 - [`WHY.md`](WHY.md) — co se změnilo, proč a co to změnilo jinde; anglicky.
 - [`concept.md`](concept.md) — celý koncept, anglicky: k čemu je, hlava, proč by to mělo fungovat,
   elektronika, zvuk, teplo, opuštěné cesty a proč, co nevíme, zkoušky.
-- [`datel/`](datel/README.md) — Datel, akustická kamera: účel, stavba, proč se co změnilo, skripty.
+- [`datel/`](datel/README.md) — Netopýr, akustická kamera, a Datel, jeho poklep: účel, stavba, proč se co změnilo, skripty.
 - [`calc/`](calc) — skripty za každým spočítaným číslem, Python 3 s numpy (dva z nich se scipy),
   a jejich výstupy. `budget.py`, `array.py`, `acoustics.py` a `cpu.py` doběhnou hned; modely FDTD
   počítají minuty až hodinu na případ.

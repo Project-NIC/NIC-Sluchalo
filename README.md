@@ -21,15 +21,18 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 > models — 2D and 3D FDTD and simpler physics — not measurements. Nobody has yet seen a cable's
 > shadow through a real wall this way. Questions and corrections are why it is published.
 
-## Two tools that listen
+## The tools that listen
 
-Sluchalo is two tools. **Fonar**, with **Iskra** behind the wall, listens to the shadow Wi-Fi
-casts through it — the rest of this page. **[Datel](datel/README.md)**, the woodpecker, listens to
-sound: an acoustic camera with 32 microphones that shows where a gas under pressure escapes, and
-by a knock which patch of a surface rings hollow. Both stand on the same base — one core board
-with an STM32N6, one supply from a sodium cell, one display.
+Sluchalo is a family of tools on one base — one core board with an STM32N6, one supply from a
+sodium cell, one display:
 
-<p align="center"><a href="datel/README.md"><img src="datel/datel.jpg" width="420" alt="Datel"/></a></p>
+- **Rys**, the lynx, with **Iskra** behind the wall — listens to the shadow Wi-Fi casts through
+  it, and sees what is inside: the rest of this page.
+- **Netopýr**, the bat — an acoustic camera with 32 microphones that shows where a gas under
+  pressure escapes; and **Datel**, the woodpecker, its knock — which patch of a surface rings
+  hollow. Both in [`datel/`](datel/README.md) for now.
+
+<p align="center"><a href="datel/README.md"><img src="datel/netopyr.jpg" width="320" alt="Netopýr"/> <img src="datel/datel.jpg" width="320" alt="Datel"/></a></p>
 
 ## How it works
 
@@ -64,12 +67,12 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | part | what it is |
 |---|---|
 | <img src="pictures/iskra.jpg" width="90"/><br/>**Iskra** | the spark: the sender behind the wall, a ready-made board with two crossed antennas taking turns, upright and level |
-| <img src="pictures/fonar.jpg" width="90"/><br/>**Fonar** | the lantern: the tool held to the wall — Valenki and Kolchoz |
+| <img src="pictures/fonar.jpg" width="90"/><br/>**Rys** | the lynx, which sees through walls: the tool held to the wall — Valenki and Kolchoz |
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | the collective farm: the head — everything that turns on the rod |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskov's left-handed smith: the construction, all of metal and plastic that holds the units |
 | <img src="pictures/brigada.jpg" width="90"/><br/>**Brigáda** | the work brigade: the ring of eight receivers, the **Mužíci**, each with its antenna, its **Kosa** (scythe) |
-| <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Fonar, for **Samokritika** |
+| <img src="pictures/predseda.jpg" width="90"/><br/>**Předseda** | the chairman (Czech): the pair in the middle, at right angles — the work of two Mužíci — with **Serp** and **Molot** in its hands, the only senders in Rys, for **Samokritika** |
 | <img src="pictures/kuranty.jpg" width="90"/><br/>**Kuranty** | the Kremlin's chimes: the time base — one edge on a line shared by all receivers |
 | <img src="pictures/razvedcik.jpg" width="90"/><br/>**Razvedčik** | the scout: the sensor of the head's angle on the rod |
 | <img src="pictures/iljic.jpg" width="90"/><br/>**Iljič** | Ilyich's lamp: the mains-voltage unit — a capacitive sensor with its own gain and band, a mode of its own, held like a tester |
@@ -135,7 +138,7 @@ as far as time and means allow.
 - [`WHY.md`](WHY.md) — why things changed, and what that changed elsewhere.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
-- [`datel/`](datel/README.md) — Datel, the acoustic camera: its purpose, its build, why things changed, its scripts.
+- [`datel/`](datel/README.md) — Netopýr, the acoustic camera, and Datel, its knock: its purpose, its build, why things changed, its scripts.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for
   two of them), and their outputs. `budget.py`, `array.py`, `acoustics.py` and `cpu.py` run at
   once; the FDTD models take minutes to an hour a case.

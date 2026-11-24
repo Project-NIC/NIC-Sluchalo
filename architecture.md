@@ -5,12 +5,12 @@ processors — those are in [`parts.md`](parts.md). What the tool is for is in
 [`purpose.md`](purpose.md), what it must do in [`requirements.md`](requirements.md); why it changed
 in [`WHY.md`](WHY.md).
 
-## Iskra and Fonar
+## Iskra and Rys
 
 **Sluchalo** is the project. It is two things: **Iskra**, the sender, which lights the wall from
-behind, and **Fonar**, the tool held to the near face. Fonar is two bodies: **Valenki**, the
+behind, and **Rys**, the tool held to the near face. Rys is two bodies: **Valenki**, the
 undercarriage — everything that stands and does not turn — and **Kolchoz**, the head, which turns
-on Valenki's rod just off the wall — everything that turns. Between Iskra and Fonar there is only
+on Valenki's rod just off the wall — everything that turns. Between Iskra and Rys there is only
 radio; between Valenki and Kolchoz, a bearing.
 
 Each body is made of units, and a unit is whole — what senses, the electronics behind it, and its
@@ -57,7 +57,7 @@ In Kolchoz:
 | unit | what it does | what it does not |
 |---|---|---|
 | **Brigáda** | the ring of eight receivers, the **Mužíci**, each with its own antenna facing the wall; each measures the channel of every frame and reports it | compute the picture; keep anything |
-| **Předseda** | the chairman in the middle of the ring: two antennas at right angles to each other, round the middle, one to each of its two receivers, so that the middle measures both components of the field — the work of two Mužíci at once. It holds **Serp** in one hand and **Molot** in the other, the only senders in Fonar, and with them hands out the calibration | — |
+| **Předseda** | the chairman in the middle of the ring: two antennas at right angles to each other, round the middle, one to each of its two receivers, so that the middle measures both components of the field — the work of two Mužíci at once. It holds **Serp** in one hand and **Molot** in the other, the only senders in Rys, and with them hands out the calibration | — |
 | **Kuranty** | the time base: one edge from Gensek, fanned out to every receiver of Brigáda and Předseda, each catching it in its own timer, so that every report carries the same time | make the receivers' phases comparable — each runs on its own crystal |
 | **Razvedčik** | the angle: reads how far the head has turned on the rod | know where on the wall the rod stands |
 | **Iljič** | the mains voltage, in a mode of its own: the tool held by its grip like a tester, a light where it senses; it picks up the electric field at the wall — the mains, or the signals of cable tracers on their own frequencies, several at once — with a gain and in a band the user sets, and tells it by sound, a bar and the display | say that a cable is dead; say where to the centimetre |
@@ -130,9 +130,9 @@ not changed.
 
 | | name | from | what it is |
 |---|---|---|---|
-| the project | **Sluchalo** | the listener of *The Flying Ship* | Iskra and Fonar |
+| the project | **Sluchalo** | the listener of *The Flying Ship* | Iskra and Rys |
 | the sender | **Iskra** | the spark, and the Bolsheviks' paper | the sender behind the wall |
-| the tool | **Fonar** | the lantern | what is held to the wall: Valenki and Kolchoz |
+| the tool | **Rys** | the lynx — Lynkeus of the Argonauts saw through walls and under the earth | what is held to the wall: Valenki and Kolchoz |
 | a body | **Valenki** | felt boots | the undercarriage: all that stands |
 | in Valenki | **Kuří nožka** | Czech: the chicken leg Baba Yaga's hut turns on | the rod with its rubber foot, the axis Kolchoz turns about |
 | the construction | **Levša** | Leskov's left-handed smith of Tula, who shod a steel flea | everything of metal and plastic that holds the units: Front's disc and its face, Kolchoz's housing, Valenki's foot, rod and bearing |

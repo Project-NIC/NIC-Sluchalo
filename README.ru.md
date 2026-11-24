@@ -34,7 +34,7 @@
   давлением; и **Дятел**, его простукивание — какое место поверхности звучит пусто. Оба пока в
   [`datel/`](datel/README.md).
 
-<p align="center"><a href="datel/README.md"><img src="datel/netopyr.jpg" width="320" alt="Netopýr"/> <img src="datel/datel.jpg" width="320" alt="Datel"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="datel/README.md"><img src="datel/netopyr.jpg" width="300" alt="Netopýr"/> <img src="datel/datel.jpg" width="300" alt="Datel"/></a></p>
 
 ## Как это работает
 
@@ -68,7 +68,7 @@
 | часть | что это |
 |---|---|
 | <img src="pictures/iskra.jpg" width="90"/><br/>**Iskra** | искра: передатчик за стеной, готовая плата с двумя скрещёнными антеннами, передающими по очереди, вертикальной и горизонтальной |
-| <img src="pictures/fonar.jpg" width="90"/><br/>**Rys** | рысь, которая видит сквозь стены: прибор, приложенный к стене, — Valenki и Kolchoz |
+| <img src="pictures/rys.jpg" width="90"/><br/>**Rys** | рысь, которая видит сквозь стены: прибор, приложенный к стене, — Valenki и Kolchoz |
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | валенки: шасси — резиновая ножка, прижатая к стене, стержень и рукоятка; держит головку на расстоянии от стены и перпендикулярно ей |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | колхоз: головка — всё, что вращается на стержне |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Левша Лескова: конструкция, всё металлическое и пластиковое, что держит блоки |

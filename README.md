@@ -32,7 +32,7 @@ sodium cell, one display:
   pressure escapes; and **Datel**, the woodpecker, its knock — which patch of a surface rings
   hollow. Both in [`datel/`](datel/README.md) for now.
 
-<p align="center"><a href="datel/README.md"><img src="datel/netopyr.jpg" width="320" alt="Netopýr"/> <img src="datel/datel.jpg" width="320" alt="Datel"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="datel/README.md"><img src="datel/netopyr.jpg" width="300" alt="Netopýr"/> <img src="datel/datel.jpg" width="300" alt="Datel"/></a></p>
 
 ## How it works
 
@@ -67,7 +67,7 @@ shadow Wi-Fi casts through a wall can be drawn — with a plain capacitive volta
 | part | what it is |
 |---|---|
 | <img src="pictures/iskra.jpg" width="90"/><br/>**Iskra** | the spark: the sender behind the wall, a ready-made board with two crossed antennas taking turns, upright and level |
-| <img src="pictures/fonar.jpg" width="90"/><br/>**Rys** | the lynx, which sees through walls: the tool held to the wall — Valenki and Kolchoz |
+| <img src="pictures/rys.jpg" width="90"/><br/>**Rys** | the lynx, which sees through walls: the tool held to the wall — Valenki and Kolchoz |
 | <img src="pictures/valenki.jpg" width="90"/><br/>**Valenki** | the felt boots: the undercarriage — a rubber foot pressed to the wall, a rod and a grip; it holds the head off the wall and square to it |
 | <img src="pictures/kolchoz.jpg" width="90"/><br/>**Kolchoz** | the collective farm: the head — everything that turns on the rod |
 | <img src="pictures/levsa.jpg" width="90"/><br/>**Levša** | Leskov's left-handed smith: the construction, all of metal and plastic that holds the units |

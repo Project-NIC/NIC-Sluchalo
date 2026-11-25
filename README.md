@@ -14,7 +14,7 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.3 — on paper](https://img.shields.io/badge/version-0.3%20on%20paper-blue.svg)
+![Version: 0.4 — on paper](https://img.shields.io/badge/version-0.4%20on%20paper-blue.svg)
 
 > ⚠️ **A concept — nothing built, nothing measured.** Every figure is marked by where it comes
 > from: a datasheet, published work, our own calculation, or not known. The calculations are
@@ -23,16 +23,19 @@ a pipe or a steel stud between them dims the field, and the head maps where. Eve
 
 ## The tools that listen
 
-Sluchalo is a family of tools on one base — one core board with an STM32N6, one supply from a
-sodium cell, one display:
+Sluchalo is a family of tools on one base — **the Báze** ([`baze/`](baze/README.md)): one core board
+with an STM32N6, one supply from a sodium cell, one display, a camera, a thermal camera, a laser
+rangefinder, the air's temperature and humidity, eight inductive buttons — and two ports for
+**heads**; a tool is the Báze and its head behind its front mask:
 
 - **Rys**, the lynx, with **Iskra** behind the wall — listens to the shadow Wi-Fi casts through
   it, and sees what is inside: the rest of this page.
-- **Netopýr**, the bat — an acoustic camera with 32 microphones that shows where a gas under
-  pressure escapes; and **Datel**, the woodpecker, its knock — which patch of a surface rings
-  hollow. Both in [`datel/`](datel/README.md) for now.
+- **Netopýr**, the bat — an acoustic camera: a head of 32 microphones on a propeller 14 cm across,
+  raw at 192 kHz, that shows where a gas under pressure escapes, a bearing wears, a discharge
+  crackles; and **Datel**, the woodpecker, its knock — which patch of a surface rings hollow.
+  Both in [`netopyr/`](netopyr/README.md).
 
-<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="datel/README.md"><img src="datel/netopyr.jpg" width="300" alt="Netopýr"/> <img src="datel/datel.jpg" width="300" alt="Datel"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a></p>
 
 ## How it works
 
@@ -138,7 +141,8 @@ as far as time and means allow.
 - [`WHY.md`](WHY.md) — why things changed, and what that changed elsewhere.
 - [`concept.md`](concept.md) — the whole concept: what it is for, the head, why it should work,
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
-- [`datel/`](datel/README.md) — Netopýr, the acoustic camera, and Datel, its knock: its purpose, its build, why things changed, its scripts.
+- [`baze/`](baze/README.md) — the Báze, the main board every tool plugs into: its netlist, the heads' ports, every clock (`kuranty.md`), the boards weighed, its scripts.
+- [`netopyr/`](netopyr/README.md) — Netopýr, the acoustic camera's head, and Datel, its knock: its purpose, its netlist, the propeller, why things changed, its scripts.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for
   two of them), and their outputs. `budget.py`, `array.py`, `acoustics.py` and `cpu.py` run at
   once; the FDTD models take minutes to an hour a case.

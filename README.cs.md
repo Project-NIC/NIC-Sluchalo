@@ -14,7 +14,7 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.3 — on paper](https://img.shields.io/badge/version-0.3%20on%20paper-blue.svg)
+![Version: 0.4 — on paper](https://img.shields.io/badge/version-0.4%20on%20paper-blue.svg)
 
 > ⚠️ **Koncept — nic není postavené ani změřené.** U každého čísla je uvedeno, odkud pochází:
 > z datasheetu, z publikované práce, z našeho vlastního výpočtu, nebo že není známé. Výpočty jsou
@@ -23,15 +23,18 @@ ocelový profil mezi nimi pole zeslabí a hlava zmapuje kde. Každé nastavení 
 
 ## Nástroje, které poslouchají
 
-Sluchalo je rodina nástrojů na jednom základu — jedna jádrová deska s STM32N6, jeden zdroj ze
-sodíkového článku, jeden displej:
+Sluchalo je rodina nástrojů na jednom základu — **Bázi** ([`baze/`](baze/README.md)): jedna jádrová
+deska s STM32N6, jeden zdroj ze sodíkového článku, jeden displej, kamera, termokamera, laserový
+dálkoměr, teplota a vlhkost vzduchu, osm indukčních tlačítek — a dva porty pro **hlavy**; nástroj
+je Báze a jeho hlava za přední maskou:
 
 - **Rys** s **Iskrou** za zdí — poslouchá stín, který Wi-Fi vrhá skrz zeď, a vidí, co je uvnitř:
   o něm je zbytek této stránky.
-- **Netopýr** — akustická kamera s 32 mikrofony, která ukáže, kudy uniká plyn pod tlakem; a
-  **Datel**, jeho poklep — které místo povrchu zní dutě. Oba zatím v [`datel/`](datel/README.md).
+- **Netopýr** — akustická kamera: hlava s 32 mikrofony na vrtuli o průměru 14 cm, surově na
+  192 kHz, která ukáže, kudy uniká plyn pod tlakem, kde se opotřebovává ložisko, kde praská výboj;
+  a **Datel**, jeho poklep — které místo povrchu zní dutě. Oba v [`netopyr/`](netopyr/README.md).
 
-<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="datel/README.md"><img src="datel/netopyr.jpg" width="300" alt="Netopýr"/> <img src="datel/datel.jpg" width="300" alt="Datel"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a></p>
 
 ## Jak to funguje
 
@@ -132,7 +135,8 @@ co ukážou, a tak daleko, jak dovolí čas a prostředky.
 - [`WHY.md`](WHY.md) — co se změnilo, proč a co to změnilo jinde; anglicky.
 - [`concept.md`](concept.md) — celý koncept, anglicky: k čemu je, hlava, proč by to mělo fungovat,
   elektronika, zvuk, teplo, opuštěné cesty a proč, co nevíme, zkoušky.
-- [`datel/`](datel/README.md) — Netopýr, akustická kamera, a Datel, jeho poklep: účel, stavba, proč se co změnilo, skripty.
+- [`baze/`](baze/README.md) — Báze, hlavní deska, do které se zapojuje každý nástroj: netlist, porty hlav, všechny hodiny (`kuranty.md`), zvážené desky, skripty.
+- [`netopyr/`](netopyr/README.md) — Netopýr, hlava akustické kamery, a Datel, jeho poklep: účel, netlist, vrtule, proč se co změnilo, skripty.
 - [`calc/`](calc) — skripty za každým spočítaným číslem, Python 3 s numpy (dva z nich se scipy),
   a jejich výstupy. `budget.py`, `array.py`, `acoustics.py` a `cpu.py` doběhnou hned; modely FDTD
   počítají minuty až hodinu na případ.

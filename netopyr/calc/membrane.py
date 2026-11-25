@@ -1,4 +1,4 @@
-"""NIC-Datel: what a cover over the sound holes takes from the ultrasound — rough.
+"""NIC-Sluchalo (Netopýr): what a cover over the sound holes takes from the ultrasound — rough.
 
 A non-porous film, by the mass law at normal incidence (unclamped, so the best case: a film
 clamped over a sub-millimetre hole is stiffer and loses more):  TL = 10 log10(1 + (w m / 2 rho c)^2).

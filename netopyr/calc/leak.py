@@ -1,4 +1,4 @@
-"""NIC-Datel: how small a leak the camera hears, against the ear (24 Nov 2026). A rough model.
+"""NIC-Sluchalo (Netopýr): how small a leak the camera hears, against the ear (24 Nov 2026). A rough model.
 
 The source: air (or another gas) through a round hole from a pressure p (bar gauge), choked above
 ~0.9 bar: mass flow m = 0.0404 A p0 / sqrt(T) (air, SI), jet ~400 m/s, jet power 1/2 m U^2;

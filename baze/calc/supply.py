@@ -1,4 +1,4 @@
-"""NIC-Datel: does the microphones' supply need a low-noise LDO?
+"""NIC-Sluchalo (Netopýr): does the microphones' supply need a low-noise LDO?
 
 The microphone (SPH0641LU4H-1 Rev B, ultrasonic mode): PSRR 55 dBV/FS (200 mVpp at 1 kHz),
 i.e. 1 Vrms on VDD shows at -55 dBFS; its own noise floor is the sensitivity (-26 dBFS at 94 dB SPL)

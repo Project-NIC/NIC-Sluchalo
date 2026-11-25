@@ -1,4 +1,4 @@
-"""NIC-Datel: the sound hole through the board in front of a bottom-port microphone.
+"""NIC-Sluchalo (Netopýr): the sound hole through the board in front of a bottom-port microphone.
 
 The hole is a short tube, open to the air at one end, closed by the microphone's small front
 volume at the other: its first resonance near a quarter wavelength over its length with the end

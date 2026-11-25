@@ -1,4 +1,4 @@
-"""NIC-Datel: how much the air takes from a leak's sound, by frequency (ISO 9613-1).
+"""NIC-Sluchalo (Netopýr): how much the air takes from a leak's sound, by frequency (ISO 9613-1).
 
 alpha in dB/m at a temperature, relative humidity and pressure; then what a path costs.
 """

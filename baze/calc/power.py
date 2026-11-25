@@ -1,4 +1,4 @@
-"""NIC-Datel: the tool's power, and what the microphones' voltage changes in it — rough.
+"""NIC-Sluchalo (Netopýr): the tool's power, and what the microphones' voltage changes in it — rough.
 
 Sources: PCMD3180 SBASA14A (8-channel PDM recording: IAVDD 11.9 mA at 3.3 V, 11.3 mA at 1.8 V with
 AREG shorted to AVDD; IIOVDD 0.7 mA at 3.3 V — at 48 kHz, more at 192 kHz, not given);

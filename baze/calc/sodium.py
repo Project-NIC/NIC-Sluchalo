@@ -1,4 +1,4 @@
-"""NIC-Datel on a sodium-ion cell — a thought of 24 Nov 2026.
+"""NIC-Sluchalo (Netopýr) on a sodium-ion cell — a thought of 24 Nov 2026.
 
 The cell's charge against voltage is a typical sloping layered-oxide curve (0 % ~2.50 V, 20 % ~2.95 V, 50 % ~3.25 V,
 80 % ~3.55 V, 100 % ~3.90 V) — a chosen cell's own table replaces it. The limits: nPM1300 PS v1.1

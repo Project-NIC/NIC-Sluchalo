@@ -1,4 +1,4 @@
-# NIC-Datel, the 3.3 V branch's surges (24 Nov 2026): is one C_P (47 uF Al polymer, 40 mohm, + 1 uF)
+# NIC-Sluchalo (Netopýr), the 3.3 V branch's surges (24 Nov 2026): is one C_P (47 uF Al polymer, 40 mohm, + 1 uF)
 # before the four LDOs enough when the camera shares the branch? The camera's current is still open
 # (UM3354), so it is swept. U23's own answer read from TPS63020 SLVS916I fig. 21 (a 1 A step, 0.5 -> 1.5 A,
 # VIN 2.4 V): the output moves ~50-60 mV (50 mV/div), settled within the 2 ms/div trace's resolution.

@@ -1,6 +1,6 @@
-# Datel — the purpose
+# Netopýr and Datel — the purpose
 
-What it does, for whom, and how we know it works.
+*A draft, 23 Nov 2026, for the owner to close.* What it does, for whom, and how we know it works.
 No parts and no numbers here.
 
 ## What it does

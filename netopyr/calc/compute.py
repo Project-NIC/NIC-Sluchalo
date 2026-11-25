@@ -1,4 +1,4 @@
-"""NIC-Datel: what the map costs to compute, roughly, so that boards can be weighed.
+"""NIC-Sluchalo (Netopýr): what the map costs to compute, roughly, so that boards can be weighed.
 
 Counts floating-point operations (a complex multiply-add = 8). Rough: no memory traffic, no
 overheads; a processor sustains perhaps a third to a half of its peak on such loops.

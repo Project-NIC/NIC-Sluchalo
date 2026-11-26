@@ -15,7 +15,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![License: CERN-OHL-P v2](https://img.shields.io/badge/License-CERN--OHL--P%20v2-red.svg)](https://ohwr.org/cern_ohl_p_v2.txt)
-![Version: 0.4 — on paper](https://img.shields.io/badge/version-0.4%20on%20paper-blue.svg)
+![Version: 0.5 — on paper](https://img.shields.io/badge/version-0.5%20on%20paper-blue.svg)
 
 > ⚠️ **Концепция — ничего не построено и не измерено.** Для каждой цифры указано, откуда она:
 > из даташита, из опубликованной работы, из нашего собственного расчёта — или что она неизвестна.
@@ -36,8 +36,11 @@
   данные на 192 кГц, которая показывает, где утекает газ под давлением, где изнашивается
   подшипник, где трещит разряд; и **Дятел**, его простукивание — какое место поверхности звучит
   пусто. Оба в [`netopyr/`](netopyr/README.md).
+- **Ариадна** — четыре искателя в одной головке: нить, то есть кабель, прослеживаемый по сигналу
+  на нём, от сети или от любого уже подключённого трассоискателя; металл; напряжение; и тепло —
+  **Градусник**, камера и тепловизор Базе с наложенными изображениями. В [`ariadne/`](ariadne/README.md).
 
-<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a> <a href="ariadne/README.md"><img src="ariadne/ariadne.jpg" width="300" alt="Ariadne"/></a></p>
 
 ## Как это работает
 
@@ -143,6 +146,7 @@ Espressif, авторам ESPARGOS, на форумы, — а испытания
   испытания.
 - [`baze/`](baze/README.md) — Базе, основная плата, к которой подключается каждый прибор: нетлист, порты головок, все тактовые сигналы (`kuranty.md`), сравнение плат, скрипты.
 - [`netopyr/`](netopyr/README.md) — Нетопырь, головка акустической камеры, и Дятел, его простукивание: назначение, нетлист, «винт», почему что менялось, скрипты.
+- [`ariadne/`](ariadne/README.md) — Ариадна, четыре искателя в одной головке: назначение, требования, почему что менялось.
 - [`calc/`](calc) — скрипты за каждой рассчитанной цифрой, Python 3 с numpy (два из них со
   scipy), и их результаты. `budget.py`, `array.py`, `acoustics.py` и `cpu.py` отрабатывают сразу;
   модели FDTD считают от минут до часа на случай.

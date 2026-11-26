@@ -34,11 +34,12 @@ rangefinder, the air's temperature and humidity, eight inductive buttons — and
   raw at 192 kHz, that shows where a gas under pressure escapes, a bearing wears, a discharge
   crackles; and **Datel**, the woodpecker, its knock — which patch of a surface rings hollow.
   Both in [`netopyr/`](netopyr/README.md).
-- **Ariadne** — four finders in one head: the thread, a cable followed by the signal on it, the
-  mains or any tracer already plugged in; metal; voltage; and heat by **Gradusnik**, the Báze's
-  camera and thermal camera laid over each other. In [`ariadne/`](ariadne/README.md).
+- **Klubok**, the magic ball of thread that leads the way — four finders in one head: the thread, a
+  cable followed by the signal on it, the mains or any tracer already plugged in; metal; voltage;
+  and heat by **Gradusnik**, the Báze's camera and thermal camera laid over each other. In
+  [`klubok/`](klubok/README.md).
 
-<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a> <a href="ariadne/README.md"><img src="ariadne/ariadne.jpg" width="300" alt="Ariadne"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a> <a href="klubok/README.md"><img src="klubok/klubok.jpg" width="300" alt="Klubok"/></a></p>
 
 ## How it works
 
@@ -146,7 +147,7 @@ as far as time and means allow.
   the electronics, the sound, the heat, the paths left and why, what is not known, the trials.
 - [`baze/`](baze/README.md) — the Báze, the main board every tool plugs into: its netlist, the heads' ports, every clock (`kuranty.md`), the boards weighed, its scripts.
 - [`netopyr/`](netopyr/README.md) — Netopýr, the acoustic camera's head, and Datel, its knock: its purpose, its netlist, the propeller, why things changed, its scripts.
-- [`ariadne/`](ariadne/README.md) — Ariadne, four finders in one head: its purpose, its requirements, why things changed.
+- [`klubok/`](klubok/README.md) — Klubok, four finders in one head: its purpose, its requirements, why things changed.
 - [`calc/`](calc) — the scripts behind every calculated figure, Python 3 with numpy (scipy for
   two of them), and their outputs. `budget.py`, `array.py`, `acoustics.py` and `cpu.py` run at
   once; the FDTD models take minutes to an hour a case.

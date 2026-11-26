@@ -33,11 +33,12 @@ je Báze a jeho hlava za přední maskou:
 - **Netopýr** — akustická kamera: hlava s 32 mikrofony na vrtuli o průměru 14 cm, surově na
   192 kHz, která ukáže, kudy uniká plyn pod tlakem, kde se opotřebovává ložisko, kde praská výboj;
   a **Datel**, jeho poklep — které místo povrchu zní dutě. Oba v [`netopyr/`](netopyr/README.md).
-- **Ariadne** — čtyři hledačky v jedné hlavě: nit, tedy kabel sledovaný podle signálu na něm, ze
-  sítě nebo z jakékoli zapojené hledačky vedení; kov; napětí; a teplo **Gradusnikem**, kamerou a
-  termokamerou Báze, jejichž obrazy se překrývají. V [`ariadne/`](ariadne/README.md).
+- **Klubok**, kouzelné klubko, které ukazuje cestu — čtyři hledačky v jedné hlavě: nit, tedy kabel
+  sledovaný podle signálu na něm, ze sítě nebo z jakékoli zapojené hledačky vedení; kov; napětí; a
+  teplo **Gradusnikem**, kamerou a termokamerou Báze, jejichž obrazy se překrývají. V
+  [`klubok/`](klubok/README.md).
 
-<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a> <a href="ariadne/README.md"><img src="ariadne/ariadne.jpg" width="300" alt="Ariadne"/></a></p>
+<p align="center"><img src="pictures/rys.jpg" width="300" alt="Rys"/> <a href="netopyr/README.md"><img src="netopyr/netopyr.jpg" width="300" alt="Netopýr"/> <img src="netopyr/datel.jpg" width="300" alt="Datel"/></a> <a href="klubok/README.md"><img src="klubok/klubok.jpg" width="300" alt="Klubok"/></a></p>
 
 ## Jak to funguje
 
@@ -140,7 +141,7 @@ co ukážou, a tak daleko, jak dovolí čas a prostředky.
   elektronika, zvuk, teplo, opuštěné cesty a proč, co nevíme, zkoušky.
 - [`baze/`](baze/README.md) — Báze, hlavní deska, do které se zapojuje každý nástroj: netlist, porty hlav, všechny hodiny (`kuranty.md`), zvážené desky, skripty.
 - [`netopyr/`](netopyr/README.md) — Netopýr, hlava akustické kamery, a Datel, jeho poklep: účel, netlist, vrtule, proč se co změnilo, skripty.
-- [`ariadne/`](ariadne/README.md) — Ariadne, čtyři hledačky v jedné hlavě: účel, požadavky, proč se co změnilo.
+- [`klubok/`](klubok/README.md) — Klubok, čtyři hledačky v jedné hlavě: účel, požadavky, proč se co změnilo.
 - [`calc/`](calc) — skripty za každým spočítaným číslem, Python 3 s numpy (dva z nich se scipy),
   a jejich výstupy. `budget.py`, `array.py`, `acoustics.py` a `cpu.py` doběhnou hned; modely FDTD
   počítají minuty až hodinu na případ.

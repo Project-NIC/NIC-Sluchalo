@@ -1,9 +1,10 @@
-# Ariadne — four finders in one head
+# Klubok — four finders in one head
 
-Ariadne finds what runs in a wall, a floor or a board before it is touched: **the thread** — a cable
+Klubok finds what runs in a wall, a floor or a board before it is touched: **the thread** — a cable
 followed by the signal on it, the mains or any tracer the user already has —, **metal**, **voltage**
 and **heat**. One head on the Báze (`../baze/`), held like a metal detector, one finder at a time.
-Ariadne gave Theseus a thread through the labyrinth; the signal is the thread.
+Klubok is the magic ball of thread in Russian tales that rolls ahead of the hero and leads
+him the way; the signal on the cable is the thread.
 
 | finder | what it does |
 |---|---|

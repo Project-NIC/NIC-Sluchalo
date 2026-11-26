@@ -1,4 +1,4 @@
-# Ariadne — the purpose
+# Klubok — the purpose
 
 *What it does, for whom, and how we know it works. No parts and no numbers.*
 
@@ -15,8 +15,8 @@ touching it. Everything a professional carries in several tools, in one head on 
    its own:** the receiver takes 50 Hz to about 130 kHz and picks out the frequencies in software.
    It reads the cable two ways, **by its charge** (a capacitive plate) and **by its current**
    (three small ferrite rods at right angles, x, y and z), so it finds a cable shorted further
-   on, which a voltage probe cannot. Ariadne gave Theseus a thread through the labyrinth; the
-   signal is the thread.
+   on, which a voltage probe cannot. Klubok, the magic ball of the tales, rolls ahead and leads
+   the way; the signal is the thread.
 2. **Metal.** With a field of its own it finds metal near the surface, and tells iron from
    copper. No sender needed.
 3. **Voltage.** The plainest: a sound, or a bar that grows, where the mains voltage is. No sender

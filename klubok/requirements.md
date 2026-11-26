@@ -1,4 +1,4 @@
-# Ariadne — the requirements
+# Klubok — the requirements
 
 *Each range is set at a realistic, reasonable maximum — what tools of this class reach, not more;
 the figures are checked against them in the principle.*
